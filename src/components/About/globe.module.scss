@@ -1,0 +1,255 @@
+/* Example styling specifically for GlobeSection */
+
+@import "../../app/globals.scss";
+
+.globeSection {
+  width: 100%;
+  background-color: #fff;
+  transform: translate(0, 0); /* Example transform */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100em;
+  padding: 0 clamp(2.5em, 8vw, 8em);
+  &.medium {
+    /* If you have special “medium” spacing logic */
+    padding-left: calc(2.5em * 2);
+    padding-right: calc(2.5em * 2);
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.flexCol {
+  /* Adjust as needed */
+  flex: 1;
+  position: relative;
+}
+
+/* Example “stripe” class and “digitalBall” logic */
+.stripe {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.digitalBall {
+  width: clamp(10em, 13vw, 13em);
+  height: clamp(10em, 13vw, 13em);
+  background: royalblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  float: right;
+
+  .overlay {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* etc. */
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+
+  .globe {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    perspective: 800px;
+    top: 0%;
+    left: 0%;
+    box-shadow: inset 0px 0px 0px 0.125em white;
+    // animation: globe 5.4s cubic-bezier(0.35, 0, 0.65, 1) infinite;
+
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      box-shadow: inset 0.1em 0px 0px 0.08em white;
+      animation: circle1 2.7s linear infinite;
+      font-size: 0.75em;
+
+      &:nth-child(1) {
+        animation-delay: -1.8s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: -0.9s;
+      }
+    }
+
+    .circleHor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      height: 55%;
+      box-shadow: inset 0px 0px 0px 0.15em white;
+      font-size: 0.75em;
+    }
+
+    .circleHorMiddle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150%;
+      transform: translate(-50%, -50%);
+      border-radius: 0;
+      height: 0.15em;
+      background: white;
+      font-size: 0.75em;
+    }
+
+    .globe-wrap {
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) rotate(30deg);
+      overflow: hidden;
+      box-shadow: inset 0px 0px 0px 0.125em white;
+    }
+  }
+}
+
+// Keyframes
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes digitalball {
+  0% {
+    background: blue;
+  }
+  50% {
+    background: #ff4444;
+  }
+  100% {
+    background: blue;
+  }
+}
+
+@keyframes circle1 {
+  0% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0px 0px 0.08em white;
+    width: 100%;
+  }
+  49% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0px 0px 0.08em white;
+    background: transparent;
+  }
+  50% {
+    border-radius: 0%;
+    width: 0.175em;
+    background: white;
+  }
+  51% {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0px 0px 0.08em white;
+    background: transparent;
+  }
+  100% {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0px 0px 0.08em white;
+    width: 100%;
+  }
+}
+
+@keyframes AboutSection_circle1__BI1c4 {
+  0% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0px 0px 0.08em white;
+    width: 100%;
+  }
+  49% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0px 0px 0.08em white;
+    background: transparent;
+  }
+  50% {
+    border-radius: 0%;
+    width: 0.175em;
+    background: white;
+  }
+  51% {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0px 0px 0.08em white;
+    background: transparent;
+  }
+  100% {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0px 0px 0.08em white;
+    width: 100%;
+  }
+}
+
+@keyframes floatArrow {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes globe {
+  0% {
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+}
