@@ -6,7 +6,7 @@ import Magnetic from "../../common/Magnetic";
 import IvanImage from "../../../public/images/IMG_7197.JPG";
 import styles from "./ContactSection.module.scss";
 
-export default function Contact() {
+export default function ContactSection() {
   const [formData, setFormData] = useState({
     userName: "",
     userEmail: "",

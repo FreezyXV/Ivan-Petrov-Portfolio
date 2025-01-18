@@ -1,6 +1,5 @@
 "use client";
 import styles from "./globe.module.scss"; 
-import { motion } from "framer-motion";
 
 export default function GlobeSection() {
   return (

@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
-const words = ["Hello", "Bonjour", "Ciao", "Привет", "やあ", "Привiт", "Guten tag", "Buna Ziua"]
+const words = ["Hello", "Bonjour", "Ciao", "Привет", "やあ", "Привiт", "Guten tag"]
 
-export default function Index() {
+export default function Preloader() {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
 

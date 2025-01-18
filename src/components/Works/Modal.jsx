@@ -19,7 +19,7 @@ export default function Modal({ tech, isOpen, onClose }) {
         <button className={styles.closeButton} onClick={onClose}>
           &times;
         </button>
-        <img src={tech.icon} alt={tech.name} className={styles.modalImage} />
+        <image src={tech.icon} alt={tech.name} className={styles.modalImage} />
         <h2>{tech.name}</h2>
         <p>{tech.description}</p>
       </motion.div>

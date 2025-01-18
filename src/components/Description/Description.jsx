@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { slideUp, opacity } from "./animation";
 import Rounded from "../../common/RoundedButton";
 
-export default function Index() {
+export default function Description() {
   const phrase =
     "Transforming digital ideas into reality. I create dynamic and user-focused solutions tailored to elevate your brand.";
   const description = useRef(null);
