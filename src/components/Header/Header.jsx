@@ -1,14 +1,18 @@
 "use client";
-import { useState } from "react";
+
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
 import styles from "./style.module.scss";
 import aboutStyles from "../About/AboutHeader.module.scss";
 import contactStyles from "../Contact/contactHeader.module.scss";
 import workStyles from "../Works/WorkHeader.module.scss";
 import Link from "next/link";
-import { AnimatePresence } from "framer-motion";
 import Navigation from "./nav/Navigation";
 import Rounded from "../../common/RoundedButton/RoundedButton";
 import Magnetic from "../../common/Magnetic/Magnetic";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Header({ styleType }) {
   const [isActive, setIsActive] = useState(false);
@@ -21,6 +25,37 @@ export default function Header({ styleType }) {
       : styleType === "work"
       ? workStyles
       : styles;
+
+  const header = useRef(null);
+  const button = useRef(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsActive(false);
+  }, [pathname]);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(button.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: 0,
+        end: window.innerHeight,
+        onLeave: () =>
+          gsap.to(button.current, {
+            scale: 1,
+            duration: 0.25,
+            ease: "power1.out",
+          }),
+        onEnterBack: () =>
+          gsap.to(button.current, {
+            scale: 0,
+            duration: 0.25,
+            ease: "power1.out",
+          }),
+      },
+    });
+  }, []);
 
   return (
     <>
@@ -38,6 +73,7 @@ export default function Header({ styleType }) {
             </div>
           </Link>
         </div>
+
         {/* Navigation */}
         <nav className={currentStyles.nav}>
           <Magnetic>
@@ -62,21 +98,23 @@ export default function Header({ styleType }) {
       </header>
 
       {/* Button */}
-      <div className={currentStyles.headerButtonContainer}>
+      <div ref={button} className={styles.headerButtonContainer}>
         <Rounded
-          onClick={() => setIsActive(!isActive)}
-          className={currentStyles.button}
+          onClick={() => setIsActive((prev) => !prev)}
+          className={styles.button}
         >
           <div
-            className={`${currentStyles.burger} ${
-              isActive ? currentStyles.burgerActive : ""
+            className={`${styles.burger} ${
+              isActive ? styles.burgerActive : ""
             }`}
           ></div>
         </Rounded>
       </div>
 
       {/* Navigation Menu */}
-      <AnimatePresence>{isActive && <Navigation />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isActive && <Navigation />}
+      </AnimatePresence>
     </>
   );
 }

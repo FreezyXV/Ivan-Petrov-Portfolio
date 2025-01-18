@@ -4,10 +4,10 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
+import Rounded from "@/common/RoundedButton/RoundedButton"; 
 import Link from "next/link";
 import { useRouter } from "next/navigation"; // Import useRouter
 
-import Rounded from "../../common/RoundedButton/RoundedButton";
 import Project from "../Projects/components/project/ProjectSection";
 
 import styles from "../Works/WorksSection.module.scss";
