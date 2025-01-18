@@ -95,7 +95,7 @@ export default function ContactSection() {
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g
                   transform="translate(-1019.000000, -279.000000)"
-                  stroke="#FFFFFF"
+                  stroke="#fff"
                   strokeWidth="1.5"
                 >
                   <g
