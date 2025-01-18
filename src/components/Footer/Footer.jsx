@@ -2,9 +2,9 @@
 import React, { useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Rounded from "../../common/RoundedButton";
+import Rounded from "../../common/RoundedButton/RoundedButton";
 import { useScroll, motion, useTransform } from "framer-motion";
-import Magnetic from "../../common/Magnetic";
+import Magnetic from "../../common/Magnetic/Magnetic";
 import styles from "./style.module.scss";
 
 export default function Footer() {

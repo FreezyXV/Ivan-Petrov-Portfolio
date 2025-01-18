@@ -1,10 +1,10 @@
 "use client";
+
 import Image from "next/image";
 import styles from "./style.module.scss";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-
 
 export default function Home() {
   const name = "Ivan Petrov - ";
@@ -13,38 +13,42 @@ export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
-  let xPercent = 0;
-  let direction = -1;
+  const xPercent = useRef(0); // Use useRef for xPercent
+  const direction = useRef(-1); // Use useRef for direction
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: 0.25,
         start: 0,
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
+        onUpdate: (e) => {
+          direction.current = e.direction * -1; // Update direction ref
+        },
       },
       x: "-500px",
     });
+
+    const animate = () => {
+      if (xPercent.current < -100) {
+        xPercent.current = 0;
+      } else if (xPercent.current > 0) {
+        xPercent.current = -100;
+      }
+      gsap.set(firstText.current, { xPercent: xPercent.current });
+      gsap.set(secondText.current, { xPercent: xPercent.current });
+      requestAnimationFrame(animate);
+      xPercent.current += 0.006 * direction.current; // Use direction ref
+    };
+
     requestAnimationFrame(animate);
   }, []);
 
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    requestAnimationFrame(animate);
-    xPercent += 0.006 * direction;
-  };
-
   return (
-<div className={styles.landing}>
+    <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
           Combining creativity, technical expertise, and a user-first approach
@@ -78,6 +82,6 @@ export default function Home() {
         <p>Freelance</p>
         <p>Designer & Developer</p>
       </div>
-      </div>
+    </div>
   );
 }

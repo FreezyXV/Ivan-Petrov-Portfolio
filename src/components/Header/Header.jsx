@@ -7,8 +7,8 @@ import workStyles from "../Works/WorkHeader.module.scss";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 import Navigation from "./nav/Navigation";
-import Rounded from "../../common/RoundedButton";
-import Magnetic from "../../common/Magnetic";
+import Rounded from "../../common/RoundedButton/RoundedButton";
+import Magnetic from "../../common/Magnetic/Magnetic";
 
 export default function Header({ styleType }) {
   const [isActive, setIsActive] = useState(false);

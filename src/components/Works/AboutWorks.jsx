@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Rounded from "../../common/RoundedButton";
+import Rounded from "../../common/RoundedButton/RoundedButton";
 import styles from "./AboutWorks.module.scss";
 import { fadeInUpVariants } from "../Works/animations";
 import Modal from "./Modal";

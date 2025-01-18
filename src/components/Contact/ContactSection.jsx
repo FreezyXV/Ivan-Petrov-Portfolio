@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Magnetic from "../../common/Magnetic";
+import Magnetic from "../../common/Magnetic/Magnetic";
 import IvanImage from "../../../public/images/IMG_7197.JPG";
 import styles from "./ContactSection.module.scss";
 
@@ -15,7 +15,6 @@ export default function ContactSection() {
     userMessage: "",
     honeypot: "", // spam field
   });
-  const [status, setStatus] = useState(null);
 
   // Handle changes in each input/textarea
   function handleChange(e) {
@@ -46,7 +45,6 @@ export default function ContactSection() {
       const result = await response.json();
 
       if (response.ok) {
-        setStatus("success");
         alert("Thank you! Your message was sent successfully.");
 
         setFormData({
@@ -58,11 +56,9 @@ export default function ContactSection() {
           honeypot: "",
         });
       } else {
-        setStatus("error");
         alert(`Error: ${result.error || "Failed to send email"}`);
       }
     } catch (error) {
-      setStatus("error");
       console.error("Submit error:", error);
       alert("Something went wrong, please try again.");
     }

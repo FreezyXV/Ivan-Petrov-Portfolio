@@ -3,7 +3,7 @@ import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
 import { slideUp, opacity } from "./animation";
-import Rounded from "../../common/RoundedButton";
+import Rounded from "../../common/RoundedButton/RoundedButton";
 
 export default function Description() {
   const phrase =

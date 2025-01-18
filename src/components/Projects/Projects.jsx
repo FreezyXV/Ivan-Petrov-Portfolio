@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter
 
-import Rounded from "../../common/RoundedButton";
+import Rounded from "../../common/RoundedButton/RoundedButton";
 import Project from "../Projects/components/project/ProjectSection";
 
 import styles from "../Works/WorksSection.module.scss";
@@ -55,17 +56,15 @@ const scaleAnimation = {
 };
 
 export default function WorksSection() {
-  // Modal state
+  const router = useRouter(); // Initialize useRouter
+
   const [modal, setModal] = useState({ active: false, index: 0 });
   const { active, index } = modal;
 
-  // View mode: 'list' or 'grid'
   const [viewMode, setViewMode] = useState("list");
 
-  // mouse position Trancking
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  // Refs
   const containerRef = useRef(null);
   const modalContainer = useRef(null);
   const cursor = useRef(null);
@@ -78,7 +77,6 @@ export default function WorksSection() {
   const xMoveCursorLabel = useRef(null);
   const yMoveCursorLabel = useRef(null);
 
-  // GSAP setup for smooth modal and cursor movements
   useEffect(() => {
     if (!modalContainer.current) return;
 
@@ -108,7 +106,6 @@ export default function WorksSection() {
     });
   }, []);
 
-  // Move GSAP elements
   const moveItems = (mouseX, mouseY) => {
     if (
       !xMoveContainer.current ||
@@ -128,13 +125,11 @@ export default function WorksSection() {
     yMoveCursorLabel.current(mouseY);
   };
 
-  // Global mouse tracker
   const handleMouseMove = (e) => {
     setMousePos({ x: e.clientX, y: e.clientY });
     moveItems(e.clientX, e.clientY);
   };
 
-  // Open or close the modal
   const manageModal = (newActive, newIndex, mouseX, mouseY) => {
     moveItems(mouseX, mouseY);
     setModal({ active: newActive, index: newIndex });
@@ -146,14 +141,11 @@ export default function WorksSection() {
         ref={containerRef}
         className={styles.myProjects}
         onMouseMove={handleMouseMove}
-        style={{ backgroundColor: "rgb(255, 755, 255)" }}
+        style={{ backgroundColor: "rgb(255, 255, 255)" }}
       >
         <div className={`${styles.container} medium`}>
           <div className={styles.row}>
-            <div
-              className={`${styles.flexCol} once-in`}
-              style={{ transform: "translate(0px, 0vh)" }}
-            >
+            <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
                 <span>Creating next level </span>
                 <span>
@@ -171,7 +163,7 @@ export default function WorksSection() {
           </div>
         </div>
 
-        {/* List/Grid Toggle Buttons */}
+        {/* Toggle Buttons */}
         <div className={styles.toggleButtons}>
           <button
             onClick={() => setViewMode("list")}
@@ -214,7 +206,6 @@ export default function WorksSection() {
         </div>
 
         <div className={styles.projectAndButton}>
-          {/* Projects Container */}
           <div
             className={`${styles.body} ${
               viewMode === "grid" ? styles.grid : styles.list
@@ -257,13 +248,11 @@ export default function WorksSection() {
           </div>
 
           <div className={styles.buttonDiv}>
-            {/* When the Rounded button is clicked, navigate to the Contact page */}
             <Rounded onClick={() => router.push("/contact")}>
               <p>Let’s Work Together</p>
             </Rounded>
           </div>
         </div>
-
         {/* Modal */}
         <motion.div
           ref={modalContainer}

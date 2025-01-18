@@ -16,18 +16,24 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const locomotiveScroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
 
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
       }, 2000);
+
+      // Clean up LocomotiveScroll instance
+      return () => locomotiveScroll.destroy();
     })();
   }, []);
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-scroll-container>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
