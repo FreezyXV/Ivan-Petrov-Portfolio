@@ -1,6 +1,6 @@
 # Ivan Petrov -- Portfolio
 
-This repository hosts the **Ivan Petrov** portfolio, a **Next.js 13** application showcasing projects, skills, and contact information. It leverages **Framer Motion**, **GSAP**, and **SCSS modules** to provide a visually engaging and animated user experience.
+This repository hosts **Ivan Petrov** portfolio, a **Next.js 13** application showcasing projects, skills, and contact information. It leverages **Framer Motion**, **GSAP**, and **SCSS modules** to provide a visually engaging and animated user experience.
 
 ## Table of Contents
 
@@ -55,47 +55,87 @@ This repository hosts the **Ivan Petrov** portfolio, a **Next.js 13** applicatio
 
 Below is a simplified structure reflecting key directories:
 
-`├── app
+```bash
+├── app
 │   ├── about
-│   │   ├── page.jsx
-│   │   └── ... (About sections & SCSS)
+│   │   ├── page.jsx                # About page entry point
+│   │   ├── AboutHeader.jsx         # About header section
+│   │   ├── AboutImageSection.jsx   # About image section
+│   │   ├── AboutServices.jsx       # About services section
+│   │   ├── globe.module.scss       # Globe section styles
+│   │   ├── AboutHeader.module.scss # Header styles for About
+│   │   ├── AboutServices.module.scss # Services styles for About
+│   │   └── ...                     # Additional sections & SCSS
 │   ├── works
-│   │   ├── page.jsx
-│   │   └── ... (Works sections & SCSS)
+│   │   ├── page.jsx                # Works page entry point
+│   │   ├── WorksSection.jsx        # Main works section
+│   │   ├── AboutWorks.jsx          # About Works section
+│   │   ├── WorkHeader.module.scss  # Header styles for works
+│   │   ├── WorksSection.module.scss # Main works section styles
+│   │   └── animations.js           # Animations for works
 │   ├── contact
-│   ├── layout.js
-│   └── page.js
+│   │   ├── page.jsx                # Contact page entry point
+│   │   ├── ContactHeader.module.scss # Header styles for contact
+│   │   ├── ContactSection.jsx      # Main contact section
+│   │   └── ContactSection.module.scss # Contact section styles
+│   ├── layout.js                   # Global layout for all pages
+│   └── page.js                     # Root entry point
+├── common
+│   ├── Magnetic
+│   │   ├── Magnetic.jsx            # Magnetic button/interaction
+│   │   └── style.module.scss       # Styles for Magnetic
+│   ├── RoundedButton
+│   │   ├── RoundedButton.jsx       # Reusable rounded button
+│   │   └── style.module.scss       # Styles for RoundedButton
 ├── components
 │   ├── About
 │   │   ├── AboutHeader.jsx
 │   │   ├── AboutImageSection.jsx
 │   │   ├── AboutServices.jsx
+│   │   ├── style.module.scss       # Shared About styles
 │   │   └── ...
 │   ├── Footer
-│   │   ├── Footer.jsx
-│   │   └── style.module.scss
+│   │   ├── Footer.jsx              # Footer component
+│   │   ├── Subfooter.jsx           # Subfooter component
+│   │   └── style.module.scss       # Footer styles
 │   ├── Header
-│   │   ├── Header.jsx
-│   │   └── style.module.scss
+│   │   ├── Header.jsx              # Header component
+│   │   ├── Link.jsx                # Link for navigation
+│   │   ├── Navigation.jsx          # Main navigation logic
+│   │   ├── animation.js            # Animations for header
+│   │   └── style.module.scss       # Header styles
+│   ├── Preloader
+│   │   ├── Preloader.jsx           # Page preloader
+│   │   └── style.module.scss       # Preloader styles
 │   ├── Works
-│   │   ├── WorksSection.jsx
-│   │   ├── AboutWorks.jsx
-│   │   ├── animations.js
-│   │   └── ...
-│   └── Preloader
-│       ├── Preloader.jsx
-│       └── style.module.scss
+│   │   ├── AboutWorks.jsx          # About Works component
+│   │   ├── WorksSection.jsx        # Works section component
+│   │   ├── SlidingImages.jsx       # Sliding images component
+│   │   ├── ProjectSection.jsx      # Project section
+│   │   ├── animations.js           # Animation logic
+│   │   └── style.module.scss       # Works shared styles
 ├── public
-│   ├── images
-│   │   └── ... (PNG, JPG, GIF assets)
-│   └── favicon.ico
-├── node_modules
-├── package.json
-├── package-lock.json
-├── .eslintrc.json
-├── .gitignore
-├── README.md
-└── ...`
+│   ├── images                      # Image assets
+│   │   ├── ListBlack.png           # Icon for list view (black)
+│   │   ├── ListWhite.png           # Icon for list view (white)
+│   │   ├── GridBlack.png           # Icon for grid view (black)
+│   │   ├── GridWhite.png           # Icon for grid view (white)
+│   │   ├── BlueCube.gif            # Decorative cube GIF
+│   │   ├── ...                     # Additional images (PNG, JPG, GIF)
+│   ├── favicon.ico                 # Favicon for the site
+│   ├── android-chrome-192x192.png  # Android-specific favicon
+│   ├── apple-touch-icon.png        # Apple-specific favicon
+│   └── ...
+├── node_modules                    # Node.js dependencies
+├── .env.local                      # Environment variables
+├── .eslintrc.json                  # ESLint configuration
+├── .gitignore                      # Git ignored files
+├── next.config.js                  # Next.js configuration
+├── package.json                    # Node.js package manifest
+├── package-lock.json               # Dependency lock file
+├── README.md                       # Project documentation
+└── ...
+```
 
 **Notable Directories & Files**
 
@@ -110,11 +150,11 @@ Below is a simplified structure reflecting key directories:
 
 1.  **Clone the repository**
 
-    `git clone https://github.com/YourUsername/ivan-petrov-portfolio.git`
+    `git clone https://github.com/FreezyXV/Ivan-Petrov-Portfolio.git`
 
 2.  **Install dependencies**
 
-        `cd ivan-petrov-portfolio
+        `cd Ivan-Petrov-Portfolio
 
     npm install`
 
@@ -155,10 +195,10 @@ Within the **root** directory, you can run:
 If you plan to use **Nodemailer** or any external APIs, you'll need to configure environment variables:
 
 `# .env.local (example)
-EMAIL_HOST=smtp.example.com
-EMAIL_PORT=465
-EMAIL_USER=YourUsername
-EMAIL_PASSWORD=SecretPassword`
+MAIL_HOST=smtp.gmail.com
+MAIL_USER=you@example.com
+MAIL_PASS=topsecret
+
 
 Then ensure that you do **not** commit your `.env.local` file to version control.
 
@@ -168,19 +208,13 @@ Then ensure that you do **not** commit your `.env.local` file to version control
 
 You can deploy this Next.js 13 project to platforms like **Vercel**, **Netlify**, or your own server. For example, to deploy on **Vercel**:
 
-1.  Install the Vercel CLI.
-2.  Run `vercel` in your project directory.
-3.  Follow the prompts to set up a new project or link an existing one.
+- That Next.js portfolio is deployed on **Vercel**
 
 ---
 
-## Contributing
+## Contributing is not Allowed for this project for tierce persons.
 
-1.  **Fork** the project.
-2.  **Create** a new feature branch (`git checkout -b feature-awesome`).
-3.  **Commit** your changes (`git commit -m 'Add awesome feature'`).
-4.  **Push** to the branch (`git push origin feature-awesome`).
-5.  **Open a Pull Request** describing your changes.
+As a Portfolio owner Ivan want be the only person that can contribute.
 
 ## License
 
