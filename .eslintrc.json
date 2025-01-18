@@ -3,6 +3,9 @@
   "rules": {
     "@next/next/no-img-element": "off",
     "react/no-unescaped-entities": "off",
-    "react-hooks/rules-of-hooks": "warn"
+    "react-hooks/rules-of-hooks": "warn",
+    "no-unused-vars": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-undef": "warn"
   }
 }
