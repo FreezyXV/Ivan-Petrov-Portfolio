@@ -207,15 +207,11 @@
   cursor: pointer;
   height: 60px;
   width: 60px;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.btnImageList {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
+.btnImageList,
 .btnImageGrid {
   width: 25px;
   height: 25px;
@@ -224,12 +220,12 @@
 }
 
 .toggleButton:hover .btnImageList {
-  transform: scale(1.1);
+  transform: scale(1.2);
   background-color: black;
 }
 
 .toggleButton:hover .btnImageGrid {
-  transform: scale(1.05);
+  transform: scale(1.2);
   background-color: black;
 }
 
@@ -243,4 +239,6 @@
   height: 60px;
   width: 60px;
   pointer-events: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
