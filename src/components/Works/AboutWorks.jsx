@@ -21,79 +21,79 @@ const cardVariants = {
 const allTechnologies = [
   {
     name: "React.js",
-    icon: "/images/Technologies/React.png",
+    icon: "/images/React.png",
     description:
       "A JavaScript library for building user interfaces. React is widely used for creating interactive web applications.",
   },
   {
     name: "Next.js",
-    icon: "/images/Technologies/Next.png",
+    icon: "/images/Next.png",
     description:
       "A React framework for production that makes building full-stack apps simpler, with server-side rendering and static site generation.",
   },
   {
     name: "Node.js",
-    icon: "/images/Technologies/Node.png",
+    icon: "/images/Node.png",
     description:
       "A JavaScript runtime built on Chrome's V8 engine, ideal for building scalable network applications.",
   },
   {
     name: "MongoDB",
-    icon: "/images/Technologies/MongoDB.png",
+    icon: "/images/MongoDB.png",
     description:
       "A NoSQL database that offers high performance, high availability, and easy scalability.",
   },
   {
     name: "Express",
-    icon: "/images/Technologies/Express.png",
+    icon: "/images/Express.png",
     description:
       "A minimal and flexible Node.js web application framework that provides robust features for web and mobile applications.",
   },
   {
     name: "Stripe",
-    icon: "/images/Technologies/Stripe.png",
+    icon: "/images/Stripe.png",
     description:
       "A payment processing platform for online businesses, enabling secure transactions.",
   },
   {
     name: "Jest",
-    icon: "/images/Technologies/Jest.png",
+    icon: "/images/Jest.png",
     description:
       "A JavaScript testing framework designed to ensure correctness of any JavaScript codebase.",
   },
   {
     name: "JWT",
-    icon: "/images/Technologies/JWT.png",
+    icon: "/images/JWT.png",
     description:
       "JSON Web Tokens are used for securely transmitting information between parties as a JSON object.",
   },
   {
     name: "Redux",
-    icon: "/images/Technologies/Redux.png",
+    icon: "/images/Redux.png",
     description:
       "A predictable state container for JavaScript applications, often used with React for state management.",
   },
   {
     name: "Vite",
-    icon: "/images/Technologies/Vite.png",
+    icon: "/images/Vite.png",
     description:
       "A fast build tool that offers an extremely fast development environment for modern web projects.",
   },
   {
     name: "Drupal",
-    icon: "/images/Technologies/Drupal.png",
+    icon: "/images/Drupal.png",
     description:
       "A powerful open-source content management framework used to build complex, data-rich websites.",
   },
   {
     name: "Jira",
-    icon: "/images/Technologies/Jira.png",
+    icon: "/images/Jira.png",
     description:
       "A project management tool used for tracking issues, managing agile teams, and supporting project delivery.",
   },
   {
     name: "Agile",
-    icon: "/images/Technologies/Agile.png",
+    icon: "/images/Agile.png",
     description:
       "Agile is a methodology for iterative development that promotes flexibility and collaboration in software projects.",
   },
@@ -164,6 +164,7 @@ export default function AboutWorks() {
               src="/images/BlackFlack.png"
               alt="BlackFlack Logo"
               width={150}
+              className={styles.image}
               height={150}
               style={{ objectFit: "contain", verticalAlign: "middle" }}
             />
@@ -187,6 +188,7 @@ export default function AboutWorks() {
                 alt="BlackStars Logo"
                 width={100}
                 height={100}
+                className={styles.image}
                 style={{ objectFit: "contain", verticalAlign: "middle" }}
               />
             </h2>
@@ -208,6 +210,7 @@ export default function AboutWorks() {
                       src={project.image}
                       alt={project.title}
                       width={400}
+                      className={styles.image}
                       height={300}
                       style={{ objectFit: "cover" }}
                     />
@@ -253,6 +256,7 @@ export default function AboutWorks() {
             <Image
               src="/images/AbstractLines.png"
               alt="Abstract Lines"
+              className={styles.image}
               width={150}
               height={150}
               style={{ objectFit: "contain", verticalAlign: "middle" }}
@@ -329,6 +333,7 @@ export default function AboutWorks() {
               alt="Abstract Lines"
               width={150}
               height={150}
+              className={styles.image}
               style={{ objectFit: "contain", verticalAlign: "middle" }}
             />
           </h3>
@@ -380,6 +385,7 @@ export default function AboutWorks() {
                           src={foundTech.icon}
                           alt={foundTech.name}
                           width={150}
+                          className={styles.image}
                           height={150}
                           style={{ objectFit: "contain" }}
                         />

@@ -59,6 +59,7 @@ export default function Home() {
         src="/images/Background/Middle Grey.png"
         fill={true}
         alt="background"
+        className={styles.image}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>

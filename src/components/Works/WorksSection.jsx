@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import Rounded from "@/common/RoundedButton/RoundedButton"; 
+import Rounded from "@/common/RoundedButton/RoundedButton";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,13 +27,13 @@ const projects = [
   },
   {
     title: "ELF.com",
-    src: "/images/ELF.jpeg",
+    src: "/images/ELF.png",
     color: "#000000",
     url: "https://elf.com/en",
   },
   {
     title: "TotalEnergies Lubricants",
-    src: "/images/TotalEnergies.jpeg",
+    src: "/images/TotalEnergies.png",
     color: "#db0000",
     url: "https://lubricants.totalenergies.com",
   },
@@ -164,6 +164,7 @@ export default function WorksSection() {
                   <Image
                     src="/Images/BlueCube.gif"
                     alt=""
+                    className={styles.image}
                     width={150}
                     height={150}
                     style={{ objectFit: "contain", verticalAlign: "middle" }}
