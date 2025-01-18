@@ -6,7 +6,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import Rounded from "@/common/RoundedButton/RoundedButton"; 
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // Import useRouter
+import { useRouter } from "next/navigation"; 
 
 import Project from "../Projects/components/project/ProjectSection";
 
@@ -27,13 +27,13 @@ const projects = [
   },
   {
     title: "ELF.com",
-    src: "/images/ELF.jpeg",
+    src: "/images/ELF.png",
     color: "#000000",
     url: "https://elf.com/en",
   },
   {
     title: "TotalEnergies Lubricants",
-    src: "/images/TotalEnergies.jpeg",
+    src: "/images/TotalEnergies.png",
     color: "#db0000",
     url: "https://lubricants.totalenergies.com",
   },
