@@ -151,7 +151,7 @@ export default function WorksSection() {
                 <span>
                   digital products{" "}
                   <Image
-                    src="/Images/BlueCube.gif"
+                    src="/images/BlueCube.gif"
                     alt=""
                     width={150}
                     height={150}
@@ -175,7 +175,7 @@ export default function WorksSection() {
             <Image
               src={
                 viewMode === "list"
-                  ? "/images/ListBlack.png "
+                  ? "/images/ListBlack.png"
                   : "/images/ListWhite.png"
               }
               alt="List Icon"
