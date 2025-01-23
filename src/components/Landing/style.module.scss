@@ -207,11 +207,11 @@
         background: rgba(0, 0, 0, 0.5);
       }
       .sliderContainer {
-        top: calc(100vh - 300px) !important;
+        top: calc(100vh - 200px) !important;
       }
   
       .slider p {
-        font-size: 170px !important;
+        font-size: 150px !important;
       }
   
       .firstDescription,
@@ -242,7 +242,7 @@ display: none;
         text-align: left;
         font-size: 30px;
         top: 55%;
-        left: 5%;
+        left: -55%;
         font-weight: 200;
       }
     }
