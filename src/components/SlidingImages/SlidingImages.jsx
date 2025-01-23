@@ -41,7 +41,7 @@ const slider2 = [
   },
 ];
 
-export default function SlidingImages() { // Updated component name to start with an uppercase letter
+export default function SlidingImages() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,

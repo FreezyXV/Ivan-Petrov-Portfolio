@@ -15,6 +15,7 @@
     margin-top: 150px;
     position: relative;
     z-index: 1;
+
     padding-left: clamp(5em, 16vw, 16em);
     padding-right: clamp(5em, 16vw, 16em);
 
@@ -35,6 +36,7 @@
       .once-in {
         will-change: transform;
       }
+
       .flexCol {
         display: block;
         width: 100%;
@@ -49,6 +51,7 @@
         font-size: clamp(3.25em, 7vw, 8em);
         line-height: 1.065;
         margin-bottom: 1em;
+
         font-size: calc(clamp(3.25em, 7vw, 8em) * 0.875);
       }
     }
@@ -75,6 +78,7 @@
       .gridImageWrapper {
         overflow: hidden;
         border-radius: 8px;
+
         .projectItem {
           display: flex;
           flex-direction: column;
@@ -91,10 +95,10 @@
 
       .projectTitle {
         margin-top: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         text-align: center;
         font-family: "DM Sans", sans-serif;
-        font-weight: 700;
+        font-weight: 400;
       }
     }
 
@@ -241,4 +245,81 @@
   pointer-events: auto;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .projectAndButton {
+    .body.grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 2rem !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .myProjects {
+    margin-top: 100px;
+
+    .container {
+      .mainHeading {
+        font-size: clamp(2.5em, 5vw, 5em);
+      }
+    }
+  }
+
+  .projectAndButton {
+    .body.grid {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 1.5rem !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainWorks {
+    z-index: 9;
+  }
+  .myProjects {
+    margin-top: 0px !important;
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -70px;
+    .container {
+      display: none;
+    }
+
+    .gridImage {
+      width: 100% !important;
+    }
+  }
+  .toggleButtons {
+    display: none;
+  }
+
+  .projectAndButton {
+    .body.grid {
+      grid-template-columns: 1fr !important;
+      gap: 4rem !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .projectTitle {
+        text-decoration: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: left !important;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        border-bottom: 1px solid #ccc !important;
+      }
+    }
+
+    .projectItem {
+      text-decoration: none !important;
+      color: black !important;
+    }
+  }
 }

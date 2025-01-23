@@ -13,8 +13,8 @@ export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
-  const xPercent = useRef(0); // Use useRef for xPercent
-  const direction = useRef(-1); // Use useRef for direction
+  const xPercent = useRef(0);
+  const direction = useRef(-1);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +26,7 @@ export default function Home() {
         start: 0,
         end: window.innerHeight,
         onUpdate: (e) => {
-          direction.current = e.direction * -1; // Update direction ref
+          direction.current = e.direction * -1;
         },
       },
       x: "-500px",
@@ -41,7 +41,7 @@ export default function Home() {
       gsap.set(firstText.current, { xPercent: xPercent.current });
       gsap.set(secondText.current, { xPercent: xPercent.current });
       requestAnimationFrame(animate);
-      xPercent.current += 0.006 * direction.current; // Use direction ref
+      xPercent.current += 0.002 * direction.current;
     };
 
     requestAnimationFrame(animate);
@@ -63,8 +63,8 @@ export default function Home() {
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>{repeatedName}</p>
-          <p ref={secondText}>{repeatedName}</p>
+          <p className={styles.repeatedName} ref={firstText}>{repeatedName}</p>
+          <p className={styles.repeatedName} ref={secondText}>{repeatedName}</p>
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>

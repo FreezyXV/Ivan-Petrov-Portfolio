@@ -6,6 +6,7 @@
     "react-hooks/rules-of-hooks": "warn",
     "no-unused-vars": "warn",
     "react-hooks/exhaustive-deps": "warn",
-    "no-undef": "warn"
+    "no-undef": "warn",
+    "react/no-string-refs": "error"  // Ensure string refs are flagged as errors
   }
 }

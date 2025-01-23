@@ -4,12 +4,11 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
-import Rounded from "@/common/RoundedButton/RoundedButton"; 
 import Link from "next/link";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 
+import Rounded from "@/common/RoundedButton/RoundedButton";
 import Project from "../Projects/components/project/ProjectSection";
-
 import styles from "../Works/WorksSection.module.scss";
 
 const projects = [
@@ -39,6 +38,7 @@ const projects = [
   },
 ];
 
+// Framer Motion animations for the modal / cursor
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
   enter: {
@@ -56,13 +56,19 @@ const scaleAnimation = {
 };
 
 export default function WorksSection() {
-  const router = useRouter(); // Initialize useRouter
+  const router = useRouter();
 
+  // State to handle which project is in the modal
   const [modal, setModal] = useState({ active: false, index: 0 });
   const { active, index } = modal;
 
+  // Default to "list" for desktop, change to "grid" if mobile in useEffect
   const [viewMode, setViewMode] = useState("list");
 
+  // State to track if we're on mobile
+  const [isMobile, setIsMobile] = useState(false);
+
+  // For custom cursor tracking
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const containerRef = useRef(null);
@@ -70,12 +76,22 @@ export default function WorksSection() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
+  // GSAP references
   const xMoveContainer = useRef(null);
   const yMoveContainer = useRef(null);
   const xMoveCursor = useRef(null);
   const yMoveCursor = useRef(null);
   const xMoveCursorLabel = useRef(null);
   const yMoveCursorLabel = useRef(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth <= 768) {
+        setViewMode("grid");
+        setIsMobile(true);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (!modalContainer.current) return;
@@ -106,6 +122,7 @@ export default function WorksSection() {
     });
   }, []);
 
+  // For desktop custom cursor
   const moveItems = (mouseX, mouseY) => {
     if (
       !xMoveContainer.current ||
@@ -127,12 +144,16 @@ export default function WorksSection() {
 
   const handleMouseMove = (e) => {
     setMousePos({ x: e.clientX, y: e.clientY });
-    moveItems(e.clientX, e.clientY);
+
+    if (!isMobile) moveItems(e.clientX, e.clientY);
   };
 
+  // Manage modal open/close on desktop
   const manageModal = (newActive, newIndex, mouseX, mouseY) => {
-    moveItems(mouseX, mouseY);
-    setModal({ active: newActive, index: newIndex });
+    if (!isMobile) {
+      moveItems(mouseX, mouseY);
+      setModal({ active: newActive, index: newIndex });
+    }
   };
 
   return (
@@ -140,9 +161,10 @@ export default function WorksSection() {
       <div
         ref={containerRef}
         className={styles.myProjects}
-        onMouseMove={handleMouseMove}
-        style={{ backgroundColor: "rgb(255, 255, 255)" }}
+        // Track mouse only on desktop
+        onMouseMove={!isMobile ? handleMouseMove : undefined}
       >
+        {/* Desktop Container / Heading */}
         <div className={`${styles.container} medium`}>
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
@@ -152,7 +174,7 @@ export default function WorksSection() {
                   digital products{" "}
                   <Image
                     src="/images/BlueCube.gif"
-                    alt=""
+                    alt="Blue Cube"
                     width={150}
                     height={150}
                     style={{ objectFit: "contain", verticalAlign: "middle" }}
@@ -163,7 +185,7 @@ export default function WorksSection() {
           </div>
         </div>
 
-        {/* Toggle Buttons */}
+        {/* Desktop Toggle Buttons (hidden on mobile via CSS) */}
         <div className={styles.toggleButtons}>
           <button
             onClick={() => setViewMode("list")}
@@ -179,8 +201,8 @@ export default function WorksSection() {
                   : "/images/ListWhite.png"
               }
               alt="List Icon"
-              width={100}
-              height={100}
+              width={25}
+              height={25}
               className={styles.btnImageList}
             />
           </button>
@@ -198,33 +220,35 @@ export default function WorksSection() {
                   : "/images/GridWhite.png"
               }
               alt="Grid Icon"
-              width={100}
-              height={100}
+              width={25}
+              height={25}
               className={styles.btnImageGrid}
             />
           </button>
         </div>
 
         <div className={styles.projectAndButton}>
+          {/* Project Items */}
           <div
             className={`${styles.body} ${
               viewMode === "grid" ? styles.grid : styles.list
             }`}
           >
-            {projects.map((proj, i) => (
-              <div key={i} className={styles.projectItem}>
-                {viewMode === "grid" ? (
-                  <>
+            {projects.map((proj, i) => {
+              // If mobile: direct link, no modal
+              if (isMobile) {
+                return (
+                  <Link
+                    key={i}
+                    href={proj.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectItem}
+                  >
                     <motion.div
                       className={styles.gridImageWrapper}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.97 }}
-                      onMouseEnter={() =>
-                        manageModal(true, i, mousePos.x, mousePos.y)
-                      }
-                      onMouseLeave={() =>
-                        manageModal(false, i, mousePos.x, mousePos.y)
-                      }
                     >
                       <Image
                         src={proj.src}
@@ -235,84 +259,121 @@ export default function WorksSection() {
                       />
                     </motion.div>
                     <p className={styles.projectTitle}>{proj.title}</p>
-                  </>
-                ) : (
-                  <Project
-                    index={i}
-                    title={proj.title}
-                    manageModal={manageModal}
-                  />
-                )}
-              </div>
-            ))}
+                  </Link>
+                );
+              } else {
+                // Desktop or tablet: keep modal logic
+                return (
+                  <div key={i} className={styles.projectItem}>
+                    {viewMode === "grid" ? (
+                      <>
+                        <motion.div
+                          className={styles.gridImageWrapper}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.97 }}
+                          onMouseEnter={() =>
+                            manageModal(true, i, mousePos.x, mousePos.y)
+                          }
+                          onMouseLeave={() =>
+                            manageModal(false, i, mousePos.x, mousePos.y)
+                          }
+                        >
+                          <Image
+                            src={proj.src}
+                            width={500}
+                            height={300}
+                            alt={proj.title}
+                            className={styles.gridImage}
+                          />
+                        </motion.div>
+                        <p className={styles.projectTitle}>{proj.title}</p>
+                      </>
+                    ) : (
+                      <Project
+                        index={i}
+                        title={proj.title}
+                        manageModal={manageModal}
+                      />
+                    )}
+                  </div>
+                );
+              }
+            })}
           </div>
 
+          {/* "Let's Work Together" Button */}
           <div className={styles.buttonDiv}>
             <Rounded onClick={() => router.push("/contact")}>
               <p>Let’s Work Together</p>
             </Rounded>
           </div>
         </div>
-        {/* Modal */}
-        <motion.div
-          ref={modalContainer}
-          variants={scaleAnimation}
-          initial="initial"
-          animate={active ? "enter" : "closed"}
-          className={`${styles.modalContainer} ${
-            active ? styles.modalActive : ""
-          }`}
-          aria-hidden={!active}
-        >
-          <div
-            style={{ top: `${index * -100}%` }}
-            className={styles.modalSlider}
-          >
-            {projects.map((p, i) => (
-              <Link
-                key={`modal_${i}`}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.modalLink}
-                aria-label={`View ${p.title}`}
-              >
-                <motion.div
-                  className={styles.modal}
-                  style={{ backgroundColor: p.color }}
-                >
-                  <Image
-                    src={p.src}
-                    width={300}
-                    height={200}
-                    alt={p.title}
-                    className={styles.modalImage}
-                  />
-                </motion.div>
-              </Link>
-            ))}
-          </div>
-        </motion.div>
 
-        {/* Custom Cursor */}
-        <motion.div
-          ref={cursor}
-          className={styles.cursor}
-          variants={scaleAnimation}
-          initial="initial"
-          animate={active ? "enter" : "closed"}
-          aria-hidden="true"
-        />
-        <motion.div
-          ref={cursorLabel}
-          className={styles.cursorLabel}
-          variants={scaleAnimation}
-          initial="initial"
-          animate={active ? "enter" : "closed"}
-          aria-hidden="true"
-        >
-          View
-        </motion.div>
+        {/* Modal / Cursor - Desktop Only */}
+        {!isMobile && (
+          <>
+            {/* Modal */}
+            <motion.div
+              ref={modalContainer}
+              variants={scaleAnimation}
+              initial="initial"
+              animate={active ? "enter" : "closed"}
+              className={`${styles.modalContainer} ${
+                active ? styles.modalActive : ""
+              }`}
+              aria-hidden={!active}
+            >
+              <div
+                style={{ top: `${index * -100}%` }}
+                className={styles.modalSlider}
+              >
+                {projects.map((p, i) => (
+                  <Link
+                    key={`modal_${i}`}
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.modalLink}
+                    aria-label={`View ${p.title}`}
+                  >
+                    <motion.div
+                      className={styles.modal}
+                      style={{ backgroundColor: p.color }}
+                    >
+                      <Image
+                        src={p.src}
+                        width={300}
+                        height={200}
+                        alt={p.title}
+                        className={styles.modalImage}
+                      />
+                    </motion.div>
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Custom Cursor */}
+            <motion.div
+              ref={cursor}
+              className={styles.cursor}
+              variants={scaleAnimation}
+              initial="initial"
+              animate={active ? "enter" : "closed"}
+              aria-hidden="true"
+            />
+            <motion.div
+              ref={cursorLabel}
+              className={styles.cursorLabel}
+              variants={scaleAnimation}
+              initial="initial"
+              animate={active ? "enter" : "closed"}
+              aria-hidden="true"
+            >
+              View
+            </motion.div>
+          </>
+        )}
       </div>
     </section>
   );
