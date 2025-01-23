@@ -420,6 +420,11 @@
             font-size: 10px;
           }
         }
+
+        .buttonContainer {
+transform: none;
+transition: none;
+        }
       }
 
       .nav {
@@ -431,6 +436,7 @@
         align-items: stretch;
         gap: 0px;
         margin-top: 60px;
+        
 
         .versionLocation {
           display: flex;

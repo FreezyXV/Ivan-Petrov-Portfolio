@@ -108,21 +108,13 @@
 
 @media only screen and (max-width: 480px) {
   .slidingImages {
-    margin-top: 0px;
-    margin-bottom: 400px;
+display: none;
 
-    width: 100%;
     .slider {
-      gap: 2vw;
-      width: 100vw;
-      left: 0;
-      flex-wrap: wrap;
+      display: none;
 
       .project {
-        width: 45%;
-        height: 40vw;
-        margin-bottom: 2vh;
-        display: none;
+display: none;
       }
     }
     .circleContainer {
