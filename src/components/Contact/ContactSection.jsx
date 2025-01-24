@@ -169,7 +169,7 @@ export default function ContactSection() {
                 label: "Your message",
                 name: "userMessage",
                 type: "textarea",
-                placeholder: "Hello Dennis, can you help me with ... *",
+                placeholder: "Hello Ivan, can you help me with ... *",
                 rows: 8,
               },
             ].map((field) => (

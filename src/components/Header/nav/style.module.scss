@@ -54,3 +54,14 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 480px) {
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      font-size: 56px;
+      gap: 12px;
+      margin-top: 0px !important;
+  }
+}
