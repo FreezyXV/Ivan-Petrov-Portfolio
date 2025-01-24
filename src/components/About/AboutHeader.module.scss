@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 .header {
-  position: absolute;
+  position: relative;
   display: flex;
   z-index: 991;
   top: 0;
   color: #000000;
-  padding: 10px 15px;
+  padding: 15px 15px;
   justify-content: space-between;
   font-family: "DM Sans", sans-serif;
   width: 100%;
@@ -192,6 +192,8 @@
 .headerButtonContainer {
   transform: scale(0);
   position: fixed;
+  padding: 0px;
+  top: 0px !important;
   right: 0px;
   z-index: 995;
   transition: transform 0.3s ease-in-out;
@@ -265,6 +267,7 @@
   }
 
   .headerButtonContainer {
+    top: 0px !important;
     right: 80px !important;
     z-index: 996 !important;
   }
@@ -287,6 +290,7 @@
   }
 
   .headerButtonContainer {
+    top: 0px !important;
     right: 0px !important;
     z-index: 996 !important;
     .button {
@@ -359,6 +363,7 @@
 
   @media (max-width: 480px) {
     .aboutHeader {
+      position: relative;
       width: 100%;
       background-color: #fff;
       margin-top: 50px !important;

@@ -1,10 +1,171 @@
+// @import "../../app/globals.scss";
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+// .aboutServices {
+//   position: relative;
+//   z-index: 1;
+
+//   background-color: rgb(255, 755, 255);
+//   transform: translate(0px, 0vh);
+
+//   .container {
+//     margin: 0 auto;
+//     padding-left: clamp(2.5em, 8vw, 8em);
+//     padding-right: clamp(2.5em, 8vw, 8em);
+//     max-width: 100em;
+
+//     .row {
+//       display: flex;
+//       flex-wrap: wrap;
+//       position: relative;
+//       gap: 50px;
+//       margin-bottom: 50px;
+
+//       .flexCol {
+//         flex: 1;
+//         position: relative;
+
+//         &:nth-child(1) {
+//           animation-delay: 0.2s;
+//           width: 35%;
+//         }
+
+//         &:nth-child(2) {
+//           animation-delay: 0.4s;
+//           width: 65%;
+//         }
+//       }
+//     }
+//   }
+
+//   .isInview {
+//     font-size: 4rem;
+//     font-family: "DM Sans", sans-serif;
+//     margin-bottom: 100px;
+//     margin-top: 150px;
+//     will-change: transform;
+
+//     .animateDot {
+//       opacity: 0;
+//       animation: animateDot1 2s linear infinite;
+
+//       &:nth-child(2) {
+//         animation: animateDot2 2s linear infinite;
+//       }
+
+//       &:nth-child(3) {
+//         animation: animateDot3 2s linear infinite;
+//       }
+//     }
+//   }
+
+//   .number {
+//     font-size: 1rem;
+//     font-family: "DM Sans", sans-serif;
+//     font-weight: 200;
+//     color: #a4a4a4;
+//     padding-bottom: 20px;
+//   }
+
+//   .stripe {
+//     display: block;
+//     width: 100%;
+//     height: 1px;
+//     background-color: gray;
+//   }
+
+//   .isTitle {
+//     font-size: 3rem;
+//     font-family: "DM Sans", sans-serif;
+//     font-weight: 200;
+//     padding: 30px 0px 30px 0px;
+//   }
+
+//   .details {
+//     font-family: "DM Sans", sans-serif;
+//     font-weight: 100;
+//     color: #333;
+//     font-size: 1.2rem;
+//     line-height: 1.66;
+//     margin-bottom: 1em;
+
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+// .circleContainer {
+//   background-color: rgb(255, 255, 255);
+//   position: relative;
+
+//   .circle {
+//     height: 1550%;
+//     width: 120%;
+//     left: -10%;
+//     border-radius: 0 0 50% 50%;
+//     background-color: white;
+//     z-index: 1;
+//     position: absolute;
+//     box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+//   }
+// }
+
+// @keyframes animateDot1 {
+//   0% {
+//     opacity: 0;
+//   }
+//   20% {
+//     opacity: 0;
+//   }
+//   30% {
+//     opacity: 1;
+//   }
+//   90% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes animateDot2 {
+//   0% {
+//     opacity: 0;
+//   }
+//   35% {
+//     opacity: 0;
+//   }
+//   45% {
+//     opacity: 1;
+//   }
+//   90% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes animateDot3 {
+//   0% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 0;
+//   }
+//   60% {
+//     opacity: 1;
+//   }
+//   90% {
+//     opacity: 1;
+//   }
+// }
+
+
+
+
 @import "../../app/globals.scss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
+/* ========== Base (Desktop) Styles ========== */
 .aboutServices {
   position: relative;
   z-index: 1;
-
   background-color: rgb(255, 755, 255);
   transform: translate(0px, 0vh);
 
@@ -29,7 +190,6 @@
           animation-delay: 0.2s;
           width: 35%;
         }
-
         &:nth-child(2) {
           animation-delay: 0.4s;
           width: 65%;
@@ -52,7 +212,6 @@
       &:nth-child(2) {
         animation: animateDot2 2s linear infinite;
       }
-
       &:nth-child(3) {
         animation: animateDot3 2s linear infinite;
       }
@@ -95,6 +254,7 @@
   }
 }
 
+/* Circle Container + Circle */
 .circleContainer {
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -111,6 +271,7 @@
   }
 }
 
+/* ========== Keyframes ========== */
 @keyframes animateDot1 {
   0% {
     opacity: 0;
@@ -125,7 +286,6 @@
     opacity: 1;
   }
 }
-
 @keyframes animateDot2 {
   0% {
     opacity: 0;
@@ -140,7 +300,6 @@
     opacity: 1;
   }
 }
-
 @keyframes animateDot3 {
   0% {
     opacity: 0;
@@ -153,5 +312,99 @@
   }
   90% {
     opacity: 1;
+  }
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* --- 1024px (Large Tablets / Small Desktops) --- */
+@media (max-width: 1024px) {
+  .aboutServices {
+    .container {
+      padding-left: clamp(1.5em, 6vw, 6em);
+      padding-right: clamp(1.5em, 6vw, 6em);
+
+      .row {
+        flex-direction: column;
+        gap: 2rem;
+
+        .flexCol {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .isInview {
+      font-size: 3rem;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+
+    .isTitle {
+      font-size: 2.5rem;
+    }
+    .details {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* --- 768px (Tablets) --- */
+@media (max-width: 768px) {
+  .aboutServices {
+    .container {
+      padding-left: clamp(1em, 5vw, 5em);
+      padding-right: clamp(1em, 5vw, 5em);
+
+      .row {
+        margin-bottom: 40px;
+      }
+    }
+
+    .isInview {
+      font-size: 2.5rem;
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+
+    .isTitle {
+      font-size: 2rem;
+    }
+    .details {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* --- 480px (Mobile) --- */
+@media (max-width: 480px) {
+  .aboutServices {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .isInview {
+      font-size: 2rem;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .isTitle {
+      font-size: 1.6rem;
+      padding: 15px 0px;
+    }
+    .details {
+      font-size: 0.95rem;
+    }
+
+    .number {
+      display: none;
+    }
+  }
+
+  .circleContainer .circle {
+    height: 800%;
   }
 }
