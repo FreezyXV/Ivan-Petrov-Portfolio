@@ -39,3 +39,12 @@
 .modalImage {
   margin-bottom: 1rem;
 }
+
+
+@media (max-width: 480px) { 
+  .modalContent {
+    max-width: 300px;
+    width: 70%;
+
+  }
+}
