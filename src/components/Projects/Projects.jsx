@@ -14,25 +14,25 @@ import styles from "../Projects/style.module.scss";
 const projects = [
   {
     title: "Burger Town",
-    src: "/images/Burger Town.png",
+    src: "/images/BurgerTownWork.png",
     color: "#FFA500",
     url: "https://burger-house-front.vercel.app",
   },
   {
     title: "Hi Tech Store",
-    src: "/images/HiTech Store.png",
+    src: "/images/HiTechStoreWork.png",
     color: "#E9EAEB",
     url: "https://hi-tech-store-front.vercel.app",
   },
   {
     title: "ELF.com",
-    src: "/images/ELF.png",
+    src: "/images/ELFLubricantsWork.png",
     color: "#000000",
     url: "https://elf.com/en",
   },
   {
     title: "TotalEnergies Lubricants",
-    src: "/images/TotalEnergies.png",
+    src: "/images/TotalEnergiesWork.png",
     color: "#db0000",
     url: "https://lubricants.totalenergies.com",
   },
