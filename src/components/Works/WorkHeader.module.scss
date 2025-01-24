@@ -1,14 +1,14 @@
-@import "../../app/globals.scss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 .header {
   position: absolute;
   display: flex;
-  z-index: 1;
+  z-index: 991;
   top: 0;
   color: #000000;
-  padding: 15px 30px;
+  padding: 10px 15px;
   justify-content: space-between;
+  font-family: "DM Sans", sans-serif;
   width: 100%;
   font-weight: 300;
   box-sizing: border-box;
@@ -23,7 +23,7 @@
   .theme-dark h4,
   .theme-dark h5,
   .theme-dark p {
-    color: rgb(0, 0, 0);
+    color: #000000;
   }
 
   .logoMain {
@@ -34,11 +34,15 @@
     a {
       cursor: pointer;
       text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
       color: #000000;
     }
     Link {
       cursor: pointer;
       text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
       color: #000000;
     }
 
@@ -48,14 +52,18 @@
       text-decoration: none;
       a {
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: #000000;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
       }
 
       p {
         text-decoration: none;
         margin: 0px;
         transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-        color: rgb(0, 0, 0);
+        color: #000000;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
       }
 
       .copyright {
@@ -72,6 +80,8 @@
         overflow: hidden;
         white-space: nowrap;
         margin-left: 5px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
         transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
         text-decoration: none;
 
@@ -79,6 +89,8 @@
           position: relative;
           transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
           text-decoration: none;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 200;
 
           &:nth-of-type(2) {
             padding-left: 0.3em;
@@ -123,6 +135,8 @@
       flex-direction: column;
       position: relative;
       z-index: 1;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
       padding: 15px;
       cursor: pointer;
       &:hover {
@@ -146,11 +160,29 @@
       cursor: pointer;
       text-decoration: none;
       color: #000000;
+      font-family: "DM Sans", sans-serif;
     }
     Link {
       cursor: pointer;
       text-decoration: none;
       color: #000000;
+      font-family: "DM Sans", sans-serif;
+    }
+  }
+
+  .menuButton {
+    display: none;
+    button {
+      background: none;
+      border: none;
+      color: #000000;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .menuToggleButton {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
     }
   }
 }
@@ -159,7 +191,8 @@
   transform: scale(0);
   position: fixed;
   right: 0px;
-  z-index: 4;
+  z-index: 995;
+  transition: transform 0.3s ease-in-out;
 
   .button {
     position: relative;
@@ -209,5 +242,61 @@
       transform: rotate(-45deg);
       top: 0px;
     }
+    &.active {
+      transform: scale(1) !important;
+    }
   }
+  &.active {
+    transform: scale(1) !important;
+  }
+}
+
+/* Apply mobile styles for the header, navigation, and headerButtonContainer */
+@media (max-width: 768px) {
+  .header {
+    .nav {
+      display: none;
+    }
+    .menuButton {
+      display: block;
+    }
+  }
+
+  .headerButtonContainer {
+    right: 80px !important;
+    z-index: 996 !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .header {
+    
+    .nav {
+      display: none;
+    }
+    .menuButton {
+      display: block;
+    }
+  }
+
+  .headerButtonContainer {
+    right: 0px !important;
+    z-index: 996 !important;
+    .button {
+      position: relative;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }

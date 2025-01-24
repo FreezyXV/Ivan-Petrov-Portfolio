@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 import Rounded from "@/common/RoundedButton/RoundedButton";
 import Project from "../Projects/components/project/ProjectSection";
-import styles from "../Works/WorksSection.module.scss";
+import styles from "../Projects/style.module.scss";
 
 const projects = [
   {
@@ -55,7 +55,7 @@ const scaleAnimation = {
   },
 };
 
-export default function WorksSection() {
+export default function Projects() {
   const router = useRouter();
 
   // State to handle which project is in the modal
