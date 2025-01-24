@@ -864,6 +864,23 @@
     }
   }
 
+  .projectModal {
+    width: 70% !important;
+
+    .techUsedList {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      .techUsedItem {
+Img {
+  width: 90px;
+  height: 90px;
+}
+      }
+    }
+  }
+
   .buttonDiv {
     margin-bottom: 50px;
   }
