@@ -39,45 +39,60 @@ export default function Header({ styleType }) {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (isActive) return;
+    let triggers = [];
 
-    if (pathname === "/") {
-      gsap.to(buttonRef.current, {
-        scrollTrigger: {
-          trigger: document.documentElement,
-          start: "top+=100 top",
-          toggleActions: "play none none reverse",
-        },
-        scale: 1,
-        duration: 0.3,
-        ease: "power1.out",
-      });
+    if (!isActive) {
+      if (pathname === "/") {
+        triggers.push(
+          gsap.to(buttonRef.current, {
+            scrollTrigger: {
+              trigger: document.documentElement,
+              start: "top+=100 top",
+              toggleActions: "play none none reverse",
+            },
+            scale: 1,
+            duration: 0.3,
+            ease: "power1.out",
+          })
+        );
+      } else {
+        triggers.push(
+          gsap.to(buttonRef.current, {
+            scrollTrigger: {
+              trigger: document.documentElement,
+              start: 0,
+              end: window.innerHeight,
+              onLeave: () =>
+                gsap.to(buttonRef.current, {
+                  scale: 1,
+                  duration: 0.25,
+                  ease: "power1.out",
+                }),
+              onEnterBack: () =>
+                gsap.to(buttonRef.current, {
+                  scale: 0,
+                  duration: 0.25,
+                  ease: "power1.out",
+                }),
+            },
+          })
+        );
+      }
     } else {
-      gsap.to(buttonRef.current, {
-        scrollTrigger: {
-          trigger: document.documentElement,
-          start: 0,
-          end: window.innerHeight,
-          onLeave: () =>
-            gsap.to(buttonRef.current, {
-              scale: 1,
-              duration: 0.25,
-              ease: "power1.out",
-            }),
-          onEnterBack: () =>
-            gsap.to(buttonRef.current, {
-              scale: 0,
-              duration: 0.25,
-              ease: "power1.out",
-            }),
-        },
-      });
+      gsap.set(buttonRef.current, { scale: 1 });
     }
+
+    // Cleanup
+    return () => {
+      triggers.forEach((t) => {
+        if (t.scrollTrigger) t.scrollTrigger.kill();
+        t.kill();
+      });
+    };
   }, [isActive, pathname]);
 
   return (
     <>
-      {/* Use currentStyles.* everywhere */}
       <header className={currentStyles.header} ref={headerRef}>
         {/* Logo */}
         <div className={currentStyles.logoMain} role="button" tabIndex="0">
