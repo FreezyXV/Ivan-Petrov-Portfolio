@@ -44,12 +44,11 @@ export default function AboutImageSection() {
             Hello, I’m Ivan <br />
             <br />
             Before I started writing code, I spent several years in automotive
-            sales, learning the ins and outs of client satisfaction, active
-            listening, strategy, solution-oriented thinking and problem-solving.
+            sales, mastering client satisfaction, active
+            listening, strategic & solution-oriented thinking and problem-solving.
             Now, I combine those interpersonal strengths with a deep passion for
             web development—architecting systems that are easy to maintain and
-            enjoyable to use. I firmly believe that a brilliant user experience
-            is born from empathy, strategic thinking, and solid code.
+            enjoyable to use. My philosophy is simple: a brilliant user experience arises from empathy, thoughtful strategy, and solid code.
           </h1>
         </motion.div>
 
@@ -106,15 +105,28 @@ export default function AboutImageSection() {
               an opportunity to innovate and push my abilities to greater
               heights—always with quality at the forefront.
             </p>
-            <br />
-            <br />
+
             <p className={styles.aboutMe}>
               My pivot from selling cars to crafting code taught me one key
               lesson: user satisfaction isn’t optional—it’s essential.
             </p>
-            <br />
-            <br />
-            <p className={styles.aboutMe}>
+
+          </div>
+          
+
+          {/* PARALLAX IMAGE */}
+          <div className={styles.flexCol}>
+            <div ref={parallaxContainer} className={styles.parallaxContainer}>
+              <Image
+                ref={parallaxImage}
+                src={IvanImage}
+                alt="Ivan Petrov"
+                className={styles.parallaxImage}
+              />
+            </div>
+          </div>
+
+          <p className={styles.aboutMe3}>
               Now, as a Full Stack Developer, I marry that customer-first
               mindset with my technical expertise in MERN and Drupal to craft
               seamless, intuitive interfaces.
@@ -128,19 +140,6 @@ export default function AboutImageSection() {
                 <span className={styles.animateDot}>.</span>
               </span>
             </p>
-          </div>
-
-          {/* PARALLAX IMAGE */}
-          <div className={styles.flexCol}>
-            <div ref={parallaxContainer} className={styles.parallaxContainer}>
-              <Image
-                ref={parallaxImage}
-                src={IvanImage}
-                alt="Ivan Petrov"
-                className={styles.parallaxImage}
-              />
-            </div>
-          </div>
 
           <motion.div
             className={styles.Competences}
@@ -168,14 +167,10 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Business Savvy:</strong> An automotive sales
-                  background helps me see the bigger picture and tailor
-                  solutions to real-world needs.
+                  <strong>Business Savvy:</strong> My sales background means I grasp the bigger picture and tie solutions to real-world ROI.
                 </li>
                 <li>
-                  <strong>Tech Expertise:</strong> Certified Full Stack
-                  Developer with a knack for building optimized, clean, and
-                  secure applications.
+                  <strong>Tech Expertise:</strong> ’m a Certified Full Stack Developer who builds optimized, clean, and secure applications.
                 </li>
                 <li>
                   <strong>Global Mindset:</strong> Fluent in English, French,
@@ -205,7 +200,7 @@ export default function AboutImageSection() {
                   </li>
                   <li>
                     <strong>Technical Depth:</strong> Proficient in HTML/CSS/JS,
-                    React.js, Next.js, Node.js, Express, MongoDB, plus Drupal
+                    React.js, Next.js, Vue.js Node.js, Express, MongoDB, plus Drupal
                     for CMS solutions and more.
                   </li>
                   <li>

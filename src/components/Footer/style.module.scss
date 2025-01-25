@@ -22,6 +22,9 @@
       margin-left: 200px;
       margin-right: 200px;
       position: relative;
+      h2 {
+        font-size: 8vw;
+      }
       span {
         display: flex;
         align-items: center;
@@ -41,7 +44,7 @@
         }
       }
       h2 {
-        font-size: 5vw;
+        font-size: 8vw;
         margin: 0px;
         font-weight: 300;
       }
@@ -51,8 +54,8 @@
         top: calc(100% - 75px);
       }
       .button {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         background-color: #455ce9;
         color: white;
         border-radius: 50%;
@@ -171,13 +174,16 @@
       padding-top: 0px;
       margin-left: 100px;
       margin-right: 100px;
+      justify-content: space-between;
 
       .title {
         margin-left: 100px;
         margin-right: 100px;
         padding-bottom: 80px;
         border-bottom: 1px solid rgb(134, 134, 134);
-
+        h2 {
+          font-size: 9vw;
+        }
         .nav {
           margin-left: 100px;
           margin-right: 100px;
@@ -189,11 +195,9 @@
             height: 80px;
           }
           h2 {
-            font-size: 6vw;
+            font-size: 9vw;
           }
-          h2 {
-            font-size: 6vw;
-          }
+         
         }
 
         .buttonContainer {
@@ -265,26 +269,32 @@
 @media only screen and (max-width: 768px) {
   .contact {
     .body {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding-top: 80px;
-      margin-left: 0px;
-      margin-right: 0px;
+      padding-top: 50px;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      min-height: auto;
 
       .title {
         width: 100%;
         padding-top: 0px;
-
+        font-size: 8vw;
         padding-bottom: 0px;
         text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
         border-bottom: 0px solid rgb(134, 134, 134);
         .buttonContainer {
           left: calc(100% - 300px);
           top: calc(100% - 5px);
+        }
+
+        h2 {
+          font-size: 8vw;
         }
 
         .button {
@@ -330,12 +340,13 @@
       }
 
       .nav {
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 0px  !important;
+        padding-left: 0px !important;
         flex-direction: column;
         gap: 10px;
         margin: 0px 0 0;
         padding-bottom: 0px;
+        padding-top: 50px;
       }
 
       .info {
@@ -371,6 +382,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-bottom: 0px;
 
           .socialsLinks {
             display: flex;
@@ -391,13 +403,14 @@
 @media only screen and (max-width: 480px) {
   .contact {
     .body {
-      padding-top: 80px;
+      padding-top: 50px;
       margin: 0 40px;
+      min-height: none;
 
       .title {
         padding-top: 0px;
         margin: 0 20px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
 
         span {
           .imageContainer {
@@ -428,7 +441,7 @@ transition: none;
       }
 
       .nav {
-        margin: 70px 0 0;
+        margin: 0px 0 0;
       }
 
       .info {

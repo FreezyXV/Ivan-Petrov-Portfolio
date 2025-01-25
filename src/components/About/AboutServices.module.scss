@@ -330,21 +330,30 @@
 
         .flexCol {
           width: 100% !important;
+          margin-bottom: 100px;
+          margin-top: 0px;
         }
       }
     }
 
     .isInview {
-      font-size: 3rem;
-      margin-top: 100px;
-      margin-bottom: 60px;
+      font-size: 5rem;
+      font-weight: 1000;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     .isTitle {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 0px;
+      margin-top: 20px;
     }
     .details {
-      font-size: 1.1rem;
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 0px 0px 0px 0px;
+      margin-top: 0px;
     }
   }
 }
@@ -356,24 +365,40 @@
       padding-left: clamp(1em, 5vw, 5em);
       padding-right: clamp(1em, 5vw, 5em);
 
+      .flexCol {
+        width: 100% !important;
+        margin-bottom: 100px;
+      }
+
       .row {
         margin-bottom: 40px;
       }
     }
 
     .isInview {
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-top: 80px;
-      margin-bottom: 40px;
+      margin-bottom:-100px;
     }
 
     .isTitle {
       font-size: 2rem;
+      font-weight: 400;
+      padding: 0px 0px 0px 0px;
+      margin-top: 20px;
     }
     .details {
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 1.5;
+      font-weight: 200;
+      padding: 0px 0px 0px 0px;
+      margin-top: 0px;
     }
+
+    .number {
+      padding: 0px 0px 0px 0px;
+    }
+    
   }
 }
 
@@ -383,24 +408,35 @@
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
+
+      .flexCol {
+        width: 100% !important;
+        margin-bottom: 70px !important;
+      }
     }
 
     .isInview {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-top: 50px;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+      font-weight: 1000;
+      
     }
 
     .isTitle {
-      font-size: 1.6rem;
-      padding: 15px 0px;
+      font-size: 2rem;
+      font-weight: 400;
+      padding: 0px 0px 0px 0px;
+      margin-bottom: 10px;
     }
     .details {
-      font-size: 0.95rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+      padding: 0px 0px 0px 0px;
     }
 
     .number {
-      display: none;
+      display: block;
     }
   }
 

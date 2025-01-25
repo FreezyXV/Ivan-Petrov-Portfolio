@@ -69,8 +69,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Design</h4>
             <p className={styles.details}>
-              With a background in user-centric sales, I apply the same
-              principle to web design...
+            I apply user-centric principles learned from sales to create intuitive, elegant UI/UX solutions.
             </p>
           </motion.div>
 
@@ -94,7 +93,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Development</h4>
             <p className={styles.details}>
-              Leveraging MERN, Drupal, and other modern frameworks...
+            Using MERN, Drupal, and other modern frameworks, I deliver robust, scalable platforms with a seamless user experience.
             </p>
           </motion.div>
 
@@ -118,7 +117,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>The full package</h4>
             <p className={styles.details}>
-              From concept to code, I’m your partner in crafting end-to-end...
+            From concept to code, I’m a partner who ensures every step aligns with your brand and delights customers.
             </p>
           </motion.div>
         </div>
