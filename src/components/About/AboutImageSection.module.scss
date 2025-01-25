@@ -388,7 +388,7 @@
 @import "../../app/globals.scss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-/* ========== Base (Desktop) Styles ========== */
+
 .aboutImage {
   padding-top: 2rem;
   padding-bottom: 0;
@@ -524,7 +524,7 @@
   }
 }
 
-/* Heading outside .aboutImage */
+
 .heading {
   padding-top: 7rem;
   font-family: "DM Sans", sans-serif;
@@ -559,7 +559,7 @@
   }
 }
 
-/* DriveMe Section */
+
 .drivemeMain {
   display: flex;
 }
@@ -596,7 +596,7 @@
   }
 }
 
-/* About Section (seems like a separate wrapper) */
+
 .aboutSection {
   min-height: 100vh;
   display: flex;
@@ -692,7 +692,7 @@
   }
 }
 
-/* ========== Keyframes ========== */
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -775,9 +775,7 @@
   }
 }
 
-/* ========== Responsive Media Queries ========== */
 
-/* --- 1024px (Large Tablets / Small Desktops) --- */
 @media (max-width: 1024px) {
   .aboutImage {
     .container {
@@ -816,7 +814,7 @@
   }
 }
 
-/* --- 768px (Tablets) --- */
+
 @media (max-width: 768px) {
   .aboutImage {
     .container {
@@ -843,7 +841,7 @@
   }
 }
 
-/* --- 480px (Mobile) --- */
+
 @media (max-width: 480px) {
   .aboutImage {
     padding-top: 0rem;

@@ -1,272 +1,9 @@
-// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-
-// .contactShell {
-//   margin: 0 auto;
-//   background: #1C1D20;
-//   padding: 5em; 
-//   color: #fff;
-//   padding-left: clamp(5em, 16vw, 16em);
-//   padding-right: clamp(5em, 16vw, 16em);
-// }
-
-// /* Fade/slide effect for row transitions */
-// .fadeUp {
-//   opacity: 0;
-//   transform: translateY(20px);
-//   animation: fadeIn 1.5s ease-in-out forwards;
-
-// }
-// @keyframes fadeIn {
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-
-
-// .layoutRow {
-//   display: flex;
-//   margin-bottom: 4rem; /* space between rows */
-//   padding-top: calc(clamp(3.25em, 7vw, 8em)* .875* 1.175);
-// }
-
-// /* Left & Right columns for row(s) */
-// .colLeft {
-//   width: 73%; 
-//   padding-right: 4rem;
-// }
-// .colRight {
-//   width: 27%;
-//   padding-left: 3rem;
-  
-// }
-// .layoutRow:nth-of-type(1) {
-//   .colLeft {
-//     width: 73%; 
-//     padding-right: 4rem;
-//   }
-//   .colRight {
-//     width: 27%;
-//     padding-left: 3rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-
-//   }
-// }
-
-// .layoutRow:nth-of-type(2) {
-//   .colLeft { 
-//     width: 73%;
-//   }
-//   .colRight { 
-//     width: 27%;
-//     padding-left: 3rem;
-//     border-top: none;
-//   }
-// }
-
-// /* Heading text */
-// .mainHeading {
-//   font-family: "DM Sans", sans-serif;
-//   font-size: calc(clamp(3em, 6vw, 7em)* .875);
-//   line-height: 1.1;
-//   font-weight: 500;
-//   margin-bottom: 0.75rem;
-//   span {
-//     display: block;
-//   }
-// }
-
-// /* Circle Avatar & pointer arrow */
-// .circleAvatar {
-//   border-radius: 50%;
-//   display: inline-block;
-//   width: 200px; 
-//   height: 200px;
-//   overflow: hidden; 
-//   margin-top: 7rem;
-// }
-// .pointerIcon {
-//   margin-top: 1rem;
-//   position: absolute;
-//   bottom: -5rem;
-//   transform: translateY(-50%);
-//   svg {
-//     display: block; 
-
-//   }
-// }
-
-// /* Contact Form */
-// .contactForm {
-//   display: block;
-// }
-
-// /* Hidden spam/honeypot field */
-// .hiddenField {
-//   position: absolute;
-//   left: -9999px;
-// }
-
-// .formRow {
-//   display: flex;
-//   gap: 2rem;
-//   align-items: baseline;
-//   border-bottom: 1px solid rgba(255,255,255,0.2);
-//   padding: 1rem 0;
-//   margin-bottom: 2rem;
-//   font-size: 1.33em;
-// }
-
-
-// .fieldNumber {
-//   font-family: "DM Sans", sans-serif;
-//   font-weight: 200;
-//   font-style: normal;
-//   font-size: .6em;
-//   line-height: 1.065;
-//   margin-bottom: 1em;
-//   text-transform: uppercase;
-//   letter-spacing: .05em;
-//   opacity: 0.5;
-//   margin: 0;
-// }
-
-
-
-// .fieldGroup {
-//   display: flex;
-//   flex-direction: column;
-//   flex: 1;
-//   background: #1C1D20;
-//   background-color: #1C1D20;
-// }
-// .fieldLabel {
-//   font-family: "DM Sans", sans-serif;
-// font-size: 1.2rem;
-//   font-weight: 200;
-//   margin-bottom: 0.5rem;
-//   background: #1C1D20;
-//   background-color: #1C1D20;
-// }
-
-// /* The actual input/textarea */
-// .inputField {
-//   font-family: "DM Sans", sans-serif;
-//   font-size: 0.9em;
-//   background: #1C1D20;
-//   border: none;
-//   font-weight: 500;
-//   border-radius: 4px;
-// padding: 10px 0 10px 0;
-//   color: #ffffff;
-//   line-height: 1.4;
-//   &:focus {
-//     outline: none;
-//   }
-//   &::placeholder {
-//     color: #777;
-//     opacity: 0.7;
-//   }
-// }
-
-
-// /* Form Submit Action */
-// .formAction {
-//   margin-top: 3rem;
-//   text-align: right;
-// }
-// .submitButton {
-//   font-family: "DM Sans", sans-serif;
-//   transform: translate(5%, -70%);
-//   font-size: 1.2rem;
-//   font-weight: 200;
-//   color: #fff;
-//   background: #455CE9;
-//   border: none;
-//   border-radius: 50%;
-//   padding: 1.2rem 2rem;
-//   width: clamp(9em, 12vw, 11em);
-//   height: clamp(9em, 12vw, 11em);
-//   cursor: pointer;
-//   transition: background 0.3s ease;
-//   &:hover {
-//     background: #334BD3;
-//   }
-// }
-
-// /* Right-Side Contact Info */
-// .infoBlock {
-//   width: 100%;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     padding-bottom: 1em;
-// }
-// .infoHeading {
-//   font-family: "DM Sans", sans-serif;
-//   font-weight: 450;
-//   font-style: normal;
-//   font-size: .6em;
-//   line-height: 1.065;
-//   margin-bottom: 1em;
-//   text-transform: uppercase;
-//   letter-spacing: .05em;
-//   opacity: .5;
-// }
-
-// /* List style for contact/business items */
-// .infoList {
-//   list-style: none;
-//   margin: 0; 
-//   padding: 0;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   padding-bottom: 2.5em;
-// }
-// .infoList li {
-//   margin-bottom: 1rem;
-//   height: 2em;
-//     display: flex;
-//     align-items: center;
-//     font-family: "DM Sans", sans-serif;
-//     font-weight: 200;
-//     font-style: normal;
-//     cursor: pointer;
-
-//   a {
-//     text-decoration: none;
-//     color: #fff;
-//     font-size: 1rem;
-//     font-family: "DM Sans", sans-serif;
-//     font-weight: 200;
-//     font-style: normal;
-//     position: relative;
-//     cursor: pointer;
-
-//   }
-// }
-
-// .photo {
-//   width: 100%; 
-//   height: auto; 
-//   object-fit: cover;
-//   cursor: pointer;
-// }
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-/* ========================
-   BASE / DESKTOP STYLES
-======================== */
 .contactShell {
   margin: 0 auto;
-  background: #1C1D20;
-  padding: 5em; 
+  background: #1c1d20;
+  padding: 5em;
   color: #fff;
   padding-left: clamp(5em, 16vw, 16em);
   padding-right: clamp(5em, 16vw, 16em);
@@ -286,12 +23,12 @@
 
 .layoutRow {
   display: flex;
-  margin-bottom: 4rem; /* space between rows */
+  margin-bottom: 4rem;
   padding-top: calc(clamp(3.25em, 7vw, 8em) * 0.875 * 1.175);
 }
 
 .colLeft {
-  width: 73%; 
+  width: 73%;
   padding-right: 4rem;
 }
 .colRight {
@@ -301,7 +38,7 @@
 
 .layoutRow:nth-of-type(1) {
   .colLeft {
-    width: 73%; 
+    width: 73%;
     padding-right: 4rem;
   }
   .colRight {
@@ -314,10 +51,10 @@
 }
 
 .layoutRow:nth-of-type(2) {
-  .colLeft { 
+  .colLeft {
     width: 73%;
   }
-  .colRight { 
+  .colRight {
     width: 27%;
     padding-left: 3rem;
     border-top: none;
@@ -327,7 +64,7 @@
 /* Heading text */
 .mainHeading {
   font-family: "DM Sans", sans-serif;
-  font-size: calc(clamp(3em, 6vw, 7em)* .875);
+  font-size: calc(clamp(3em, 6vw, 7em) * 0.875);
   line-height: 1.1;
   font-weight: 500;
   margin-bottom: 0.75rem;
@@ -336,13 +73,12 @@
   }
 }
 
-/* Circle Avatar & pointer arrow */
 .circleAvatar {
   border-radius: 50%;
   display: inline-block;
-  width: 200px; 
+  width: 200px;
   height: 200px;
-  overflow: hidden; 
+  overflow: hidden;
   margin-top: 7rem;
 }
 .pointerIcon {
@@ -351,16 +87,14 @@
   bottom: -5rem;
   transform: translateY(-50%);
   svg {
-    display: block; 
+    display: block;
   }
 }
 
-/* Contact Form */
 .contactForm {
   display: block;
 }
 
-/* Hidden spam/honeypot field */
 .hiddenField {
   position: absolute;
   left: -9999px;
@@ -370,7 +104,7 @@
   display: flex;
   gap: 2rem;
   align-items: baseline;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1rem 0;
   margin-bottom: 2rem;
   font-size: 1.33em;
@@ -380,11 +114,11 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: .6em;
+  font-size: 0.6em;
   line-height: 1.065;
   margin-bottom: 1em;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   opacity: 0.5;
   margin: 0;
 }
@@ -393,7 +127,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: #1C1D20;
+  background: #1c1d20;
 }
 
 .fieldLabel {
@@ -401,14 +135,14 @@
   font-size: 1.2rem;
   font-weight: 200;
   margin-bottom: 0.5rem;
-  background-color: #1C1D20;
+  background-color: #1c1d20;
 }
 
 /* The actual input/textarea */
 .inputField {
   font-family: "DM Sans", sans-serif;
-  font-size: 0.9em;
-  background: #1C1D20;
+  font-size: 0.7em;
+  background: #1c1d20;
   border: none;
   font-weight: 500;
   border-radius: 4px;
@@ -437,21 +171,19 @@
   font-size: 1.2rem;
   font-weight: 200;
   color: #fff;
-  background: #455CE9;
+  background: #455ce9;
   border: none;
   border-radius: 50%;
-  padding: 1.2rem 2rem;
   width: clamp(9em, 12vw, 11em);
   height: clamp(9em, 12vw, 11em);
   cursor: pointer;
   transition: background 0.3s ease;
 
   &:hover {
-    background: #334BD3;
+    background: #334bd3;
   }
 }
 
-/* Right-Side Contact Info */
 .infoBlock {
   width: 100%;
   flex-direction: column;
@@ -462,18 +194,17 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 450;
   font-style: normal;
-  font-size: .6em;
+  font-size: 0.6em;
   line-height: 1.065;
   margin-bottom: 1em;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  opacity: .5;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
 }
 
-/* List style for contact/business items */
 .infoList {
   list-style: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   flex-direction: column;
   align-items: flex-start;
@@ -502,20 +233,15 @@
 }
 
 .photo {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   object-fit: cover;
   cursor: pointer;
 }
 
-/* ===============================
-   RESPONSIVE MEDIA QUERIES
-=============================== */
-
-/* --- 1024px (Large Tablets / Small Desktops) --- */
 @media (max-width: 1024px) {
   .layoutRow {
-    padding-top: 2rem; /* reduce top padding */
+    padding-top: 2rem;
   }
 
   .colLeft {
@@ -555,19 +281,18 @@
     height: clamp(8em, 10vw, 10em);
   }
 
-  .formAction{
+  .formAction {
     left: 300px;
-   position: absolute;
-   margin-top: -7rem;
-   }
+    position: absolute;
+    margin-top: -7rem;
+  }
 }
 
-/* --- 768px (Tablets) --- */
 @media (max-width: 768px) {
   .contactShell {
     margin: 0 auto;
-    background: #1C1D20;
-    padding: 5em; 
+    background: #1c1d20;
+    padding: 5em;
     color: #fff;
     padding-left: 80px;
     padding-right: 80px;
@@ -577,61 +302,58 @@
     padding-top: 50px;
     font-size: 3.3rem;
     margin-bottom: 1.5rem;
-max-width: 100%;
+    max-width: 100%;
   }
-
 
   .pointerIcon {
     position: absolute;
     margin-bottom: 1rem;
     bottom: -80px;
-        left: 10px;
+    left: 10px;
   }
 
   .colLeft {
-    width: 100%; 
+    width: 100%;
     padding-right: 5rem;
   }
   .colRight {
     width: 100%;
     padding-left: 3rem;
   }
-  
+
   .layoutRow:nth-of-type(1) {
     .colLeft {
-      width: 100%; 
+      width: 100%;
     }
     .colRight {
-
       padding-left: 3rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
   }
-  
+
   .layoutRow:nth-of-type(2) {
-    .colLeft { 
+    .colLeft {
       width: 100%;
     }
-    .colRight { 
+    .colRight {
       // width: 100%;
       padding-left: 0rem !important;
       border-top: none;
     }
   }
 
-  .formAction{
-   left: 300px;
-  position: absolute;
-  margin-top: -7rem;
+  .formAction {
+    left: 270px;
+    float: right;
+    position: absolute;
+    margin-top: -7rem;
   }
 }
 
-/* --- 480px (Mobile) --- */
 @media (max-width: 480px) {
   .contactShell {
-
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -639,20 +361,21 @@ max-width: 100%;
   .layoutRow {
     margin-bottom: 2rem;
     padding-top: 1rem;
+    flex-direction: column;
   }
 
   .colLeft {
-    width: 100%; 
+    width: 100%;
     padding-right: 4rem;
   }
   .colRight {
     width: 100%;
     padding-left: 3rem;
   }
-  
+
   .layoutRow:nth-of-type(1) {
     .colLeft {
-      width: 100%; 
+      width: 100%;
     }
     .colRight {
       width: 100%;
@@ -662,12 +385,12 @@ max-width: 100%;
       align-items: flex-start;
     }
   }
-  
+
   .layoutRow:nth-of-type(2) {
-    .colLeft { 
+    .colLeft {
       width: 100%;
     }
-    .colRight { 
+    .colRight {
       width: 100%;
       padding-left: 0rem !important;
       border-top: none;
@@ -678,7 +401,6 @@ max-width: 100%;
     padding-top: 50px;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-
   }
 
   .circleAvatar {
@@ -686,27 +408,25 @@ max-width: 100%;
     height: 110px;
     margin-top: 1rem;
     top: 180px;
-        left: 200px;
-        position: absolute;
+    left: 200px;
+    position: absolute;
   }
 
   .pointerIcon {
     position: absolute;
     margin-bottom: 1rem;
     bottom: -50px;
-        left: 10px;
+    left: 10px;
   }
 
   .formRow {
     margin-bottom: 1.5rem;
-
-
   }
 
-  .formAction{
-    right: 10px;
-  position: absolute;
-  margin-top: -5.5rem;
+  .formAction {
+    left: 270px;
+    position: absolute;
+    margin-top: -5rem;
   }
 
   .fieldLabel {
@@ -726,5 +446,21 @@ max-width: 100%;
   .infoList li {
     margin-bottom: 0.5rem;
     padding-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .formAction {
+    left: 250px;
+    position: absolute;
+    margin-top: -4.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .formAction {
+    left: 230px;
+    position: absolute;
+    margin-top: -4.5rem;
   }
 }

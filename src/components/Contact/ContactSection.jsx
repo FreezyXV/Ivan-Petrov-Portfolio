@@ -13,24 +13,20 @@ export default function ContactSection() {
     userOrg: "",
     userServices: "",
     userMessage: "",
-    honeypot: "", // spam field
+    honeypot: "",
   });
 
-  // Handle changes in each input/textarea
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
-  // When user submits the form
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // If honeypot is filled, assume spam
     if (formData.honeypot) {
       return;
     }
     try {
-      // POST form data to /api/sendMail
       const response = await fetch("/api/sendMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -138,35 +134,35 @@ export default function ContactSection() {
             {[
               {
                 idx: "01",
-                label: "What's your name?",
+                label: "What's your name ?",
                 name: "userName",
                 type: "text",
                 placeholder: "John Doe *",
               },
               {
                 idx: "02",
-                label: "What's your email?",
+                label: "What's your email ?",
                 name: "userEmail",
                 type: "email",
                 placeholder: "john@doe.com *",
               },
               {
                 idx: "03",
-                label: "What's the name of your organization?",
+                label: "What's the name of your organization ?",
                 name: "userOrg",
                 type: "text",
                 placeholder: "John & Doe ®",
               },
               {
                 idx: "04",
-                label: "What services are you looking for?",
+                label: "What services are you looking for ?",
                 name: "userServices",
                 type: "text",
-                placeholder: "Web Design, Web Development ...",
+                placeholder: "Web Design, Website Development ...",
               },
               {
                 idx: "05",
-                label: "Your message",
+                label: "Write your message",
                 name: "userMessage",
                 type: "textarea",
                 placeholder: "Hello Ivan, can you help me with ... *",

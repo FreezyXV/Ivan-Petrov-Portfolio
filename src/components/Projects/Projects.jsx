@@ -38,7 +38,6 @@ const projects = [
   },
 ];
 
-// Framer Motion animations for the modal / cursor
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
   enter: {
@@ -58,17 +57,13 @@ const scaleAnimation = {
 export default function Projects() {
   const router = useRouter();
 
-  // State to handle which project is in the modal
   const [modal, setModal] = useState({ active: false, index: 0 });
   const { active, index } = modal;
 
-  // Default to "list" for desktop, change to "grid" if mobile in useEffect
   const [viewMode, setViewMode] = useState("list");
 
-  // State to track if we're on mobile
   const [isMobile, setIsMobile] = useState(false);
 
-  // For custom cursor tracking
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const containerRef = useRef(null);
@@ -76,7 +71,6 @@ export default function Projects() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
-  // GSAP references
   const xMoveContainer = useRef(null);
   const yMoveContainer = useRef(null);
   const xMoveCursor = useRef(null);
@@ -122,7 +116,6 @@ export default function Projects() {
     });
   }, []);
 
-  // For desktop custom cursor
   const moveItems = (mouseX, mouseY) => {
     if (
       !xMoveContainer.current ||
@@ -148,7 +141,6 @@ export default function Projects() {
     if (!isMobile) moveItems(e.clientX, e.clientY);
   };
 
-  // Manage modal open/close on desktop
   const manageModal = (newActive, newIndex, mouseX, mouseY) => {
     if (!isMobile) {
       moveItems(mouseX, mouseY);
@@ -161,7 +153,6 @@ export default function Projects() {
       <div
         ref={containerRef}
         className={styles.myProjects}
-        // Track mouse only on desktop
         onMouseMove={!isMobile ? handleMouseMove : undefined}
       >
         {/* Desktop Container / Heading */}
@@ -235,7 +226,6 @@ export default function Projects() {
             }`}
           >
             {projects.map((proj, i) => {
-              // If mobile: direct link, no modal
               if (isMobile) {
                 return (
                   <Link
@@ -262,7 +252,6 @@ export default function Projects() {
                   </Link>
                 );
               } else {
-                // Desktop or tablet: keep modal logic
                 return (
                   <div key={i} className={styles.projectItem}>
                     {viewMode === "grid" ? (

@@ -1,6 +1,6 @@
 /* Example styling specifically for AboutHeader */
-@import '../../app/globals.scss';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "../../app/globals.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 .header {
   position: relative;
@@ -255,7 +255,6 @@
   }
 }
 
-/* Apply mobile styles for the header, navigation, and headerButtonContainer */
 @media (max-width: 768px) {
   .header {
     .nav {
@@ -277,10 +276,8 @@
   display: none;
 }
 
-
 @media (max-width: 480px) {
   .header {
-    
     .nav {
       display: none;
     }
@@ -298,7 +295,6 @@
       margin: 10px;
       width: 60px;
       height: 60px;
-
     }
   }
 }
@@ -307,14 +303,29 @@
   display: none;
 }
 
-
-
 .aboutHeader {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 300px;
+}
+
+.aboutTitle {
+  font-size: clamp(2.5rem, 6vw, 7rem);
+  margin: 150px 0;
+  padding-left: clamp(2.5em, 8vw, 8em);
+  padding-right: clamp(2.5em, 8vw, 8em);
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .aboutHeader {
     width: 100%;
     background-color: #fff;
     margin-top: 300px;
   }
-  
+
   .aboutTitle {
     font-size: clamp(2.5rem, 6vw, 7rem);
     margin: 150px 0;
@@ -324,60 +335,41 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
   }
+}
 
-  @media (max-width: 1200px) {
-    .aboutHeader {
-      width: 100%;
-      background-color: #fff;
-      margin-top: 300px;
-    }
-    
-    .aboutTitle {
-      font-size: clamp(2.5rem, 6vw, 7rem);
-      margin: 150px 0;
-      padding-left: clamp(2.5em, 8vw, 8em);
-      padding-right: clamp(2.5em, 8vw, 8em);
-      color: black;
-      font-family: "DM Sans", sans-serif;
-      font-weight: 400;
-    }
+@media (max-width: 768px) {
+  .aboutHeader {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 300px;
   }
 
-  @media (max-width: 768px) {
-    .aboutHeader {
-      width: 100%;
-      background-color: #fff;
-      margin-top: 300px;
-    }
-    
-    .aboutTitle {
-      font-size: clamp(2.5rem, 6vw, 7rem);
-      margin: 150px 0;
-      padding-left: clamp(2.5em, 8vw, 8em);
-      padding-right: clamp(2.5em, 8vw, 8em);
-      color: black;
-      font-family: "DM Sans", sans-serif;
-      font-weight: 400;
-    }
+  .aboutTitle {
+    font-size: clamp(2.5rem, 6vw, 7rem);
+    margin: 150px 0;
+    padding-left: clamp(2.5em, 8vw, 8em);
+    padding-right: clamp(2.5em, 8vw, 8em);
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeader {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px !important;
   }
 
-  @media (max-width: 480px) {
-    .aboutHeader {
-      position: relative;
-      width: 100%;
-      background-color: #fff;
-      margin-top: 50px !important;
-    }
-    
-    .aboutTitle {
-      font-size: clamp(2.2rem, 5vw, 6rem);
-      margin: 150px 0;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: black;
-      font-family: "DM Sans", sans-serif;
-      font-weight: 400;
-    }
+  .aboutTitle {
+    font-size: clamp(2.2rem, 5vw, 6rem);
+    margin: 150px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
   }
-
-  
+}

@@ -189,11 +189,10 @@
 .headerButtonContainer {
   transform: scale(0);
   position: fixed;
-  top: 0px ;
+  top: 0px;
   right: 0px;
   z-index: 995;
   transition: transform 0.3s ease-in-out;
-
 
   .button {
     position: relative;
@@ -252,7 +251,6 @@
   }
 }
 
-/* Apply mobile styles for the header, navigation, and headerButtonContainer */
 @media (max-width: 768px) {
   .header {
     .nav {
@@ -272,7 +270,6 @@
 .hidden {
   display: none;
 }
-
 
 @media (max-width: 480px) {
   .header {
