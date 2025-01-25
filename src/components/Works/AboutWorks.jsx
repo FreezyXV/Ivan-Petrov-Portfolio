@@ -27,12 +27,84 @@ const cardVariants = {
   },
 };
 
-const allTechnologies = [
+export const allTechnologies = [
   {
-    name: "React.js",
-    icon: "/images/React.png",
+    name: "Agile",
+    icon: "/images/Agile.png",
     description:
-      "A JavaScript library for building user interfaces. React is widely used for creating interactive web applications.",
+      "A methodology for iterative development that promotes flexibility and collaboration in software projects.",
+  },
+  {
+    name: "CSS",
+    icon: "/images/CSS.png",
+    description:
+      "Stylesheet language used to describe the presentation of a document written in HTML or other markup languages.",
+  },
+  {
+    name: "Drupal",
+    icon: "/images/Drupal.png",
+    description:
+      "A powerful open-source content management framework used to build complex, data-rich websites.",
+  },
+  {
+    name: "Express",
+    icon: "/images/Express.png",
+    description:
+      "A minimal and flexible Node.js web application framework providing robust features for web and mobile applications.",
+  },
+  {
+    name: "HTML",
+    icon: "/images/HTML.png",
+    description:
+      "Standard markup language forming the structure of your application’s front end.",
+  },
+  {
+    name: "JavaScript",
+    icon: "/images/JavaScript.png",
+    description:
+      "A high-level, dynamic programming language enabling interactive web pages and server-side scripting.",
+  },
+  {
+    name: "Jest",
+    icon: "/images/Jest.png",
+    description:
+      "A JavaScript testing framework designed to ensure correctness of any JS codebase.",
+  },
+  {
+    name: "Jira",
+    icon: "/images/Jira.png",
+    description:
+      "A project management tool used for tracking issues, managing agile teams, and supporting project delivery.",
+  },
+  {
+    name: "jQuery",
+    icon: "/images/jQuery.png",
+    description:
+      "A fast, small, and feature-rich JavaScript library that simplifies HTML DOM manipulation, event handling, and Ajax.",
+  },
+  {
+    name: "JWT",
+    icon: "/images/JWT.png",
+    description:
+      "JSON Web Tokens are used for securely transmitting information between parties as a JSON object.",
+  },
+  {
+    name: "MongoDB",
+    icon: "/images/MongoDB.png",
+    description:
+      "A NoSQL database offering high performance, high availability, and easy scalability.",
+  },
+  {
+    name: "Mongoose",
+    icon: "/images/Mongoose.png",
+    description:
+      "An ODM library for MongoDB in Node.js, simplifying data modeling and validation.",
+  },
+  {
+    name: "MySQL",
+    icon: "/images/mySQL.png",
+    description:
+      "A widely used open-source relational database management system for structured data.",
   },
   {
     name: "Next.js",
@@ -47,64 +119,70 @@ const allTechnologies = [
       "A JavaScript runtime built on Chrome's V8 engine, ideal for building scalable network applications.",
   },
   {
-    name: "MongoDB",
-    icon: "/images/MongoDB.png",
+    name: "Nodemailer",
+    icon: "/images/Nodemailer.png",
     description:
-      "A NoSQL database that offers high performance, high availability, and easy scalability.",
+      "A Node.js module allowing easy email sending with HTML support, attachments, and more.",
   },
   {
-    name: "Express",
-    icon: "/images/Express.png",
+    name: "React.js",
+    icon: "/images/React.png",
     description:
-      "A minimal and flexible Node.js web application framework that provides robust features for web and mobile applications.",
-  },
-  {
-    name: "Stripe",
-    icon: "/images/Stripe.png",
-    description:
-      "A payment processing platform for online businesses, enabling secure transactions.",
-  },
-  {
-    name: "Jest",
-    icon: "/images/Jest.png",
-    description:
-      "A JavaScript testing framework designed to ensure correctness of any JS codebase.",
-  },
-  {
-    name: "JWT",
-    icon: "/images/JWT.png",
-    description:
-      "JSON Web Tokens are used for securely transmitting information between parties as a JSON object.",
+      "A JavaScript library for building user interfaces, widely used for interactive web applications.",
   },
   {
     name: "Redux",
     icon: "/images/Redux.png",
     description:
-      "A predictable state container for JavaScript applications, often used with React for state management.",
+      "A predictable state container for JavaScript apps, commonly used with React for state management.",
+  },
+  {
+    name: "REST API",
+    icon: "/images/API.png",
+    description:
+      "A style of web architecture that uses stateless, client-server communications for structured endpoints.",
+  },
+  {
+    name: "Stripe",
+    icon: "/images/Stripe.png",
+    description:
+      "A payment processing platform for online businesses, enabling secure transactions and subscriptions.",
+  },
+  {
+    name: "SwiftUI",
+    icon: "/images/SwiftUI.png",
+    description:
+      "Apple’s modern declarative UI framework for building apps across iOS, macOS, tvOS, and watchOS.",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/images/Tailwind.png",
+    description:
+      "A utility-first CSS framework for rapidly building custom designs directly in your markup.",
+  },
+  {
+    name: "TDD",
+    icon: "/images/TDD.png",
+    description:
+      "Test-Driven Development involves writing tests before code to encourage cleaner architecture and robust software.",
+  },
+  {
+    name: "TypeScript",
+    icon: "/images/TypeScript.png",
+    description:
+      "A typed superset of JavaScript that compiles to plain JavaScript, adding static typing for more robust code.",
   },
   {
     name: "Vite",
     icon: "/images/Vite.png",
     description:
-      "A fast build tool that offers an extremely fast development environment for modern web projects.",
+      "A fast build tool that offers an extremely quick development environment for modern front-end projects.",
   },
   {
-    name: "Drupal",
-    icon: "/images/Drupal.png",
+    name: "Vue.js",
+    icon: "/images/Vue.png",
     description:
-      "A powerful open-source content management framework used to build complex, data-rich websites.",
-  },
-  {
-    name: "Jira",
-    icon: "/images/Jira.png",
-    description:
-      "A project management tool used for tracking issues, managing agile teams, and supporting project delivery.",
-  },
-  {
-    name: "Agile",
-    icon: "/images/Agile.png",
-    description:
-      "Agile is a methodology for iterative development that promotes flexibility and collaboration in software projects.",
+      "A progressive JavaScript framework for building user interfaces, emphasizing approachability and versatility.",
   },
 ];
 
@@ -114,21 +192,46 @@ const featuredProjects = [
     image: "/images/TotalEnergiesELF.png",
     description:
       "Spearheaded the migration of three Drupal sites encompassing over 98 pages in just three months. Focus was on brand consistency, responsive design, and enhanced SEO.",
-    techUsed: ["Drupal", "Agile", "Jira", "Stripe"],
+    techUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Drupal",
+      "Agile",
+      "Jira",
+    ],
   },
   {
     title: "Burger Town E-Commerce",
     image: "/images/BurgerTownLogo.png",
     description:
       "Developed a custom MERN stack e-commerce platform with an intuitive checkout, dynamic listings, mobile optimization, and real-time inventory updates.",
-    techUsed: ["React.js", "Node.js", "Express", "MongoDB", "JWT"],
+    techUsed: [
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Nodemailer",
+    ],
   },
   {
     title: "Hi Tech Store E-Commerce",
     image: "/images/HiTechStoreLogo.png",
     description:
       "Built a secure storefront using React & Node.js, with Stripe payment integration, robust database architecture, and adaptive layouts.",
-    techUsed: ["React.js", "Node.js", "Express", "MongoDB", "Stripe"],
+    techUsed: [
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "Redux",
+      "Jest",
+    ],
   },
 ];
 
