@@ -14,8 +14,8 @@ export default function AboutHeader() {
         transition={{ duration: 0.6 }}
         className={styles.aboutTitle}
       >
-        <span>Elevating User-Focused Digital Solutions</span>
-        <span>Where Business Insight Meets Modern Development</span>
+Elevating User-Focused Digital Solutions
+Where Business Insight Meets Modern Development
         
       </motion.h2>
     </header>

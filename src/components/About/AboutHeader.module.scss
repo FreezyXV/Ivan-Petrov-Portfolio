@@ -255,6 +255,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .header {
     .nav {
@@ -312,9 +313,11 @@
 .aboutTitle {
   font-size: clamp(2.5rem, 6vw, 7rem);
   margin: 150px 0;
-  padding-left: clamp(2.5em, 8vw, 8em);
-  padding-right: clamp(2.5em, 8vw, 8em);
+  padding-left: clamp(1.5em, 6vw, 6em);
+  padding-right: clamp(1.5em, 6vw, 6em);
   color: black;
+  width: 90%;
+  line-height: 100px;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
@@ -331,6 +334,7 @@
     margin: 150px 0;
     padding-left: clamp(2.5em, 8vw, 8em);
     padding-right: clamp(2.5em, 8vw, 8em);
+    line-height: 80px;
     color: black;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -350,6 +354,7 @@
     padding-left: clamp(2.5em, 8vw, 8em);
     padding-right: clamp(2.5em, 8vw, 8em);
     color: black;
+    line-height: 70px;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
   }
@@ -368,6 +373,7 @@
     margin: 150px 0;
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 45px;
     color: black;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
