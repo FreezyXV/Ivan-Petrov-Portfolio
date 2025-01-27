@@ -102,7 +102,7 @@ export const allTechnologies = [
   },
   {
     name: "MySQL",
-    icon: "/images/mySQL.png",
+    icon: "/images/MySQL.png",
     description:
       "A widely used open-source relational database management system for structured data.",
   },
@@ -120,7 +120,7 @@ export const allTechnologies = [
   },
   {
     name: "Nodemailer",
-    icon: "/images/Nodemailer.png",
+    icon: "/images/NodeMailer.png",
     description:
       "A Node.js module allowing easy email sending with HTML support, attachments, and more.",
   },
@@ -149,7 +149,7 @@ export const allTechnologies = [
       "A payment processing platform for online businesses, enabling secure transactions and subscriptions.",
   },
   {
-    name: "SwiftUI",
+    name: "SwiftUi",
     icon: "/images/SwiftUI.png",
     description:
       "Apple’s modern declarative UI framework for building apps across iOS, macOS, tvOS, and watchOS.",
