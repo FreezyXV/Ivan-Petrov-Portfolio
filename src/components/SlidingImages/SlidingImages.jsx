@@ -5,6 +5,10 @@ import Image from "next/image";
 
 const slider1 = [
   {
+    color: "#F5FCF8",
+    src: "FitnessPro.png",
+  },
+  {
     color: "#e3e5e7",
     src: "HiTech Store.png",
   },
@@ -39,6 +43,10 @@ const slider2 = [
     color: "#e1dad6",
     src: "HiTech Store.png",
   },
+  {
+    color: "#F5FCF8",
+    src: "FitnessPro.png",
+  }
 ];
 
 export default function SlidingImages() {

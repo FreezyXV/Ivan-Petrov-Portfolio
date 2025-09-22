@@ -184,6 +184,50 @@ export const allTechnologies = [
     description:
       "A progressive JavaScript framework for building user interfaces, emphasizing approachability and versatility.",
   },
+
+  {
+    name: "Angular",
+    icon: "/images/Angular.png",
+    description:
+      "A TypeScript-based open-source web application framework developed by Google, ideal for building dynamic single-page applications.",
+  },
+  {
+    name: "PHP",
+    icon: "/images/PHP.png",
+    description:
+      "A widely-used open-source scripting language especially suited for web development and server-side programming.",
+  },
+  {
+    name: "Laravel",
+    icon: "/images/Laravel.png",
+    description:
+      "A PHP web framework that simplifies development with expressive syntax, built-in tools, and strong support for MVC architecture.",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/images/PostgreSQL.png",
+    description:
+      "An advanced open-source relational database system known for reliability, extensibility, and standards compliance.",
+  },
+  {
+    name: "Vercel",
+    icon: "/images/Vercel.png",
+    description:
+      "A cloud platform optimized for frontend frameworks like Next.js, enabling fast deployments and global edge hosting.",
+  },
+  {
+    name: "Fly.Io",
+    icon: "/images/FlyIO.png",
+    description:
+      "A global application platform that lets you deploy apps and databases close to your users, running on edge servers worldwide.",
+  },
+  {
+    name: "ClaudeAI",
+    icon: "/images/ClaudeAI.png",
+    description:
+      "An AI assistant developed by Anthropic, designed for natural conversations, reasoning, and helping with complex tasks safely.",
+  },
+
 ];
 
 const featuredProjects = [
@@ -192,14 +236,7 @@ const featuredProjects = [
     image: "/images/TotalEnergiesELF.png",
     description:
       "Spearheaded the migration of three Drupal sites encompassing over 98 pages in just three months. Focus was on brand consistency, responsive design, and enhanced SEO.",
-    techUsed: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Drupal",
-      "Agile",
-      "Jira",
-    ],
+    techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
     title: "Burger Town E-Commerce",
@@ -231,6 +268,21 @@ const featuredProjects = [
       "Stripe",
       "Redux",
       "Jest",
+    ],
+  },
+  {
+    title: "Fitness Pro",
+    image: "/images/FitnessProSimple.png",
+    description:
+      "Built a secure storefront Fitness App using PHP Laravel & Angular, with Sanctum authentication, PostgreSQL database architecture, and adaptive layouts.",
+    techUsed: [
+      "PHP",
+      "Laravel",
+      "Angular",
+      "PostgreSQL",
+      "Vercel",
+      "Fly.io",
+      "ClaudeAI",
     ],
   },
 ];

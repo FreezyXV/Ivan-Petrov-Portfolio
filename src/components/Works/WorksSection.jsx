@@ -25,6 +25,12 @@ const projects = [
     url: "https://hi-tech-store-front.vercel.app",
   },
   {
+    title: "Fitness Pro",
+    src: "/images/FitnessProWork.png",
+    color: "#00DE23",
+    url: "https://fitness-pro-frontend.vercel.app",
+  },
+  {
     title: "ELF.com",
     src: "/images/ELFLubricantsWork.png",
     color: "#000000",
