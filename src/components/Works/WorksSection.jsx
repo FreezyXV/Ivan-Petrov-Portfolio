@@ -166,7 +166,7 @@ export default function WorksSection() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Creating next level digital products </span>
+                <span>Delivering product solutions that drive business impact </span>
                 <span>
                   <Image
                     src="/images/BlueCube.gif"

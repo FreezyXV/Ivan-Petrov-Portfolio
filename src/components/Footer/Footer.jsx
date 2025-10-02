@@ -152,9 +152,9 @@ export default function Footer() {
                     src="/images/IMG_7197.JPG"
                   />
                 </div>
-                <h2>Let's work</h2>
+                <h2>Let's create</h2>
               </span>
-              <h2>together</h2>
+              <h2>business impact</h2>
               <div className={styles.buttonContainer}>
                 <Rounded
                   onClick={handleNavigate}
@@ -220,9 +220,9 @@ export default function Footer() {
                     src="/images/IMG_7197.JPG"
                   />
                 </div>
-                <h2>Let's work</h2>
+                <h2>Let's create</h2>
               </span>
-              <h2>together</h2>
+              <h2>business impact</h2>
               {/* Conditionally render motion.div or a plain div based on screen size */}
               <motion.div style={{ x }} className={styles.buttonContainer}>
                 <Rounded

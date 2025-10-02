@@ -7,7 +7,7 @@ import Rounded from "../../common/RoundedButton/RoundedButton";
 
 export default function Description() {
   const phrase =
-    "Transforming digital ideas into reality. I create dynamic and user-focused solutions tailored to elevate your brand.";
+    "I transform business challenges into high-performing digital solutions. With 7+ years in client-facing roles and full-stack expertise, I combine product strategy, stakeholder management, and hands-on development to deliver measurable ROI.";
   const description = useRef(null);
   const isInView = useInView(description);
   const router = useRouter();
@@ -36,8 +36,9 @@ export default function Description() {
           })}
         </p>
         <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-          The combination of my passion for design, code & interaction positions
-          me in a unique place in the web design world.
+          Recent achievement: +72% qualified leads for TotalEnergies through
+          UX optimization and conversion funnel improvements. I bridge the gap
+          between technical teams and business stakeholders to drive real impact.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
           <Rounded className={styles.button} onClick={handleNavigate}>

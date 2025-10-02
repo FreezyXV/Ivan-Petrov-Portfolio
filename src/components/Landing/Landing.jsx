@@ -51,8 +51,7 @@ export default function Home() {
     <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
-          Combining creativity, technical expertise, and a user-first approach
-          to deliver exceptional results.
+          Technical Product Specialist & Solutions Engineer - Bridging technical excellence with business impact
         </p>
       </div>
       <Image
@@ -80,8 +79,9 @@ export default function Home() {
             fill="white"
           />
         </svg>
-        <p>Freelance</p>
-        <p>Designer & Developer</p>
+        <p>Available for</p>
+        <p>Contract & Freelance Missions</p>
+        <p>Can work remote & Open to relocate Internationally</p>
       </div>
     </div>
   );
