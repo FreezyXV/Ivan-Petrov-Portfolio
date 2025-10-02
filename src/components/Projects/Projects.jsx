@@ -166,9 +166,9 @@ export default function Projects() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Creating next level </span>
+                <span>Delivering product solutions </span>
                 <span>
-                  digital products{" "}
+                  that drive business impact{" "}
                   <Image
                     src="/images/BlueCube.gif"
                     alt="Blue Cube"

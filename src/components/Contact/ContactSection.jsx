@@ -66,7 +66,7 @@ export default function ContactSection() {
       <div className={`${styles.layoutRow} ${styles.fadeUp}`}>
         <div className={styles.colLeft}>
           <h1 className={styles.mainHeading}>
-            <span>Let’s collaborate to create something amazing!</span>
+            <span>Let's Build Solutions That Drive Impact</span>
           </h1>
         </div>
 
@@ -158,7 +158,7 @@ export default function ContactSection() {
                 label: "What services are you looking for ?",
                 name: "userServices",
                 type: "text",
-                placeholder: "Web Design, Website Development ...",
+                placeholder: "Product Strategy, Technical Solutions, Digital Transformation ...",
               },
               {
                 idx: "05",
@@ -232,8 +232,10 @@ export default function ContactSection() {
           <div className={styles.infoBlock}>
             <h5 className={styles.infoHeading}>Business Details</h5>
             <ul className={styles.infoList}>
-              <li>Freelance Full-Stack Developer</li>
-              <li>Based in Paris, Open to Remote Work</li>
+              <li>Technical Product Specialist & Solutions Engineer</li>
+              <li>Full-Stacke Developper and Commercial skills</li>
+              <li>Based in Paris, Open to Remote & Relocate</li>
+              <li>Focus: FinTech, SaaS, E-commerce, B2B Solutions by Contract or Freelance</li>
             </ul>
           </div>
           <div className={styles.infoBlock}>

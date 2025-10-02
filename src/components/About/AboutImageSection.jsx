@@ -41,14 +41,15 @@ export default function AboutImageSection() {
           viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h1 className={styles.introduction}>
-            Hello, I’m Ivan <br />
+            Hello, I'm Ivan <br />
             <br />
-            Before I started writing code, I spent several years in automotive
-            sales, mastering client satisfaction, active
-            listening, strategic & solution-oriented thinking and problem-solving.
-            Now, I combine those interpersonal strengths with a deep passion for
-            web development—architecting systems that are easy to maintain and
-            enjoyable to use. My philosophy is simple: a brilliant user experience arises from empathy, thoughtful strategy, and solid code.
+            I'm a Technical Product Specialist with a unique dual profile : deep technical
+            expertise in full-stack development (PHP/Laravel, MERN stack) combined with
+            7+ years of client-facing experience in B2B environments. Before writing code,
+            I mastered client relationships, stakeholder management, and solution-oriented
+            thinking in automotive sales. Now, I bridge the gap between technical teams
+            and business objectives—delivering solutions that drive measurable ROI and
+            solve real user problems.
           </h1>
         </motion.div>
 
@@ -98,17 +99,18 @@ export default function AboutImageSection() {
             </div>
 
             <p className={styles.aboutMe}>
-              My journey from automotive sales to web development gave me a
-              unique perspective: I prioritize user experience and business
-              objectives above all. I’m here to build solutions that don’t just
-              look good but genuinely drive results. Every new project presents
-              an opportunity to innovate and push my abilities to greater
-              heights—always with quality at the forefront.
+              My approach is business-first : I don't just build features—I deliver
+              solutions that drive ROI, improve KPIs, and solve real user problems.
+              Whether it's migrating enterprise web ecosystems, optimizing conversion
+              funnels, or designing scalable architectures, I ensure technical excellence
+              aligns with business goals.
             </p>
 
             <p className={styles.aboutMe}>
-              My pivot from selling cars to crafting code taught me one key
-              lesson: user satisfaction isn’t optional—it’s essential.
+              What sets me apart : Product mindset with user research and roadmap planning,
+              technical execution with modern frameworks, proven results (+72% lead generation
+              for TotalEnergies), and fluent communication between tech teams and business
+              stakeholders.
             </p>
 
           </div>
@@ -127,9 +129,9 @@ export default function AboutImageSection() {
           </div>
 
           <p className={styles.aboutMe3}>
-              Now, as a Full Stack Developer, I marry that customer-first
-              mindset with my technical expertise in MERN and Drupal to craft
-              seamless, intuitive interfaces.
+              As a Technical Product Specialist, I combine customer-first mindset
+              with full-stack expertise (PHP/Laravel, MERN, Next.js) to deliver
+              scalable platforms that drive business impact and user engagement.
             </p>
             <br />
             <p>
@@ -149,9 +151,9 @@ export default function AboutImageSection() {
             viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
           >
             <h1 className={styles.heading}>
-              I thrive on designing solutions that meet tangible business goals
-              and user needs, utilizing Agile workflows for rapid feedback and
-              continuous improvements.
+              I thrive on product strategy and technical execution—defining roadmaps,
+              prioritizing features based on business impact, and implementing solutions
+              using Agile/Scrum methodologies for rapid feedback and continuous improvement.
             </h1>
 
             <div className={styles.standOut}>
@@ -167,15 +169,16 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Business Savvy:</strong> My sales background means I grasp the bigger picture and tie solutions to real-world ROI.
+                  <strong>Product & Business Acumen:</strong> ROI analysis, KPI definition,
+                  user journey mapping, and stakeholder management from 7+ years in B2B environments.
                 </li>
                 <li>
-                  <strong>Tech Expertise:</strong> ’m a Certified Full Stack Developer who builds optimized, clean, and secure applications.
+                  <strong>Technical Excellence:</strong> Certified Full-Stack Developer building
+                  scalable, performance-optimized applications with modern frameworks (Laravel, MERN, Next.js).
                 </li>
                 <li>
-                  <strong>Global Mindset:</strong> Fluent in English, French,
-                  Russian, Ukrainian, and Moldavian, I easily collaborate across
-                  multi-cultural teams.
+                  <strong>Global Collaboration:</strong> Fluent in French, Russian, English,
+                  Ukrainian, and Moldavian—bridging technical and business teams across cultures.
                 </li>
               </ul>
             </div>
@@ -194,19 +197,19 @@ export default function AboutImageSection() {
                 </h2>
                 <ul className={styles.DrivesMeList}>
                   <li>
-                    <strong>User-Centric Focus:</strong> From automotive
-                    showrooms to e-commerce checkouts, it’s always about meeting
-                    real needs.
+                    <strong>Business Impact First:</strong> Every solution must drive
+                    measurable results—from conversion optimization to lead generation
+                    and user retention.
                   </li>
                   <li>
-                    <strong>Technical Depth:</strong> Proficient in HTML/CSS/JS,
-                    React.js, Next.js, Vue.js Node.js, Express, MongoDB, plus Drupal
-                    for CMS solutions and more.
+                    <strong>Full-Stack Mastery:</strong> PHP/Laravel, MERN stack,
+                    Angular, Vue.js, Next.js, TypeScript, REST/GraphQL APIs, PostgreSQL,
+                    MongoDB, Drupal, CI/CD, and AI integration.
                   </li>
                   <li>
-                    <strong>Collaborative Spirit:</strong> I embrace Agile
-                    methodologies and open communication to keep projects on
-                    track while refining at each step.
+                    <strong>Agile Product Delivery:</strong> Scrum/Kanban methodologies,
+                    roadmap planning, backlog management, and cross-functional team
+                    coordination for successful project delivery.
                   </li>
                 </ul>
               </div>

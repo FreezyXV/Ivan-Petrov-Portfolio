@@ -235,14 +235,14 @@ const featuredProjects = [
     title: "TotalEnergies Lubricants & ELF Lubricants",
     image: "/images/TotalEnergiesELF.png",
     description:
-      "Spearheaded the migration of three Drupal sites encompassing over 98 pages in just three months. Focus was on brand consistency, responsive design, and enhanced SEO.",
+      "Led product roadmap and digital transformation for TotalEnergies Lubricants ecosystem. Managed Drupal 7→10 migration (98 pages, 3 months) using Agile/Scrum, achieving +72% qualified leads through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
     title: "Burger Town E-Commerce",
     image: "/images/BurgerTownLogo.png",
     description:
-      "Developed a custom MERN stack e-commerce platform with an intuitive checkout, dynamic listings, mobile optimization, and real-time inventory updates.",
+      "Full-stack e-commerce platform built with MERN stack demonstrating product thinking: user journey optimization, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
     techUsed: [
       "React.js",
       "Vite",
@@ -257,7 +257,7 @@ const featuredProjects = [
     title: "Hi Tech Store E-Commerce",
     image: "/images/HiTechStoreLogo.png",
     description:
-      "Built a secure storefront using React & Node.js, with Stripe payment integration, robust database architecture, and adaptive layouts.",
+      "Scalable e-commerce solution with business impact focus: secure Stripe payment integration, state management with Redux, TDD approach using Jest, and performance-optimized architecture. Demonstrates full-stack expertise and conversion optimization principles.",
     techUsed: [
       "React.js",
       "Vite",
@@ -274,7 +274,7 @@ const featuredProjects = [
     title: "Fitness Pro",
     image: "/images/FitnessProSimple.png",
     description:
-      "Built a secure storefront Fitness App using PHP Laravel & Angular, with Sanctum authentication, PostgreSQL database architecture, and adaptive layouts.",
+      "Product case study: Fitness tracking platform with end-to-end product thinking. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. Demonstrates product ownership from concept to deployment with CI/CD pipeline.",
     techUsed: [
       "PHP",
       "Laravel",
@@ -333,11 +333,11 @@ export default function AboutWorks() {
             />
           </h2>
           <p className={styles.sectionDescription}>
-            Over the years, I’ve tackled diverse projects—from redesigning
-            enterprise-level Drupal sites to building custom e-commerce
-            platforms. Whether it’s a slick restaurant ordering system or a
-            large-scale corporate migration, my aim is the same: deliver modern,
-            scalable solutions that outperform expectations.
+            From leading digital transformations for enterprise clients like TotalEnergies
+            (+72% qualified leads) to architecting full-stack e-commerce platforms, I combine
+            product strategy with technical execution. Each project demonstrates my ability to
+            translate business requirements into scalable solutions that drive measurable ROI
+            and exceptional user experiences.
           </p>
 
           {/* FEATURED PROJECTS */}
@@ -453,16 +453,16 @@ export default function AboutWorks() {
         >
           <h3 className={styles.skillsTitle}>Skills & Expertise</h3>
           <ul className={styles.skillsList}>
-            <li>Full-Stack Development with the MERN Stack</li>
-            <li>Drupal Integrations & Customization</li>
-            <li>Automated Testing & Quality Assurance</li>
-            <li>Agile Project Management & Jira</li>
-            <li>Building Scalable and Secure APIs</li>
-            <li>Advanced JavaScript and React Development</li>
-            <li>Payment Integration using Stripe</li>
-            <li>Database Design and Optimization with MongoDB</li>
-            <li>Performance Optimization</li>
-            <li>Responsive Web Design & UX Best Practices</li>
+            <li>Product Strategy & Roadmap Planning (Agile/Scrum, OKRs)</li>
+            <li>Full-Stack Development (PHP/Laravel, MERN, Angular, Next.js)</li>
+            <li>Business Impact & ROI Optimization (+72% leads @ TotalEnergies)</li>
+            <li>Stakeholder Management & Cross-Functional Coordination</li>
+            <li>Digital Transformation & CMS Migration (Drupal 7/10)</li>
+            <li>Conversion Funnel Optimization & User Journey Mapping</li>
+            <li>Scalable API Architecture (REST/GraphQL, JWT)</li>
+            <li>Database Design (PostgreSQL, MongoDB, MySQL)</li>
+            <li>CI/CD Pipeline & DevOps (Docker, GitHub Actions, Vercel)</li>
+            <li>KPI Definition, Analytics & Performance Monitoring</li>
           </ul>
           <Image
             src="/images/WhiteCubeTransparent.gif"
@@ -493,10 +493,11 @@ export default function AboutWorks() {
             />
           </h3>
           <p className={styles.insightText}>
-            I’m driven by solving complex problems and creating seamless,
-            intuitive digital experiences. My approach is to understand the
-            client's needs first, then tailor every part of the project to meet
-            those goals while ensuring the best user experience possible.
+            I'm driven by delivering measurable business impact through technical excellence.
+            My approach starts with understanding business objectives and user needs, then
+            translating them into product roadmaps and scalable solutions. I bridge the gap
+            between technical teams and stakeholders, ensuring every feature drives ROI while
+            maintaining exceptional user experience and code quality.
           </p>
           <div className={styles.buttonDiv}>
             <Rounded onClick={() => router.push("/contact")}>

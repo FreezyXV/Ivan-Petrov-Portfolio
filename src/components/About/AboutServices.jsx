@@ -67,9 +67,9 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Design</h4>
+            <h4 className={styles.isTitle}>Product Strategy & Roadmap Planning</h4>
             <p className={styles.details}>
-            I apply user-centric principles learned from sales to create intuitive, elegant UI/UX solutions.
+            I define and prioritize product roadmaps that align technical feasibility with business objectives. Using Agile/Scrum, OKRs, and data-driven decision-making, I ensure your product delivers maximum value with clear KPIs and success metrics.
             </p>
           </motion.div>
 
@@ -91,9 +91,9 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Development</h4>
+            <h4 className={styles.isTitle}>Technical Solutions Architecture</h4>
             <p className={styles.details}>
-            Using MERN, Drupal, and other modern frameworks, I deliver robust, scalable platforms with a seamless user experience.
+            I design and implement scalable, performance-optimized web applications with a focus on business impact. From REST APIs to full-stack platforms (PHP/Laravel, MERN, Next.js), I build solutions that drive conversion and user engagement with CI/CD pipelines.
             </p>
           </motion.div>
 
@@ -115,9 +115,9 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>The full package</h4>
+            <h4 className={styles.isTitle}>Digital Transformation & Client Solutions</h4>
             <p className={styles.details}>
-            From concept to code, I’m a partner who ensures every step aligns with your brand and delights customers.
+            I lead complex web ecosystem migrations and digital initiatives, managing technical execution while ensuring business continuity. Acting as the bridge between technical and business teams, I translate requirements, align stakeholders, and deliver solutions that drive measurable ROI.
             </p>
           </motion.div>
         </div>
