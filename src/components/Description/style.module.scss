@@ -45,7 +45,8 @@
     }
 
     .button {
-      top: 80%;
+      z-index: 5;
+      top: 110%;
       left: calc(100% - 250px);
       width: 180px;
       height: 180px;
