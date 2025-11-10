@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+.header {
+  position: absolute;
+  display: flex;
+  z-index: 91;
+  top: 0;
+  color: #ffffff;
+  padding: 10px 15px;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 200;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: transparent;
+  background: transparent;
+  text-decoration: none;
+
+  .theme-dark h1,
+  .theme-dark h2,
+  .theme-dark h3,
+  .theme-dark h4,
+  .theme-dark h5,
+  .theme-dark p {
+    color: white;
+  }
+
+  .logoMain {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
+      color: #fff;
+    }
+    Link {
+      cursor: pointer;
+      text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
+      color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      cursor: pointer;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+      }
+
+      p {
+        text-decoration: none;
+        margin: 0px;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+      }
+
+      .copyright {
+        transition: transform 0.5s ease;
+      }
+
+      .copyright:hover {
+        transform: rotate(360deg);
+      }
+
+      .name {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: 5px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        text-decoration: none;
+
+        p {
+          position: relative;
+          transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+          text-decoration: none;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 200;
+
+          &:nth-of-type(2) {
+            padding-left: 0.3em;
+            text-decoration: none;
+          }
+
+          &:nth-of-type(3) {
+            position: absolute;
+            left: 120px;
+            padding-left: 0.3em;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &:hover {
+        .name {
+          padding-right: 30px;
+
+          .codeBy {
+            transform: translateX(-100%);
+          }
+
+          .ivan {
+            transform: translateX(-65px);
+          }
+
+          .petrov {
+            transform: translateX(-85px);
+          }
+        }
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .el {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
+      padding: 15px;
+      cursor: pointer;
+      &:hover {
+        .indicator {
+          transform: scale(1);
+        }
+      }
+      .indicator {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        top: 45px;
+        left: 50%;
+        background-color: white;
+        border-radius: 50%;
+        transform: scale(0) translateX(-50%);
+        transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+    }
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+    }
+    Link {
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+    }
+  }
+
+  .menuButton {
+    display: none;
+    button {
+      background: none;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .menuToggleButton {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
+    }
+  }
+}
+
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 995;
+  transition: transform 0.3s ease-in-out;
+
+  .button {
+    position: relative;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1c1d20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 40%;
+      margin: auto;
+      background-color: white;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      transform: rotate(45deg);
+      top: -1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+    &.active {
+      transform: scale(1) !important;
+    }
+  }
+  &.active {
+    transform: scale(1) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .nav {
+      display: none;
+    }
+    .menuButton {
+      display: block;
+    }
+  }
+
+  .headerButtonContainer {
+    right: 80px !important;
+    z-index: 996 !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .header {
+    .nav {
+      display: none;
+    }
+    .menuButton {
+      display: block;
+    }
+  }
+
+  .headerButtonContainer {
+    right: 30px !important;
+    z-index: 996 !important;
+
+    .button {
+      position: relative;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

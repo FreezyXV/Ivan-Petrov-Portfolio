@@ -1,13 +1,22 @@
-import React, { useEffect, useRef } from "react";
+"use client";
+
+import { cloneElement, useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function Magnetic({ children }) {
   const magnetic = useRef(null);
 
   useEffect(() => {
-    const element = magnetic.current; // Copy the ref value to a variable
+    const element = magnetic.current;
+    if (!element || typeof window === "undefined") return;
 
-    if (!element) return;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
+    if (prefersReducedMotion.matches) {
+      return;
+    }
 
     const xTo = gsap.quickTo(element, "x", {
       duration: 1,
@@ -35,12 +44,27 @@ export default function Magnetic({ children }) {
     element.addEventListener("mousemove", handleMouseMove);
     element.addEventListener("mouseleave", handleMouseLeave);
 
-    // Clean up event listeners
     return () => {
       element.removeEventListener("mousemove", handleMouseMove);
       element.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []); // Dependency array ensures the effect runs only once
+  }, []);
 
-  return React.cloneElement(children, { ref: magnetic });
+  if (!children || typeof children !== "object") {
+    return children;
+  }
+
+  const childRef = children.ref;
+
+  const setRef = (node) => {
+    magnetic.current = node;
+    if (!childRef) return;
+    if (typeof childRef === "function") {
+      childRef(node);
+    } else {
+      childRef.current = node;
+    }
+  };
+
+  return cloneElement(children, { ref: setRef });
 }

@@ -1,7 +1,8 @@
 "use client";
-import styles from "./globals.scss";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+
+import styles from "./page.module.scss";
 import Preloader from "../components/Preloader/Preloader";
 import Landing from "../components/Landing/Landing";
 import Projects from "../components/Projects/Projects";
@@ -14,23 +15,77 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    (async () => {
+    let timeoutId;
+
+    timeoutId = window.setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.cursor = "default";
+      window.scrollTo(0, 0);
+    }, 2000);
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isLoading) {
+      return;
+    }
+
+    let locomotiveScroll;
+    let containerStyles = null;
+
+    const removeLocomotiveArtifacts = () => {
+      const root = document.documentElement;
+      const body = document.body;
+      const classesToRemove = [
+        "has-scroll-init",
+        "has-scroll-smooth",
+        "has-scroll-scrolling",
+        "has-scroll-dragging",
+      ];
+      classesToRemove.forEach((cls) => {
+        root.classList.remove(cls);
+        body.classList.remove(cls);
+      });
+      root.style.removeProperty("overflow");
+      body.style.removeProperty("overflow");
+      root.style.removeProperty("height");
+      body.style.removeProperty("height");
+      if (containerStyles) {
+        const container = containerStyles.element;
+        if (container) {
+          container.style.transform = "";
+          container.style.willChange = "";
+          container.style.height = "";
+        }
+      }
+    };
+
+    const init = async () => {
+      const container = document.querySelector("[data-scroll-container]");
+      if (!container) return;
+
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
+      locomotiveScroll = new LocomotiveScroll({
+        el: container,
         smooth: true,
       });
+      containerStyles = { element: container };
+    };
 
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = "default";
-        window.scrollTo(0, 0);
-      }, 2000);
+    init();
 
-      // Clean up LocomotiveScroll instance
-      return () => locomotiveScroll.destroy();
-    })();
-  }, []);
+    return () => {
+      if (locomotiveScroll) {
+        locomotiveScroll.destroy();
+      }
+      removeLocomotiveArtifacts();
+    };
+  }, [isLoading]);
 
   return (
     <main className={styles.main} data-scroll-container>

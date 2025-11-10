@@ -1,5 +1,5 @@
 "use client";
-import styles from "../globals.scss";
+import styles from "../page.module.scss";
 import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../../components/Preloader/Preloader";

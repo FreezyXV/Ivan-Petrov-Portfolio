@@ -43,13 +43,10 @@ export default function AboutImageSection() {
           <h1 className={styles.introduction}>
             Hello, I'm Ivan <br />
             <br />
-            I'm a Technical Product Specialist with a unique dual profile : deep technical
-            expertise in full-stack development (PHP/Laravel, MERN stack) combined with
-            7+ years of client-facing experience in B2B environments. Before writing code,
-            I mastered client relationships, stakeholder management, and solution-oriented
-            thinking in automotive sales. Now, I bridge the gap between technical teams
-            and business objectives—delivering solutions that drive measurable ROI and
-            solve real user problems.
+            I spent 7 years in automotive B2B/B2C sales leading multi-site teams and
+            negotiating enterprise fleet contracts before pivoting to full-stack
+            product delivery. That commercial rigor now fuels the way I scope, code,
+            and launch digital platforms that move KPIs.
           </h1>
         </motion.div>
 
@@ -99,18 +96,16 @@ export default function AboutImageSection() {
             </div>
 
             <p className={styles.aboutMe}>
-              My approach is business-first : I don't just build features—I deliver
-              solutions that drive ROI, improve KPIs, and solve real user problems.
-              Whether it's migrating enterprise web ecosystems, optimizing conversion
-              funnels, or designing scalable architectures, I ensure technical excellence
-              aligns with business goals.
+              I have managed quotas, coached sales reps, and sat across procurement tables,
+              so I understand exactly how revenue, marketing, and operations think. Today I
+              bring that context into product workshops, ensuring every technical decision
+              ladders up to pipeline, margin, and retention goals.
             </p>
 
             <p className={styles.aboutMe}>
-              What sets me apart : Product mindset with user research and roadmap planning,
-              technical execution with modern frameworks, proven results (+72% lead generation
-              for TotalEnergies), and fluent communication between tech teams and business
-              stakeholders.
+              I run workshops in French, Russian, English, Ukrainian, and Moldovan, align
+              executives with engineering squads, and keep change management smooth through
+              transparent roadmaps. The result is faster adoption and measurable business impact.
             </p>
 
           </div>
@@ -129,10 +124,11 @@ export default function AboutImageSection() {
           </div>
 
           <p className={styles.aboutMe3}>
-              As a Technical Product Specialist, I combine customer-first mindset
-              with full-stack expertise (PHP/Laravel, MERN, Next.js) to deliver
-              scalable platforms that drive business impact and user engagement.
-            </p>
+            As a Technical Product Specialist I still architect and code (Laravel, MERN,
+            Next.js) while orchestrating the go-to-market journey end-to-end. I am as
+            comfortable facilitating a discovery call with a CFO as I am reviewing pull
+            requests with engineers.
+          </p>
             <br />
             <p>
               <span className={styles.exploring}>
@@ -151,9 +147,9 @@ export default function AboutImageSection() {
             viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
           >
             <h1 className={styles.heading}>
-              I thrive on product strategy and technical execution—defining roadmaps,
-              prioritizing features based on business impact, and implementing solutions
-              using Agile/Scrum methodologies for rapid feedback and continuous improvement.
+              I thrive at the intersection of GTM strategy and engineering: defining
+              roadmaps with sales leadership, translating them into technical specs, and
+              iterating fast with Agile ceremonies that keep every stakeholder informed.
             </h1>
 
             <div className={styles.standOut}>
@@ -169,16 +165,16 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Product & Business Acumen:</strong> ROI analysis, KPI definition,
-                  user journey mapping, and stakeholder management from 7+ years in B2B environments.
+                  <strong>Commercial leadership pedigree:</strong> 7 years running B2B/B2C
+                  automotive sales teams with ownership of quota, training, and negotiations.
                 </li>
                 <li>
-                  <strong>Technical Excellence:</strong> Certified Full-Stack Developer building
-                  scalable, performance-optimized applications with modern frameworks (Laravel, MERN, Next.js).
+                  <strong>Hands-on technical delivery:</strong> Full-stack developer building
+                  Laravel, MERN, and Next.js platforms with CI/CD, performance, and security baked in.
                 </li>
                 <li>
-                  <strong>Global Collaboration:</strong> Fluent in French, Russian, English,
-                  Ukrainian, and Moldavian—bridging technical and business teams across cultures.
+                  <strong>Global collaboration:</strong> Facilitate workshops in five languages
+                  and keep execs, marketers, and engineers aligned on the same KPIs.
                 </li>
               </ul>
             </div>
@@ -197,19 +193,17 @@ export default function AboutImageSection() {
                 </h2>
                 <ul className={styles.DrivesMeList}>
                   <li>
-                    <strong>Business Impact First:</strong> Every solution must drive
-                    measurable results—from conversion optimization to lead generation
-                    and user retention.
+                    <strong>Business impact first:</strong> Every release must show up in the
+                    sales dashboard, whether that is more qualified leads, faster onboarding,
+                    or better retention.
                   </li>
                   <li>
-                    <strong>Full-Stack Mastery:</strong> PHP/Laravel, MERN stack,
-                    Angular, Vue.js, Next.js, TypeScript, REST/GraphQL APIs, PostgreSQL,
-                    MongoDB, Drupal, CI/CD, and AI integration.
+                    <strong>Full-stack mastery:</strong> PHP/Laravel, MERN, Angular, Vue, Next.js,
+                    REST/GraphQL APIs, PostgreSQL, MongoDB, Drupal, CI/CD, and AI integration.
                   </li>
                   <li>
-                    <strong>Agile Product Delivery:</strong> Scrum/Kanban methodologies,
-                    roadmap planning, backlog management, and cross-functional team
-                    coordination for successful project delivery.
+                    <strong>Agile product delivery:</strong> Scrum and Kanban rituals that keep
+                    executives informed while empowering squads to ship continuously.
                   </li>
                 </ul>
               </div>

@@ -69,7 +69,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Product Strategy & Roadmap Planning</h4>
             <p className={styles.details}>
-            I define and prioritize product roadmaps that align technical feasibility with business objectives. Using Agile/Scrum, OKRs, and data-driven decision-making, I ensure your product delivers maximum value with clear KPIs and success metrics.
+            I connect commercial OKRs with technical feasibility by running joint workshops with sales, marketing, and engineering. Together we translate customer pain points into prioritized backlogs, success metrics, and sprint-ready scopes.
             </p>
           </motion.div>
 
@@ -93,7 +93,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Technical Solutions Architecture</h4>
             <p className={styles.details}>
-            I design and implement scalable, performance-optimized web applications with a focus on business impact. From REST APIs to full-stack platforms (PHP/Laravel, MERN, Next.js), I build solutions that drive conversion and user engagement with CI/CD pipelines.
+            I architect and build scalable platforms (Laravel, MERN, Next.js) that keep revenue teams in the loop. Expect discovery recordings turned into specs, clean APIs, observability, and CI/CD so the product can evolve as fast as your market.
             </p>
           </motion.div>
 
@@ -117,7 +117,7 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Digital Transformation & Client Solutions</h4>
             <p className={styles.details}>
-            I lead complex web ecosystem migrations and digital initiatives, managing technical execution while ensuring business continuity. Acting as the bridge between technical and business teams, I translate requirements, align stakeholders, and deliver solutions that drive measurable ROI.
+            I lead complex web ecosystem migrations and digital programs end-to-end, from stakeholder alignment to change management. My sales background helps onboard field teams, while my engineering chops guarantee business continuity and measurable ROI.
             </p>
           </motion.div>
         </div>

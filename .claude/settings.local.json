@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git stash:*)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch:*)",
+      "Bash(GIT_SEQUENCE_EDITOR=\"sed -i ''s/^pick 0d2e0dd/edit 0d2e0dd/''\" git rebase -i 3872859)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

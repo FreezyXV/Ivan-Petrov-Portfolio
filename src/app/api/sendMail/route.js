@@ -1,39 +1,36 @@
 // src/app/api/sendMail/route.js
-import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
-    // DEBUG: Log env values
-    console.log('MAIL_HOST =>', process.env.MAIL_HOST);
-    console.log('MAIL_USER =>', process.env.MAIL_USER);
-    console.log('MAIL_PASS =>', process.env.MAIL_PASS);
-
-    // Parse the request body
     const body = await request.json();
     const { userName, userEmail, userOrg, userServices, userMessage } = body;
 
-    // Quick validation
     if (!userName || !userEmail || !userMessage) {
-      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+      return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      );
     }
 
-    // 1) Create Nodemailer transporter (store in a variable!)
     const transporter = nodemailer.createTransport({
-      host: process.env.MAIL_HOST,  // must be spelled exactly the same
+      host: process.env.MAIL_HOST,
       port: 587,
       secure: false,
       auth: {
         user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS
-      }
+        pass: process.env.MAIL_PASS,
+      },
     });
 
-    // 2) Setup mail data
+    const recipient = process.env.MAIL_TO || process.env.MAIL_USER;
+    const senderName = process.env.MAIL_FROM_NAME || "My Portfolio";
+
     const mailOptions = {
-      from: `"My Portfolio" <${process.env.MAIL_USER}>`,
-      to: 'yohanpetrov@gmail.com',
-      subject: 'New Contact Form Submission',
+      from: `"${senderName}" <${process.env.MAIL_USER}>`,
+      to: recipient,
+      subject: "New Contact Form Submission",
       text: `
         Name: ${userName}
         Email: ${userEmail}
@@ -42,17 +39,19 @@ export async function POST(request) {
         Message:
         ${userMessage}
       `,
-      // Or use HTML if you want
-      // html: `<p><strong>Name:</strong> ${userName}</p> ...`,
     };
 
-    // 3) Send the email with the transporter
     await transporter.sendMail(mailOptions);
 
-    // Return success
-    return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
+    return NextResponse.json(
+      { message: "Email sent successfully" },
+      { status: 200 }
+    );
   } catch (err) {
-    console.error('SendMail error:', err);
-    return NextResponse.json({ error: 'Error sending email', details: err.message }, { status: 500 });
+    console.error("SendMail error:", err);
+    return NextResponse.json(
+      { error: "Error sending email" },
+      { status: 500 }
+    );
   }
 }

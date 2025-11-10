@@ -221,12 +221,6 @@ export const allTechnologies = [
     description:
       "A global application platform that lets you deploy apps and databases close to your users, running on edge servers worldwide.",
   },
-  {
-    name: "ClaudeAI",
-    icon: "/images/ClaudeAI.png",
-    description:
-      "An AI assistant developed by Anthropic, designed for natural conversations, reasoning, and helping with complex tasks safely.",
-  },
 
 ];
 
@@ -281,8 +275,8 @@ const featuredProjects = [
       "Angular",
       "PostgreSQL",
       "Vercel",
-      "Fly.io",
-      "ClaudeAI",
+
+
     ],
   },
 ];

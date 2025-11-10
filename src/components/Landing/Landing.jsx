@@ -19,7 +19,11 @@ export default function Home() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(slider.current, {
+    if (!slider.current || !firstText.current || !secondText.current) {
+      return;
+    }
+
+    const scrollTween = gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: 0.25,
@@ -32,6 +36,7 @@ export default function Home() {
       x: "-500px",
     });
 
+    let animationFrameId;
     const animate = () => {
       if (xPercent.current < -100) {
         xPercent.current = 0;
@@ -40,18 +45,28 @@ export default function Home() {
       }
       gsap.set(firstText.current, { xPercent: xPercent.current });
       gsap.set(secondText.current, { xPercent: xPercent.current });
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
       xPercent.current += 0.002 * direction.current;
     };
 
-    requestAnimationFrame(animate);
+    animationFrameId = requestAnimationFrame(animate);
+
+    return () => {
+      if (scrollTween?.scrollTrigger) {
+        scrollTween.scrollTrigger.kill();
+      }
+      scrollTween?.kill();
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, []);
 
   return (
     <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
-          Technical Product Specialist & Solutions Engineer - Bridging technical excellence with business impact
+          Technical Product Specialist & ex automotive sales lead - translating revenue targets into full-stack delivery.
         </p>
       </div>
       <Image
@@ -79,9 +94,9 @@ export default function Home() {
             fill="white"
           />
         </svg>
-        <p>Available for</p>
-        <p>Contract & Freelance Missions</p>
-        <p>Can work remote & Open to relocate Internationally</p>
+        <p>7 yrs leading B2B/B2C automotive sales</p>
+        <p>Hands-on full-stack (PHP Laravel, Angular, MERN, Next.js) & product strategy - Team mentoring</p>
+        <p>Fluent FR/EN/RU/UA/MD - Remote-ready & open to relocate worldwide</p>
       </div>
     </div>
   );

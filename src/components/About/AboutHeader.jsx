@@ -14,9 +14,8 @@ export default function AboutHeader() {
         transition={{ duration: 0.6 }}
         className={styles.aboutTitle}
       >
-Technical Product Specialist with Business Impact
-Where Product Strategy Meets Full-Stack Excellence
-
+Former automotive sales leader turned Technical Product Specialist
+Aligning revenue teams and engineering squads around measurable impact
       </motion.h2>
     </header>
   );

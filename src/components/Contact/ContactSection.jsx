@@ -66,7 +66,7 @@ export default function ContactSection() {
       <div className={`${styles.layoutRow} ${styles.fadeUp}`}>
         <div className={styles.colLeft}>
           <h1 className={styles.mainHeading}>
-            <span>Let's Build Solutions That Drive Impact</span>
+            <span>Let's align sales, product, and engineering around one roadmap</span>
           </h1>
         </div>
 
@@ -232,10 +232,12 @@ export default function ContactSection() {
           <div className={styles.infoBlock}>
             <h5 className={styles.infoHeading}>Business Details</h5>
             <ul className={styles.infoList}>
-              <li>Technical Product Specialist & Solutions Engineer</li>
-              <li>Full-Stacke Developper and Commercial skills</li>
-              <li>Based in Paris, Open to Remote & Relocate</li>
-              <li>Focus: FinTech, SaaS, E-commerce, B2B Solutions by Contract or Freelance</li>
+              <li>Technical Product Specialist & former automotive sales manager</li>
+              <li>Full-stack (Laravel, MERN, Next.js) + go-to-market leadership</li>
+              <li>Lead multilingual teams across sales, marketing, and engineering</li>
+              <li>Languages: French, Russian, English, Ukrainian, Moldovan</li>
+              <li>Based in Paris, remote-ready, open to relocate internationally</li>
+              <li>Focus: FinTech, SaaS, Industrial/B2B platforms on contract or freelance</li>
             </ul>
           </div>
           <div className={styles.infoBlock}>

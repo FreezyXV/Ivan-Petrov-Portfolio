@@ -1,5 +1,5 @@
 "use client";
-import styles from "../globals.scss";
+import styles from "../page.module.scss";
 import React, { useRef, useState, useEffect } from "react";
 import WorksSection from "../../components/Works/WorksSection";
 import AboutWorks from "../../components/Works/AboutWorks";
