@@ -66,10 +66,11 @@
   position: absolute;
   color: white;
   font-size: 26px;
-  font-weight: 300;
+
   z-index: 2;
 
   p {
+    width: 400px;
 font-weight: 200;
     font-family: "DM Sans", sans-serif;
     margin: 0;
@@ -90,6 +91,7 @@ font-weight: 200;
 }
 
 .description {
+  width: 400px;
   top: 35%;
   left: 65%;
 }
@@ -124,17 +126,17 @@ font-weight: 200;
   }
 
   .firstDescription {
-    top: 55%;
+    top: 50%;
     left: 5%;
     z-index: 3;
     width: 400px;
   }
 
   .description {
-    width: 400px;
+    width: 350px;
     text-align: left;
     font-size: 25px;
-    left: 45%;
+    left: 5%;
     transform: translateX(40%);
     font-weight: 200;
 
@@ -155,7 +157,7 @@ font-weight: 200;
     width: 300px;
     text-align: left;
     font-size: 20px;
-    left: 45%;
+    left: 5%;
     transform: translateX(50%);
     font-weight: 200;
 
@@ -205,7 +207,7 @@ font-weight: 200;
     .description {
       text-align: left;
       font-size: 26px;
-      left: 40%;
+      left: 5%;
       transform: translateX(60%);
       font-weight: 200;
     }
@@ -250,11 +252,11 @@ display: none;
       }
   
       .description {
-        width: 400px;
+        width: 350px;
         text-align: left;
         font-size: 25px;
-        top: 45%;
-        left: -45%;
+        top: 50%;
+        left: 5%;
         font-weight: 200;
       }
     }
