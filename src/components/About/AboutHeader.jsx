@@ -14,8 +14,11 @@ export default function AboutHeader() {
         transition={{ duration: 0.6 }}
         className={styles.aboutTitle}
       >
-Former automotive sales leader turned Technical Product Specialist
-Aligning revenue teams and engineering squads around measurable impact
+        Value-driven Product Owner
+        <br />
+        AMOA & Tech Full-Stack profile
+        <br />
+        Bridging Business, Product Management & Technology
       </motion.h2>
     </header>
   );

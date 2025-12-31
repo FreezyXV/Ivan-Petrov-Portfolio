@@ -16,17 +16,28 @@ export default function AboutImageSection() {
   const parallaxImage = useRef(null);
 
   useEffect(() => {
-    function handleScroll() {
-      if (!parallaxContainer.current || !parallaxImage.current) return;
-      const rect = parallaxContainer.current.getBoundingClientRect();
-      const containerHeight = parallaxContainer.current.offsetHeight;
-      const offset = rect.top / window.innerHeight;
+    let ticking = false;
 
-      const translateValue = Math.max(-offset * containerHeight * 0.5, 0);
-      parallaxImage.current.style.transform = `translateY(${translateValue}px)`;
+    function handleScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (!parallaxContainer.current || !parallaxImage.current) {
+            ticking = false;
+            return;
+          }
+          const rect = parallaxContainer.current.getBoundingClientRect();
+          const containerHeight = parallaxContainer.current.offsetHeight;
+          const offset = rect.top / window.innerHeight;
+
+          const translateValue = Math.max(-offset * containerHeight * 0.5, 0);
+          parallaxImage.current.style.transform = `translateY(${translateValue}px)`;
+          ticking = false;
+        });
+        ticking = true;
+      }
     }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -38,15 +49,17 @@ export default function AboutImageSection() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
         >
           <h1 className={styles.introduction}>
             Hello, I'm Ivan <br />
             <br />
-            I spent 7 years in automotive B2B/B2C sales leading multi-site teams and
-            negotiating enterprise fleet contracts before pivoting to full-stack
-            product delivery. That commercial rigor now fuels the way I scope, code,
-            and launch digital platforms that move KPIs.
+            I'm a value-driven Product Owner with 7+ years in B2B/B2C digital products
+            and digital transformation. My hybrid Product, Business & Tech profile makes me
+            the convergence point between business teams, IT, and clients. I combine AMOA
+            expertise with full-stack development skills (React, Drupal, MERN, Laravel,
+            Angular, Next.js) and proven business acumen to prioritize and deliver solutions
+            with measurable impact and ROI.
           </h1>
         </motion.div>
 
@@ -96,16 +109,18 @@ export default function AboutImageSection() {
             </div>
 
             <p className={styles.aboutMe}>
-              I have managed quotas, coached sales reps, and sat across procurement tables,
-              so I understand exactly how revenue, marketing, and operations think. Today I
-              bring that context into product workshops, ensuring every technical decision
-              ladders up to pipeline, margin, and retention goals.
+              My approach is business-first: I build solutions that address real user needs
+              while generating measurable business results. Whether managing digital transformation
+              of international sites, optimizing conversion funnels, or architecting scalable
+              platforms, I align technical execution with business objectives.
             </p>
 
             <p className={styles.aboutMe}>
-              I run workshops in French, Russian, English, Ukrainian, and Moldovan, align
-              executives with engineering squads, and keep change management smooth through
-              transparent roadmaps. The result is faster adoption and measurable business impact.
+              What differentiates me from "purely functional" Product Owners: I combine Product
+              expertise (Backlog Management, User Stories, Sprint Planning, OKRs), full-stack
+              technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and business acumen
+              (7 years B2B/B2C client relationships, ROI analysis, stakeholder management). This
+              rare combination enables me to technically challenge teams while maintaining business focus.
             </p>
 
           </div>
@@ -124,11 +139,11 @@ export default function AboutImageSection() {
           </div>
 
           <p className={styles.aboutMe3}>
-            As a Technical Product Specialist I still architect and code (Laravel, MERN,
-            Next.js) while orchestrating the go-to-market journey end-to-end. I am as
-            comfortable facilitating a discovery call with a CFO as I am reviewing pull
-            requests with engineers.
-          </p>
+              Proven results at TotalEnergies (2024-2025): 98 user stories delivered with
+              95% UAT acceptance, 108 web pages created and optimized, -35% cart abandonment,
+              +40% form completions, +26% incoming leads — managing 5 international teams
+              and conducting 45+ business/IT requirement workshops.
+            </p>
             <br />
             <p>
               <span className={styles.exploring}>
@@ -144,17 +159,18 @@ export default function AboutImageSection() {
             variants={isDesktop ? fadeInUpVariants : {}}
             initial={isDesktop ? "hidden" : false}
             whileInView={isDesktop ? "visible" : false}
-            viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+            viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
           >
             <h1 className={styles.heading}>
-              I thrive at the intersection of GTM strategy and engineering: defining
-              roadmaps with sales leadership, translating them into technical specs, and
-              iterating fast with Agile ceremonies that keep every stakeholder informed.
+              I focus on product strategy and technical execution — defining and prioritizing
+              roadmaps that align technical feasibility with business objectives, managing
+              backlogs with data-driven prioritization (RICE/MoSCoW), and implementing solutions
+              using Agile/Scrum methodologies that generate measurable ROI.
             </h1>
 
             <div className={styles.standOut}>
               <h2 className={styles.subtitles}>
-                Why I Stand Out{" "}
+                My Background{" "}
                 <Image
                   src="/images/BlueBlackCircles.gif"
                   alt="Abstract Lines"
@@ -165,16 +181,19 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Commercial leadership pedigree:</strong> 7 years running B2B/B2C
-                  automotive sales teams with ownership of quota, training, and negotiations.
+                  <strong>Product Expertise:</strong> Backlog Management, User Stories, Sprint Planning,
+                  Product Discovery, OKRs, Prioritization (RICE/MoSCoW), Roadmap, UAT — with proven
+                  results across B2B/B2C digital products and digital transformation projects.
                 </li>
                 <li>
-                  <strong>Hands-on technical delivery:</strong> Full-stack developer building
-                  Laravel, MERN, and Next.js platforms with CI/CD, performance, and security baked in.
+                  <strong>Full-Stack Technical Skills:</strong> React.js, Drupal 7-10, MERN stack,
+                  Laravel, Angular, Next.js, TypeScript, API REST, PostgreSQL, MongoDB, Figma, Git,
+                  CI/CD — I technically challenge development teams while keeping business focus.
                 </li>
                 <li>
-                  <strong>Global collaboration:</strong> Facilitate workshops in five languages
-                  and keep execs, marketers, and engineers aligned on the same KPIs.
+                  <strong>Business Acumen:</strong> 7 years B2B/B2C client relationships (360 vehicles sold,
+                  14M€ revenue), stakeholder management, ROI analysis, complex negotiation — fluent in
+                  5 languages (FR C2, RU C2, EN C1, UA C1, MD C1) for multicultural environments.
                 </li>
               </ul>
             </div>
@@ -193,17 +212,19 @@ export default function AboutImageSection() {
                 </h2>
                 <ul className={styles.DrivesMeList}>
                   <li>
-                    <strong>Business impact first:</strong> Every release must show up in the
-                    sales dashboard, whether that is more qualified leads, faster onboarding,
-                    or better retention.
+                    <strong>Measurable Business Impact:</strong> I build solutions that generate
+                    ROI — from conversion optimization and lead generation to cart abandonment
+                    reduction and user engagement improvements, always with clear KPIs.
                   </li>
                   <li>
-                    <strong>Full-stack mastery:</strong> PHP/Laravel, MERN, Angular, Vue, Next.js,
-                    REST/GraphQL APIs, PostgreSQL, MongoDB, Drupal, CI/CD, and AI integration.
+                    <strong>Technical & Functional Bridge:</strong> My dual AMOA and technical
+                    background allows me to transform complex business needs into technical solutions,
+                    challenge dev teams with technical insight, and maintain business focus throughout.
                   </li>
                   <li>
-                    <strong>Agile product delivery:</strong> Scrum and Kanban rituals that keep
-                    executives informed while empowering squads to ship continuously.
+                    <strong>Agile Product Leadership:</strong> I use Agile/Scrum/Kanban with tools
+                    like Jira, Confluence, Figma, Google Analytics, and Miro to coordinate
+                    cross-functional teams and deliver value iteratively.
                   </li>
                 </ul>
               </div>

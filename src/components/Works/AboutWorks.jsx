@@ -229,7 +229,7 @@ const featuredProjects = [
     title: "TotalEnergies Lubricants & ELF Lubricants",
     image: "/images/TotalEnergiesELF.png",
     description:
-      "Led product roadmap and digital transformation for TotalEnergies Lubricants ecosystem. Managed Drupal 7→10 migration (98 pages, 3 months) using Agile/Scrum, achieving +72% qualified leads through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
+      "Product Owner & AMOA Digital: Led product roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages, 98 user stories) using Agile/Scrum, achieving +26% leads entrants, -35% cart abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
@@ -251,7 +251,7 @@ const featuredProjects = [
     title: "Hi Tech Store E-Commerce",
     image: "/images/HiTechStoreLogo.png",
     description:
-      "Scalable e-commerce solution with business impact focus: secure Stripe payment integration, state management with Redux, TDD approach using Jest, and performance-optimized architecture. Demonstrates full-stack expertise and conversion optimization principles.",
+      "Scalable e-commerce solution with business impact focus: secure Stripe payment integration, state management with Redux, TDD approach using Jest, and performance-optimized architecture. Full-stack development with conversion optimization principles.",
     techUsed: [
       "React.js",
       "Vite",
@@ -268,14 +268,13 @@ const featuredProjects = [
     title: "Fitness Pro",
     image: "/images/FitnessProSimple.png",
     description:
-      "Product case study: Fitness tracking platform with end-to-end product thinking. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. Demonstrates product ownership from concept to deployment with CI/CD pipeline.",
+      "Fitness tracking platform with end-to-end product approach. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. Product ownership from concept to deployment with CI/CD pipeline.",
     techUsed: [
       "PHP",
       "Laravel",
       "Angular",
       "PostgreSQL",
       "Vercel",
-
 
     ],
   },
@@ -313,7 +312,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
         >
           <h2 className={styles.sectionTitle}>
             About My Work{" "}
@@ -328,10 +327,9 @@ export default function AboutWorks() {
           </h2>
           <p className={styles.sectionDescription}>
             From leading digital transformations for enterprise clients like TotalEnergies
-            (+72% qualified leads) to architecting full-stack e-commerce platforms, I combine
-            product strategy with technical execution. Each project demonstrates my ability to
-            translate business requirements into scalable solutions that drive measurable ROI
-            and exceptional user experiences.
+            (+26% leads entrants, -35% cart abandonment) to building full-stack e-commerce
+            platforms, I combine product strategy with technical execution. Each project focuses
+            on translating business requirements into scalable solutions with measurable results.
           </p>
 
           {/* FEATURED PROJECTS */}
@@ -398,7 +396,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
         >
           <h3 className={styles.techTitle}>
             Technologies I Work With{" "}
@@ -419,9 +417,9 @@ export default function AboutWorks() {
                 variants={isDesktop ? fadeInUpVariants : {}}
                 initial={isDesktop ? "hidden" : false}
                 whileInView={isDesktop ? "visible" : false}
-                viewport={isDesktop ? { once: false, amount: 0.5 } : {}}
+                viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
                 whileHover={
-                  isDesktop ? { marginBottom: 10, rotate: 5, scale: 1.2 } : {}
+                  isDesktop ? { y: -10, rotate: 5, scale: 1.2 } : {}
                 }
                 onClick={() => handleTechClick(tech)}
               >
@@ -443,13 +441,13 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
         >
           <h3 className={styles.skillsTitle}>Skills & Expertise</h3>
           <ul className={styles.skillsList}>
             <li>Product Strategy & Roadmap Planning (Agile/Scrum, OKRs)</li>
             <li>Full-Stack Development (PHP/Laravel, MERN, Angular, Next.js)</li>
-            <li>Business Impact & ROI Optimization (+72% leads @ TotalEnergies)</li>
+            <li>Business Impact & ROI Optimization (+26% leads entrants @ TotalEnergies)</li>
             <li>Stakeholder Management & Cross-Functional Coordination</li>
             <li>Digital Transformation & CMS Migration (Drupal 7/10)</li>
             <li>Conversion Funnel Optimization & User Journey Mapping</li>
@@ -473,7 +471,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
         >
           <h3 className={styles.insightTitle}>
             What Drives My Work{" "}
@@ -487,11 +485,10 @@ export default function AboutWorks() {
             />
           </h3>
           <p className={styles.insightText}>
-            I'm driven by delivering measurable business impact through technical excellence.
             My approach starts with understanding business objectives and user needs, then
-            translating them into product roadmaps and scalable solutions. I bridge the gap
-            between technical teams and stakeholders, ensuring every feature drives ROI while
-            maintaining exceptional user experience and code quality.
+            translating them into product roadmaps and technical solutions. I work to bridge
+            technical teams and stakeholders, focusing on features that deliver business value
+            while maintaining code quality and user experience.
           </p>
           <div className={styles.buttonDiv}>
             <Rounded onClick={() => router.push("/contact")}>

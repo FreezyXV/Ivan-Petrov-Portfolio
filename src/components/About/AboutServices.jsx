@@ -36,7 +36,7 @@ export default function AboutServices() {
         variants={isDesktop ? fadeInUpVariants : {}}
         initial={isDesktop ? "hidden" : false}
         whileInView={isDesktop ? "visible" : false}
-        viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+        viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
       >
         <div className={styles.row}>
           <div className={styles.flexCol}>
@@ -54,7 +54,7 @@ export default function AboutServices() {
             variants={isDesktop ? fadeInUpVariants : {}}
             initial={isDesktop ? "hidden" : false}
             whileInView={isDesktop ? "visible" : false}
-            viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+            viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
           >
             <h5 className={styles.number}>
               01{" "}
@@ -69,7 +69,10 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Product Strategy & Roadmap Planning</h4>
             <p className={styles.details}>
-            I connect commercial OKRs with technical feasibility by running joint workshops with sales, marketing, and engineering. Together we translate customer pain points into prioritized backlogs, success metrics, and sprint-ready scopes.
+            I define and prioritize product roadmaps that align technical feasibility with business
+            objectives. Using Agile/Scrum, OKRs, and data-driven prioritization (RICE/MoSCoW), I manage
+            backlogs, conduct product discovery, and coordinate UAT to deliver value with clear KPIs
+            and measurable business impact.
             </p>
           </motion.div>
 
@@ -78,7 +81,7 @@ export default function AboutServices() {
             variants={isDesktop ? fadeInUpVariants : {}}
             initial={isDesktop ? "hidden" : false}
             whileInView={isDesktop ? "visible" : false}
-            viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+            viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
           >
             <h5 className={styles.number}>
               02{" "}
@@ -93,7 +96,10 @@ export default function AboutServices() {
             <div className={styles.stripe}></div>
             <h4 className={styles.isTitle}>Technical Solutions Architecture</h4>
             <p className={styles.details}>
-            I architect and build scalable platforms (Laravel, MERN, Next.js) that keep revenue teams in the loop. Expect discovery recordings turned into specs, clean APIs, observability, and CI/CD so the product can evolve as fast as your market.
+            I design and implement scalable, performance-optimized web applications with a focus on
+            business impact. From REST APIs to full-stack platforms (React, Drupal 7-10, MERN,
+            Laravel, Angular, Next.js), I build solutions focused on conversion optimization and
+            user engagement, with CI/CD pipelines for continuous deployment.
             </p>
           </motion.div>
 
@@ -102,7 +108,7 @@ export default function AboutServices() {
             variants={isDesktop ? fadeInUpVariants : {}}
             initial={isDesktop ? "hidden" : false}
             whileInView={isDesktop ? "visible" : false}
-            viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
+            viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
           >
             <h5 className={styles.number}>
               03{" "}
@@ -115,9 +121,12 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Digital Transformation & Client Solutions</h4>
+            <h4 className={styles.isTitle}>Digital Transformation & AMOA Expertise</h4>
             <p className={styles.details}>
-            I lead complex web ecosystem migrations and digital programs end-to-end, from stakeholder alignment to change management. My sales background helps onboard field teams, while my engineering chops guarantee business continuity and measurable ROI.
+            I lead complex web ecosystem migrations and digital transformation initiatives, managing
+            technical execution while ensuring business continuity. Acting as the bridge between
+            technical and business teams, I conduct requirement workshops, align stakeholders across
+            international teams, and deliver solutions with measurable ROI.
             </p>
           </motion.div>
         </div>

@@ -7,7 +7,7 @@ import Rounded from "../../common/RoundedButton/RoundedButton";
 
 export default function Description() {
   const phrase =
-    "I build digital products the same way I built high-performing sales organizations: start from customer pain, align every stakeholder, and execute fast. Former automotive B2B/B2C sales lead turned Technical Product Specialist, I translate quota-carrying insight into full-stack delivery.";
+    "Value-driven Product Owner with 7+ years in B2B/B2C digital products and digital transformation. Hybrid Product, Business & Tech profile — I act as the convergence point between business, IT, and clients, with a strong ability to prioritize and deliver solutions with measurable impact.";
   const description = useRef(null);
   const isInView = useInView(description);
   const router = useRouter();
@@ -36,10 +36,10 @@ export default function Description() {
           })}
         </p>
         <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-          Recent achievement: +72% qualified leads for TotalEnergies through
-          UX optimization and conversion funnel improvements. That mix of sales
-          leadership and hands-on engineering lets me coach revenue, marketing,
-          and product teams around the same metrics while I ship the solution.
+          TotalEnergies results (2024-2025): 98 user stories delivered with 95% UAT acceptance,
+          108 web pages created and optimized, -35% cart abandonment, +40% form completions,
+          +26% incoming leads. My dual AMOA and technical background transforms complex needs
+          into products that generate measurable ROI.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
           <Rounded className={styles.button} onClick={handleNavigate}>

@@ -55,7 +55,10 @@ export default function ContactSection() {
         alert(`Error: ${result.error || "Failed to send email"}`);
       }
     } catch (error) {
-      console.error("Submit error:", error);
+      // Log errors only in development
+      if (process.env.NODE_ENV === 'development') {
+        console.error("Submit error:", error);
+      }
       alert("Something went wrong, please try again.");
     }
   }
@@ -232,12 +235,11 @@ export default function ContactSection() {
           <div className={styles.infoBlock}>
             <h5 className={styles.infoHeading}>Business Details</h5>
             <ul className={styles.infoList}>
-              <li>Technical Product Specialist & former automotive sales manager</li>
-              <li>Full-stack (Laravel, MERN, Next.js) + go-to-market leadership</li>
-              <li>Lead multilingual teams across sales, marketing, and engineering</li>
-              <li>Languages: French, Russian, English, Ukrainian, Moldovan</li>
-              <li>Based in Paris, remote-ready, open to relocate internationally</li>
-              <li>Focus: FinTech, SaaS, Industrial/B2B platforms on contract or freelance</li>
+              <li>Product Owner</li>
+              <li>AMOA & Full-Stack Development Expertise</li>
+              <li>Languages: FR (C2), RU (C2), EN (C1), UA (C1), MD (C1)</li>
+              <li>Based in Paris, Remote & Open to International Opportunities</li>
+              <li>Focus: FinTech, SaaS, E-commerce, B2B Solutions - Contract & Freelance</li>
             </ul>
           </div>
           <div className={styles.infoBlock}>

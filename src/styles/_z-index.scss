@@ -1,0 +1,25 @@
+// Centralized z-index scale
+// Use these variables throughout the app for consistent layering
+
+// Base layers
+$z-base: 1;
+$z-content: 10;
+
+// Interactive elements
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+
+// Overlays
+$z-modal-backdrop: 400;
+$z-modal: 500;
+$z-popover: 600;
+$z-tooltip: 700;
+
+// Top-level UI
+$z-notification: 800;
+$z-header: 900;
+$z-preloader: 1000;
+
+// Navigation menu (highest)
+$z-nav-menu: 1100;

@@ -7,16 +7,24 @@ export default function useIsDesktop(breakpoint = 1024) {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    let timeoutId;
+
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= breakpoint);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setIsDesktop(window.innerWidth >= breakpoint);
+      }, 150);
     };
 
     // Run on mount
-    handleResize();
+    setIsDesktop(window.innerWidth >= breakpoint);
 
     // Add listener
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [breakpoint]);
 
   return isDesktop;

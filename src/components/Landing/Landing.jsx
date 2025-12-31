@@ -18,12 +18,9 @@ export default function Home() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    let rafId;
 
-    if (!slider.current || !firstText.current || !secondText.current) {
-      return;
-    }
-
-    const scrollTween = gsap.to(slider.current, {
+    gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: 0.25,
@@ -36,7 +33,6 @@ export default function Home() {
       x: "-500px",
     });
 
-    let animationFrameId;
     const animate = () => {
       if (xPercent.current < -100) {
         xPercent.current = 0;
@@ -45,20 +41,14 @@ export default function Home() {
       }
       gsap.set(firstText.current, { xPercent: xPercent.current });
       gsap.set(secondText.current, { xPercent: xPercent.current });
-      animationFrameId = requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
       xPercent.current += 0.002 * direction.current;
     };
 
-    animationFrameId = requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
 
     return () => {
-      if (scrollTween?.scrollTrigger) {
-        scrollTween.scrollTrigger.kill();
-      }
-      scrollTween?.kill();
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
-      }
+      if (rafId) cancelAnimationFrame(rafId);
     };
   }, []);
 
@@ -66,7 +56,7 @@ export default function Home() {
     <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
-          Technical Product Specialist & ex automotive sales lead - translating revenue targets into full-stack delivery.
+          Value-driven Product Owner — Hybrid Product, Business & Tech Profile
         </p>
       </div>
       <Image
@@ -94,9 +84,9 @@ export default function Home() {
             fill="white"
           />
         </svg>
-        <p>7 yrs leading B2B/B2C automotive sales</p>
-        <p>Hands-on full-stack (PHP Laravel, Angular, MERN, Next.js) & product strategy - Team mentoring</p>
-        <p>Fluent FR/EN/RU/UA/MD - Remote-ready & open to relocate worldwide</p>
+        <p>7+ years of B2B/B2C experience</p>
+        <p>Product Owner | AMOA & Tech-savvy Full-Stack profile</p>
+        <p>5 languages (FR/RU/EN/UA/MD) — Paris | Remote | Open to relocation</p>
       </div>
     </div>
   );
