@@ -1,6 +1,6 @@
 # Ivan Petrov - Portfolio
 
-> A modern, interactive Next.js portfolio showcasing Technical Product Specialist expertise with cutting-edge animations and responsive design.
+> A modern, interactive Next.js portfolio showcasing Product Owner expertise with a hybrid Product, Business & Tech profile — combining AMOA skills and full-stack development capabilities.
 
 [![Next.js](https://img.shields.io/badge/Next.js-13.4-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.2-blue?style=flat&logo=react)](https://reactjs.org/)
@@ -33,19 +33,20 @@
 
 ## 🎯 Overview
 
-This portfolio application represents **Ivan Petrov's** transition from automotive sales to becoming a **Technical Product Specialist** and **Solutions Engineer**. Built with cutting-edge web technologies, it demonstrates both technical expertise and design sophistication.
+This portfolio application showcases **Ivan Petrov** as a **value-driven Product Owner** with 7+ years of experience in B2B/B2C digital products and digital transformation. Built with cutting-edge web technologies, it demonstrates a unique hybrid profile combining Product expertise, AMOA skills, and full-stack technical capabilities.
 
 ### Purpose
-- Showcase 5+ professional projects with business impact metrics
-- Present services: Product Strategy, Technical Solutions Architecture, Digital Transformation
-- Provide an interactive, engaging user experience
-- Enable direct contact for freelance/CDI opportunities
+- Showcase professional experience with proven business impact metrics (TotalEnergies: 98 user stories, 95% UAT acceptance, +26% leads, -35% cart abandonment, +40% form completions)
+- Present hybrid Product, Business & Tech profile as convergence point between technical and business teams
+- Demonstrate 5+ professional projects across multiple technology stacks
+- Enable direct contact for Product Owner opportunities (freelance/CDI)
 
 ### Target Sectors
 - FinTech
 - SaaS
 - E-commerce
-- B2B Solutions
+- B2B Digital Products
+- Digital Transformation Projects
 
 ---
 
@@ -65,10 +66,10 @@ This portfolio application represents **Ivan Petrov's** transition from automoti
 - **Technology cards** with detailed descriptions in modal popups
 
 ### 3. **Business-Focused Content**
-- Real metrics: **+72% lead generation** for TotalEnergies project
-- **3 core services** clearly defined with animated sections
-- **30+ technologies** showcased with icons and descriptions
-- **Featured case studies** demonstrating ROI and business impact
+- Real metrics from TotalEnergies (2024-2025): **98 user stories (95% UAT acceptance), 108 web pages, -35% cart abandonment, +40% form completions, +26% incoming leads**
+- **3 core services** clearly defined: Product Strategy & Roadmap Planning, Technical Solutions Architecture, Digital Transformation & AMOA Expertise
+- **30+ technologies** showcased with icons and descriptions (React, Drupal 7-10, MERN, Laravel, Angular, Next.js)
+- **Featured case studies** demonstrating measurable ROI and business impact
 
 ### 4. **Fully Responsive Design**
 - Desktop-first design with tablet and mobile adaptations
@@ -251,15 +252,16 @@ Ivan-Petrov-Portfolio/
 2. **Landing Hero**
    - Animated repeating name slider: "Ivan Petrov - Ivan Petrov - Ivan Petrov..."
    - Scroll-triggered horizontal animation (GSAP ScrollTrigger)
-   - Tagline: "Technical Product Specialist | Solutions Engineer"
-   - Current availability status
+   - Professional title: "Value-driven Product Owner — Hybrid Product, Business & Tech Profile"
+   - Three key points: 7+ years B2B/B2C experience, Product Owner | AMOA & Tech-savvy Full-Stack profile, 5 languages (FR/RU/EN/UA/MD)
    - Parallax scroll effects on text
 
 3. **Description/About Section**
    - Word-by-word animated text reveal (Framer Motion)
-   - Key achievement highlight: "+72% leads" for TotalEnergies
+   - Value proposition: "Value-driven Product Owner with 7+ years in B2B/B2C digital products and digital transformation"
+   - TotalEnergies results: 98 user stories (95% UAT acceptance), 108 pages, -35% cart abandonment, +40% forms, +26% leads
    - "About me" call-to-action button (magnetic effect)
-   - Biography snippet with professional background
+   - Emphasizes dual AMOA and technical background transforming complex needs into measurable ROI
 
 4. **Projects Showcase**
    - **5 Featured Projects:**
@@ -298,8 +300,9 @@ Ivan-Petrov-Portfolio/
 
 **Sections:**
 1. **AboutHeader**
-   - Title: "Technical Product Specialist with Business Impact"
-   - Subtitle explaining dual profile (tech + business)
+   - Title: "Value-driven Product Owner"
+   - Subtitle: "AMOA & Tech Full-Stack profile"
+   - Third line: "Bridging Business, Product Management & Technology"
 
 2. **GlobeSection**
    - Animated CSS globe visualization
@@ -307,48 +310,49 @@ Ivan-Petrov-Portfolio/
    - Desktop-only feature
 
 3. **AboutImageSection**
-   - **Full Biography**
-     - Career journey from automotive sales to web development
-     - Transition to Technical Product Specialist
-     - Core philosophy and approach
+   - **Introduction**
+     - Value-driven Product Owner with 7+ years in B2B/B2C digital products and digital transformation
+     - Hybrid Product, Business & Tech profile as convergence point between business teams, IT, and clients
+     - Combines AMOA expertise with full-stack development skills
    - **Profile Image**
      - Parallax scroll effect
      - Professional photo
-   - **Competencies**
-     - Product roadmap planning
-     - Stakeholder communication
-     - Technical leadership
-   - **Why I Stand Out** (3 key points with animated GIF icons)
-     - Business-first mindset
-     - Full-stack versatility
-     - Measurable results
+   - **Differentiation Statement**
+     - Explains what differentiates from "purely functional" Product Owners
+     - Triple competence: Product expertise + Full-stack technical skills + Business acumen
+   - **Proven Results**
+     - TotalEnergies (2024-2025): 98 user stories (95% UAT acceptance), 108 pages, -35% cart, +40% forms, +26% leads
+     - Managing 5 international teams, 45+ requirement workshops
+   - **My Background** (3 key areas with animated GIF icons)
+     - Product Expertise: Backlog Management, User Stories, Sprint Planning, OKRs, Prioritization (RICE/MoSCoW), UAT
+     - Full-Stack Technical Skills: React, Drupal 7-10, MERN, Laravel, Angular, Next.js, TypeScript, API REST
+     - Business Acumen: 7 years B2B/B2C (360 vehicles sold, 14M€ revenue), 5 languages (FR C2, RU C2, EN C1, UA C1, MD C1)
    - **What Drives Me**
-     - Mission statement
-     - Values and approach
-   - **Technical Expertise**
-     - Frontend: React, Next.js, Vue, Angular
-     - Backend: Node.js, PHP/Laravel
-     - Methodologies: Agile/Scrum, CI/CD
+     - Measurable Business Impact (ROI, conversion optimization, lead generation)
+     - Technical & Functional Bridge (transform complex needs, challenge dev teams)
+     - Agile Product Leadership (Jira, Confluence, Figma, Google Analytics, Miro)
 
 4. **AboutServices** - 3 Core Services
    - **01: Product Strategy & Roadmap Planning**
-     - Agile/Scrum implementation
-     - OKR framework
-     - KPI definition & tracking
+     - Define and prioritize product roadmaps aligning technical feasibility with business objectives
+     - Agile/Scrum, OKRs, data-driven prioritization (RICE/MoSCoW)
+     - Backlog management, product discovery, UAT coordination
+     - Focus on delivering value with clear KPIs and measurable business impact
      - Icon: Animated GIF
 
    - **02: Technical Solutions Architecture**
-     - Full-stack development
-     - Performance optimization
-     - API design & integration
-     - CI/CD pipeline setup
+     - Design and implement scalable, performance-optimized web applications
+     - Full-stack platforms: React, Drupal 7-10, MERN, Laravel, Angular, Next.js
+     - REST APIs, conversion optimization, user engagement
+     - CI/CD pipelines for continuous deployment
      - Icon: Animated GIF
 
-   - **03: Digital Transformation & Client Solutions**
-     - Complex migrations (Drupal, WordPress)
-     - Stakeholder management
-     - ROI-driven delivery
-     - Change management
+   - **03: Digital Transformation & AMOA Expertise**
+     - Lead complex web ecosystem migrations and digital transformation initiatives
+     - Manage technical execution while ensuring business continuity
+     - Bridge between technical and business teams
+     - Conduct requirement workshops, align stakeholders across international teams
+     - Deliver solutions with measurable ROI
      - Icon: Animated GIF
 
    - Animated dots and scroll-based circle shrinking effect (desktop)
@@ -380,10 +384,12 @@ Ivan-Petrov-Portfolio/
 
    **A. Featured Projects (4 case studies)**
    - **TotalEnergies + ELF** - Click to view modal
-     - Drupal 9/10 migration
-     - +72% lead generation in 6 months
-     - 40% improvement in site speed
-     - Tech: Drupal, PHP, MySQL, Twig
+     - Product Owner & AMOA Digital for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025)
+     - Drupal 7→10 migration (108 web pages, 98 user stories delivered with 95% UAT acceptance)
+     - Achieved +26% qualified leads, -35% cart abandonment, +40% form completions
+     - Managed Agile/Scrum delivery, UX optimization, conversion funnel improvements
+     - Coordinated 5 international teams, conducted 45+ requirement workshops
+     - Tech: Drupal 7-10, PHP, MySQL, Twig, API REST
      - Image: Project screenshot
 
    - **Burger Town** - Click to view modal
@@ -476,12 +482,14 @@ Two-column responsive layout (stacks on mobile)
 **Right Column - Business Information:**
 - **Profile Photo** (Ivan's image)
 - **Contact Details**
-  - Email: yohanpetrov@gmail.com
+  - Email: yohanpetrov@gmail.com (or ivanxpetrov.dev@gmail.com)
   - Phone: +33 6 18 02 64 70
 - **Business Details**
-  - Role: Technical Product Specialist / Solutions Engineer
-  - Location: Paris, France
-  - Focus: FinTech, SaaS, E-commerce, B2B
+  - Role: Product Owner
+  - Expertise: AMOA & Full-Stack Development
+  - Location: Paris, France | Remote | Open to relocation
+  - Languages: FR (C2), RU (C2), EN (C1), UA (C1), MD (C1)
+  - Focus: FinTech, SaaS, E-commerce, B2B Digital Products
 - **Hire Me Via** (with magnetic link buttons)
   - Comet
   - Malt
