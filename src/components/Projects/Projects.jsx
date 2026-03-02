@@ -182,6 +182,17 @@ export default function Projects() {
           </div>
         </div>
 
+        <div
+          className={styles.recruiterNotice}
+          role="status"
+          aria-live="polite"
+        >
+          <p>
+            Note: Hosted on a free tier server. Please allow up to 30 seconds for
+            the initial load (Cold Start) for each project. Thank you for your patience!
+          </p>
+        </div>
+
         {/* Desktop Toggle Buttons (hidden on mobile via CSS) */}
         <div className={styles.toggleButtons}>
           <button
