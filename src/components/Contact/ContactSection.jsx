@@ -204,9 +204,11 @@ export default function ContactSection() {
 
             {/* Submit */}
             <div className={styles.formAction}>
-              <button type="submit" className={styles.submitButton}>
-                Send it!
-              </button>
+              <Magnetic>
+                <button type="submit" className={styles.submitButton}>
+                  Send it!
+                </button>
+              </Magnetic>
             </div>
           </form>
         </div>

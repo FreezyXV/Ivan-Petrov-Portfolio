@@ -306,31 +306,43 @@
   }
 
   .pointerIcon {
-    position: absolute;
-    margin-bottom: 1rem;
-    bottom: -80px;
-    left: 10px;
+    position: static;
+    margin-top: 0.75rem;
+    transform: none;
   }
 
   .colLeft {
     width: 100%;
-    padding-right: 5rem;
+    padding-right: 0;
   }
   .colRight {
     width: 100%;
-    padding-left: 3rem;
+    padding-left: 0;
   }
 
   .layoutRow:nth-of-type(1) {
+    flex-direction: row;
+    align-items: flex-end;
     .colLeft {
-      width: 100%;
+      flex: 1;
+      padding-right: 1rem;
     }
     .colRight {
-      padding-left: 3rem;
+      flex-shrink: 0;
+      width: auto;
+      padding-left: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: flex-end;
     }
+  }
+
+  .circleAvatar {
+    position: static;
+    width: 100px;
+    height: 100px;
+    margin: 0;
   }
 
   .layoutRow:nth-of-type(2) {
@@ -367,23 +379,28 @@
 
   .colLeft {
     width: 100%;
-    padding-right: 4rem;
+    padding-right: 0;
   }
   .colRight {
     width: 100%;
-    padding-left: 3rem;
+    padding-left: 0;
   }
 
   .layoutRow:nth-of-type(1) {
+    flex-direction: row;
+    align-items: flex-end;
     .colLeft {
-      width: 100%;
+      flex: 1;
+      padding-right: 0.75rem;
     }
     .colRight {
-      width: 100%;
-      padding-left: 3rem;
+      flex-shrink: 0;
+      width: auto;
+      padding-left: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: flex-end;
     }
   }
 
@@ -393,7 +410,7 @@
     }
     .colRight {
       width: 100%;
-      padding-left: 0rem !important;
+      padding-left: 0 !important;
       border-top: none;
     }
   }
@@ -405,19 +422,16 @@
   }
 
   .circleAvatar {
-    width: 110px;
-    height: 110px;
-    margin-top: 1rem;
-    top: 180px;
-    left: 200px;
-    position: absolute;
+    position: static;
+    width: 85px;
+    height: 85px;
+    margin: 0;
   }
 
   .pointerIcon {
-    position: absolute;
-    margin-bottom: 1rem;
-    bottom: -50px;
-    left: 10px;
+    position: static;
+    margin-top: 0.5rem;
+    transform: none;
   }
 
   .formRow {
