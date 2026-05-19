@@ -229,14 +229,14 @@ const featuredProjects = [
     title: "TotalEnergies Lubricants & ELF Lubricants",
     image: "/images/TotalEnergiesELF.png",
     description:
-      "Product Owner & AMOA Digital: Led product roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages, 98 user stories) using Agile/Scrum, achieving +26% leads entrants, -35% cart abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
+      "Solutions Consultant & AMOA Digital: Led solution roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages,tories) using Agile/Scrum, achieving +26% inbound leads, -35% form abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
     title: "Burger Town E-Commerce",
     image: "/images/BurgerTownLogo.png",
     description:
-      "Full-stack e-commerce platform built with MERN stack demonstrating product thinking: user journey optimization, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
+      "Full-stack e-commerce platform built with MERN stack demonstrating solutions thinking: user journey optimn, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
     techUsed: [
       "React.js",
       "Vite",
@@ -268,7 +268,7 @@ const featuredProjects = [
     title: "Fitness Pro",
     image: "/images/FitnessProSimple.png",
     description:
-      "Fitness tracking platform with end-to-end product approach. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. Product ownership from concept to deployment with CI/CD pipeline.",
+      "Fitness tracking platform with end-to-end product approach. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. End-to-end solution delivery from concept to deployment with CI/CD pipeline.",
     techUsed: [
       "PHP",
       "Laravel",
@@ -326,10 +326,10 @@ export default function AboutWorks() {
             />
           </h2>
           <p className={styles.sectionDescription}>
-            From leading digital transformations for enterprise clients like TotalEnergies
-            (+26% leads entrants, -35% cart abandonment) to building full-stack e-commerce
-            platforms, I combine product strategy with technical execution. Each project focuses
-            on translating business requirements into scalable solutions with measurable results.
+            From AMOA consulting at TotalEnergies (+26% leads, -35% form abandonment, 98 user stories)
+            to premium B2B mobility solutions at Mercedes-Benz (€14M revenue), I combine business analysis
+            with technical execution. Each project focuses on translating business requirements into
+            scalable solutions with measurable ROI.
           </p>
 
           {/* FEATURED PROJECTS */}
@@ -445,7 +445,7 @@ export default function AboutWorks() {
         >
           <h3 className={styles.skillsTitle}>Skills & Expertise</h3>
           <ul className={styles.skillsList}>
-            <li>Product Strategy & Roadmap Planning (Agile/Scrum, OKRs)</li>
+            <li>Solution Strategy & Roadmap Planning (Agile/Scrum, OKRs)</li>
             <li>Full-Stack Development (PHP/Laravel, MERN, Angular, Next.js)</li>
             <li>Business Impact & ROI Optimization (+26% leads entrants @ TotalEnergies)</li>
             <li>Stakeholder Management & Cross-Functional Coordination</li>
@@ -485,10 +485,10 @@ export default function AboutWorks() {
             />
           </h3>
           <p className={styles.insightText}>
-            My approach starts with understanding business objectives and user needs, then
-            translating them into product roadmaps and technical solutions. I work to bridge
-            technical teams and stakeholders, focusing on features that deliver business value
-            while maintaining code quality and user experience.
+            My approach starts with understanding business objectives and client needs, then
+            translating them into solution roadmaps and technical delivery. I work to bridge
+            technical teams and stakeholders, focusing on outcomes that deliver measurable business value
+            while maintaining quality and user experience.
           </p>
           <div className={styles.buttonDiv}>
             <Rounded onClick={() => router.push("/contact")}>

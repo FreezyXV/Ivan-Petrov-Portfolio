@@ -54,10 +54,10 @@ export default function AboutImageSection() {
           <h1 className={styles.introduction}>
             Hello, I'm Ivan <br />
             <br />
-            I'm a value-driven Product Owner with 7+ years in B2B/B2C digital products
-            and digital transformation. My hybrid Product, Business & Tech profile makes me
-            the convergence point between business teams, IT, and clients. I combine AMOA
-            expertise with full-stack development skills (React, Drupal, MERN, Laravel,
+            I'm a Solutions Consultant with 7+ years bridging commercial performance and digital
+            transformation. My hybrid AMOA & Tech profile makes me the convergence point between
+            business teams, IT, and clients — from C-level stakeholders to development teams.
+            I combine AMOA expertise with full-stack development skills (React, Drupal, MERN, Laravel,
             Angular, Next.js) and proven business acumen to prioritize and deliver solutions
             with measurable impact and ROI.
           </h1>
@@ -116,9 +116,9 @@ export default function AboutImageSection() {
             </p>
 
             <p className={styles.aboutMe}>
-              What differentiates me from "purely functional" Product Owners: I combine Product
-              expertise (Backlog Management, User Stories, Sprint Planning, OKRs), full-stack
-              technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and business acumen
+              What differentiates me from purely functional consultants: I combine Solutions consulting
+              expertise (requirements analysis, stakeholder management, business case design), full-stack
+              technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and proven commercial acumen
               (7 years B2B/B2C client relationships, ROI analysis, stakeholder management). This
               rare combination enables me to technically challenge teams while maintaining business focus.
             </p>
@@ -181,8 +181,8 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Product Expertise:</strong> Backlog Management, User Stories, Sprint Planning,
-                  Product Discovery, OKRs, Prioritization (RICE/MoSCoW), Roadmap, UAT — with proven
+                  <strong>Consulting Expertise:</strong> Requirements Analysis, User Stories, Sprint Planning,
+                  Solution Discovery, OKRs, Prioritization (RICE/MoSCoW), Roadmap, UAT — with proven
                   results across B2B/B2C digital products and digital transformation projects.
                 </li>
                 <li>
@@ -222,9 +222,9 @@ export default function AboutImageSection() {
                     challenge dev teams with technical insight, and maintain business focus throughout.
                   </li>
                   <li>
-                    <strong>Agile Product Leadership:</strong> I use Agile/Scrum/Kanban with tools
+                    <strong>Agile Delivery Leadership:</strong> I use Agile/Scrum/Kanban with tools
                     like Jira, Confluence, Figma, Google Analytics, and Miro to coordinate
-                    cross-functional teams and deliver value iteratively.
+                    cross-functl teams and deliver solutions iteratively.
                   </li>
                 </ul>
               </div>

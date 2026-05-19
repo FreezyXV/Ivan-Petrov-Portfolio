@@ -67,11 +67,11 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Product Strategy & Roadmap Planning</h4>
+            <h4 className={styles.isTitle}>Solution Strategy & Roadmap Planning</h4>
             <p className={styles.details}>
-            I define and prioritize product roadmaps that align technical feasibility with business
+            I define and prioritize solution roadmaps that align technical feasibility with business
             objectives. Using Agile/Scrum, OKRs, and data-driven prioritization (RICE/MoSCoW), I manage
-            backlogs, conduct product discovery, and coordinate UAT to deliver value with clear KPIs
+            requirements, conduct solution discovery, and coordinate UAT to deliver value with clear KPIs
             and measurable business impact.
             </p>
           </motion.div>
