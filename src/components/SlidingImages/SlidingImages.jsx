@@ -89,7 +89,7 @@ export default function SlidingImages() {
               className={styles.project}
               style={{ backgroundColor: project.color }}
             >
-              <div key={index} className={styles.imageContainer}>
+              <div className={styles.imageContainer}>
                 <Image
                   fill={true}
                   alt={"image"}

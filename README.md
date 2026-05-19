@@ -1,6 +1,6 @@
 # Ivan Petrov - Portfolio
 
-> A modern, interactive Next.js portfolio showcasing Product Owner expertise with a hybrid Product, Business & Tech profile — combining AMOA skills and full-stack development capabilities.
+> A modern, interactive Next.js portfolio showcasing Solutions Consultant expertise with a hybrid AMOA & Tech profile — combining business analysis, pre-sales, and full-stack development capabilities.
 
 [![Next.js](https://img.shields.io/badge/Next.js-13.4-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.2-blue?style=flat&logo=react)](https://reactjs.org/)
@@ -33,20 +33,19 @@
 
 ## 🎯 Overview
 
-This portfolio application showcases **Ivan Petrov** as a **value-driven Product Owner** with 7+ years of experience in B2B/B2C digital products and digital transformation. Built with cutting-edge web technologies, it demonstrates a unique hybrid profile combining Product expertise, AMOA skills, and full-stack technical capabilities.
+This portfolio application showcases **Ivan Petrov** as a **Solutions Consultant** with 7+ years bridging commercial performance and digital transformation. Built with cutting-edge web technologies, it demonstrates a unique hybrid AMOA & Tech profile combining business analysis, pre-sales expertise, and full-stack technical capabilities.
 
 ### Purpose
 - Showcase professional experience with proven business impact metrics (TotalEnergies: 98 user stories, 95% UAT acceptance, +26% leads, -35% cart abandonment, +40% form completions)
-- Present hybrid Product, Business & Tech profile as convergence point between technical and business teams
+- Present hybrid AMOA & Tech profile as convergence point between business teams, IT, and clients
 - Demonstrate 5+ professional projects across multiple technology stacks
-- Enable direct contact for Product Owner opportunities (freelance/CDI)
+- Enable direct contact for Solutions Consulting opportunities (freelance/CDI)
 
 ### Target Sectors
-- FinTech
-- SaaS
-- E-commerce
-- B2B Digital Products
-- Digital Transformation Projects
+- Mobility Tech & Automotive
+- Digital Transformation
+- B2B Solutions & Pre-Sales
+- E-commerce & SaaS
 
 ---
 
@@ -252,13 +251,13 @@ Ivan-Petrov-Portfolio/
 2. **Landing Hero**
    - Animated repeating name slider: "Ivan Petrov - Ivan Petrov - Ivan Petrov..."
    - Scroll-triggered horizontal animation (GSAP ScrollTrigger)
-   - Professional title: "Value-driven Product Owner — Hybrid Product, Business & Tech Profile"
-   - Three key points: 7+ years B2B/B2C experience, Product Owner | AMOA & Tech-savvy Full-Stack profile, 5 languages (FR/RU/EN/UA/MD)
+   - Professional title: "Solutions Consultant | Mobility Tech & Digital Transformation"
+   - Three key points: 7+ years B2B/B2C experience, Solutions Consultant | ex-Mercedes & TotalEnergies | AMOA • Pre-Sales • Digital, 5 languages (FR/RU/EN/UA/MD)
    - Parallax scroll effects on text
 
 3. **Description/About Section**
    - Word-by-word animated text reveal (Framer Motion)
-   - Value proposition: "Value-driven Product Owner with 7+ years in B2B/B2C digital products and digital transformation"
+   - Value proposition: "Solutions Consultant with 7+ years bridging commercial performance and digital transformation"
    - TotalEnergies results: 98 user stories (95% UAT acceptance), 108 pages, -35% cart abandonment, +40% forms, +26% leads
    - "About me" call-to-action button (magnetic effect)
    - Emphasizes dual AMOA and technical background transforming complex needs into measurable ROI
@@ -300,9 +299,9 @@ Ivan-Petrov-Portfolio/
 
 **Sections:**
 1. **AboutHeader**
-   - Title: "Value-driven Product Owner"
-   - Subtitle: "AMOA & Tech Full-Stack profile"
-   - Third line: "Bridging Business, Product Management & Technology"
+   - Title: "Solutions Consultant"
+   - Subtitle: "Mobility Tech & Digital Transformation"
+   - Third line: "Bridging Business, IT & Clients"
 
 2. **GlobeSection**
    - Animated CSS globe visualization
@@ -311,20 +310,20 @@ Ivan-Petrov-Portfolio/
 
 3. **AboutImageSection**
    - **Introduction**
-     - Value-driven Product Owner with 7+ years in B2B/B2C digital products and digital transformation
-     - Hybrid Product, Business & Tech profile as convergence point between business teams, IT, and clients
+     - Solutions Consultant with 7+ years bridging commercial performance and digital transformation
+     - Hybrid AMOA & Tech profile as convergence point between business teams, IT, and clients
      - Combines AMOA expertise with full-stack development skills
    - **Profile Image**
      - Parallax scroll effect
      - Professional photo
    - **Differentiation Statement**
-     - Explains what differentiates from "purely functional" Product Owners
-     - Triple competence: Product expertise + Full-stack technical skills + Business acumen
+     - Explains what differentiates from purely functional consultants
+     - Triple competence: Solutions consulting expertise + Full-stack technical skills + Commercial acumen
    - **Proven Results**
      - TotalEnergies (2024-2025): 98 user stories (95% UAT acceptance), 108 pages, -35% cart, +40% forms, +26% leads
      - Managing 5 international teams, 45+ requirement workshops
    - **My Background** (3 key areas with animated GIF icons)
-     - Product Expertise: Backlog Management, User Stories, Sprint Planning, OKRs, Prioritization (RICE/MoSCoW), UAT
+     - Consulting Expertise: Requirements Analysis, User Stories, Sprint Planning, OKRs, Prioritization (RICE/MoSCoW), UAT
      - Full-Stack Technical Skills: React, Drupal 7-10, MERN, Laravel, Angular, Next.js, TypeScript, API REST
      - Business Acumen: 7 years B2B/B2C (360 vehicles sold, 14M€ revenue), 5 languages (FR C2, RU C2, EN C1, UA C1, MD C1)
    - **What Drives Me**
@@ -384,7 +383,7 @@ Ivan-Petrov-Portfolio/
 
    **A. Featured Projects (4 case studies)**
    - **TotalEnergies + ELF** - Click to view modal
-     - Product Owner & AMOA Digital for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025)
+     - Solutions Consultant & AMOA Digital for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025)
      - Drupal 7→10 migration (108 web pages, 98 user stories delivered with 95% UAT acceptance)
      - Achieved +26% qualified leads, -35% cart abandonment, +40% form completions
      - Managed Agile/Scrum delivery, UX optimization, conversion funnel improvements
@@ -485,11 +484,11 @@ Two-column responsive layout (stacks on mobile)
   - Email: yohanpetrov@gmail.com (or ivanxpetrov.dev@gmail.com)
   - Phone: +33 6 18 02 64 70
 - **Business Details**
-  - Role: Product Owner
+  - Role: Solutions Consultant | AMOA & Pre-Sales
   - Expertise: AMOA & Full-Stack Development
   - Location: Paris, France | Remote | Open to relocation
   - Languages: FR (C2), RU (C2), EN (C1), UA (C1), MD (C1)
-  - Focus: FinTech, SaaS, E-commerce, B2B Digital Products
+  - Focus: Mobility Tech, Automotive, Digital Transformation, B2B Solutions
 - **Hire Me Via** (with magnetic link buttons)
   - Comet
   - Malt

@@ -27,7 +27,7 @@ export default function AboutServices() {
       ref={containerRef}
       className={`${styles.aboutServices} ${styles.onceIn}`}
       style={{
-        backgroundColor: "rgb(255, 755, 255)",
+        backgroundColor: "rgb(255, 255, 255)",
         transform: "translate(0px, 0vh)",
       }}
     >

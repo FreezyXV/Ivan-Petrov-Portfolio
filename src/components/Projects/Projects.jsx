@@ -166,7 +166,7 @@ export default function Projects() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Product solutions </span>
+                <span>Solutions </span>
                 <span>
                   focused on business impact{" "}
                   <Image

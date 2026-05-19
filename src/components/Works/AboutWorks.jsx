@@ -8,15 +8,7 @@ import Rounded from "@/common/RoundedButton/RoundedButton";
 import styles from "./AboutWorks.module.scss";
 import Modal from "./Modal";
 import useIsDesktop from "@/hooks/useIsDesktop";
-
-const fadeInUpVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-};
+import { fadeInUpVariants } from "./animations";
 
 const cardVariants = {
   initial: { opacity: 0, scale: 0.8 },
