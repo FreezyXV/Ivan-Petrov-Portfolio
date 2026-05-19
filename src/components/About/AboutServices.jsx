@@ -70,7 +70,7 @@ export default function AboutServices() {
             <h4 className={styles.isTitle}>Solution Strategy & Roadmap Planning</h4>
             <p className={styles.details}>
             I define and prioritize solution roadmaps that align technical feasibility with business
-            objectives. Using Agile/Scrum, OKRs, and data-driven prioritization (RICE/MoSCoW), I manage
+            objectives. Using Agile/Scrum, OKRs, data-driven prioritization (RICE/MoSCoW), I manage
             requirements, conduct solution discovery, and coordinate UAT to deliver value with clear KPIs
             and measurable business impact.
             </p>

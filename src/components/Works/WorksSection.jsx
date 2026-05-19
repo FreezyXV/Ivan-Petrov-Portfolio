@@ -166,9 +166,7 @@ export default function WorksSection() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>
-                  Delivering product solutions that drive business impact{" "}
-                </span>
+                <span>Delivering solutions that drive business impact </span>
                 <span>
                   <Image
                     src="/images/BlueCube.gif"
@@ -182,18 +180,6 @@ export default function WorksSection() {
               </h1>
             </div>
           </div>
-        </div>
-
-        <div
-          className={styles.recruiterNotice}
-          role="status"
-          aria-live="polite"
-        >
-          <p>
-            Note: Hosted on a free tier server. Please allow up to 30 seconds
-            for the initial load (Cold Start) for each project. Thank you for
-            your patience!
-          </p>
         </div>
 
         {/* Desktop Toggle Buttons (hidden on mobile via CSS) */}

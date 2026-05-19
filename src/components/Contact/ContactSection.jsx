@@ -55,10 +55,7 @@ export default function ContactSection() {
         alert(`Error: ${result.error || "Failed to send email"}`);
       }
     } catch (error) {
-      // Log errors only in development
-      if (process.env.NODE_ENV === 'development') {
-        console.error("Submit error:", error);
-      }
+      console.error("Submit error:", error);
       alert("Something went wrong, please try again.");
     }
   }
@@ -69,7 +66,7 @@ export default function ContactSection() {
       <div className={`${styles.layoutRow} ${styles.fadeUp}`}>
         <div className={styles.colLeft}>
           <h1 className={styles.mainHeading}>
-            <span>Let's align sales, product, and engineering around one roadmap</span>
+            <span>Let's align business, sales and technology around one roadmap</span>
           </h1>
         </div>
 
@@ -235,11 +232,11 @@ export default function ContactSection() {
           <div className={styles.infoBlock}>
             <h5 className={styles.infoHeading}>Business Details</h5>
             <ul className={styles.infoList}>
-              <li>Product Owner</li>
+              <li>Solutions Consultant | AMOA & Pre-Sales</li>
               <li>AMOA & Full-Stack Development Expertise</li>
               <li>Languages: FR (C2), RU (C2), EN (C1), UA (C1), MD (C1)</li>
               <li>Based in Paris, Remote & Open to International Opportunities</li>
-              <li>Focus: FinTech, SaaS, E-commerce, B2B Solutions - Contract & Freelance</li>
+              <li>Focus: Mobility Tech, Automotive, Digital Transformation, B2B Solutions - Contract & Freelance</li>
             </ul>
           </div>
           <div className={styles.infoBlock}>

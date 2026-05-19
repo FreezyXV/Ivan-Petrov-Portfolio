@@ -229,14 +229,14 @@ const featuredProjects = [
     title: "TotalEnergies Lubricants & ELF Lubricants",
     image: "/images/TotalEnergiesELF.png",
     description:
-      "Solutions Consultant & AMOA Digital: Led solution roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages,tories) using Agile/Scrum, achieving +26% inbound leads, -35% form abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
+      "Solutions Consultant & AMOA Digital: Led solution roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages, 98 user stories) using Agile/Scrum, achieving +26% inbound leads, -35% form abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
     title: "Burger Town E-Commerce",
     image: "/images/BurgerTownLogo.png",
     description:
-      "Full-stack e-commerce platform built with MERN stack demonstrating solutions thinking: user journey optimn, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
+      "Full-stack e-commerce platform built with MERN stack demonstrating solutions thinking: user journey optimization, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
     techUsed: [
       "React.js",
       "Vite",
@@ -312,7 +312,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h2 className={styles.sectionTitle}>
             About My Work{" "}
@@ -327,9 +327,9 @@ export default function AboutWorks() {
           </h2>
           <p className={styles.sectionDescription}>
             From AMOA consulting at TotalEnergies (+26% leads, -35% form abandonment, 98 user stories)
-            to premium B2B mobility solutions at Mercedes-Benz (€14M revenue), I combine business analysis
-            with technical execution. Each project focuses on translating business requirements into
-            scalable solutions with measurable ROI.
+            to premium B2B mobility solutions at Mercedes-Benz (€14M revenue), I combine business
+            analysis with technical execution. Each project focuses on translating business requirements
+            into scalable solutions with measurable ROI.
           </p>
 
           {/* FEATURED PROJECTS */}
@@ -396,7 +396,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h3 className={styles.techTitle}>
             Technologies I Work With{" "}
@@ -417,9 +417,9 @@ export default function AboutWorks() {
                 variants={isDesktop ? fadeInUpVariants : {}}
                 initial={isDesktop ? "hidden" : false}
                 whileInView={isDesktop ? "visible" : false}
-                viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+                viewport={isDesktop ? { once: false, amount: 0.5 } : {}}
                 whileHover={
-                  isDesktop ? { y: -10, rotate: 5, scale: 1.2 } : {}
+                  isDesktop ? { marginBottom: 10, rotate: 5, scale: 1.2 } : {}
                 }
                 onClick={() => handleTechClick(tech)}
               >
@@ -441,7 +441,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h3 className={styles.skillsTitle}>Skills & Expertise</h3>
           <ul className={styles.skillsList}>
@@ -471,7 +471,7 @@ export default function AboutWorks() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h3 className={styles.insightTitle}>
             What Drives My Work{" "}

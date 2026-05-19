@@ -14,11 +14,11 @@ export default function AboutHeader() {
         transition={{ duration: 0.6 }}
         className={styles.aboutTitle}
       >
-        Value-driven Product Owner
+        Solutions Consultant
         <br />
-        AMOA & Tech Full-Stack profile
+        Mobility Tech & Digital Transformation
         <br />
-        Bridging Business, Product Management & Technology
+        Bridging Business, IT & Clients
       </motion.h2>
     </header>
   );

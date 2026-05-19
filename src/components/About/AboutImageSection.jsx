@@ -16,28 +16,17 @@ export default function AboutImageSection() {
   const parallaxImage = useRef(null);
 
   useEffect(() => {
-    let ticking = false;
-
     function handleScroll() {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (!parallaxContainer.current || !parallaxImage.current) {
-            ticking = false;
-            return;
-          }
-          const rect = parallaxContainer.current.getBoundingClientRect();
-          const containerHeight = parallaxContainer.current.offsetHeight;
-          const offset = rect.top / window.innerHeight;
+      if (!parallaxContainer.current || !parallaxImage.current) return;
+      const rect = parallaxContainer.current.getBoundingClientRect();
+      const containerHeight = parallaxContainer.current.offsetHeight;
+      const offset = rect.top / window.innerHeight;
 
-          const translateValue = Math.max(-offset * containerHeight * 0.5, 0);
-          parallaxImage.current.style.transform = `translateY(${translateValue}px)`;
-          ticking = false;
-        });
-        ticking = true;
-      }
+      const translateValue = Math.max(-offset * containerHeight * 0.5, 0);
+      parallaxImage.current.style.transform = `translateY(${translateValue}px)`;
     }
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -49,17 +38,15 @@ export default function AboutImageSection() {
           variants={isDesktop ? fadeInUpVariants : {}}
           initial={isDesktop ? "hidden" : false}
           whileInView={isDesktop ? "visible" : false}
-          viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+          viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
         >
           <h1 className={styles.introduction}>
             Hello, I'm Ivan <br />
             <br />
-            I'm a Solutions Consultant with 7+ years bridging commercial performance and digital
-            transformation. My hybrid AMOA & Tech profile makes me the convergence point between
-            business teams, IT, and clients — from C-level stakeholders to development teams.
-            I combine AMOA expertise with full-stack development skills (React, Drupal, MERN, Laravel,
-            Angular, Next.js) and proven business acumen to prioritize and deliver solutions
-            with measurable impact and ROI.
+            I'm a Solutions Consultant with 7+ years bridging commercial performance and
+            digital transformation. My hybrid AMOA & Tech profile makes me the convergence
+            point between business teams, IT, and clients — from C-level stakeholders to
+            development teams.
           </h1>
         </motion.div>
 
@@ -116,11 +103,11 @@ export default function AboutImageSection() {
             </p>
 
             <p className={styles.aboutMe}>
-              What differentiates me from purely functional consultants: I combine Solutions consulting
-              expertise (requirements analysis, stakeholder management, business case design), full-stack
-              technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and proven commercial acumen
-              (7 years B2B/B2C client relationships, ROI analysis, stakeholder management). This
-              rare combination enables me to technically challenge teams while maintaining business focus.
+              What differentiates me from purely functional consultants: I combine Solutions
+              consulting expertise (requirements analysis, stakeholder management, business case design),
+              full-stack technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and proven
+              commercial acumen (7 years B2B/B2C client relationships, ROI analysis, stakeholder management).
+              This rare combination enables me to technically challenge teams while maintaining business focus.
             </p>
 
           </div>
@@ -159,7 +146,7 @@ export default function AboutImageSection() {
             variants={isDesktop ? fadeInUpVariants : {}}
             initial={isDesktop ? "hidden" : false}
             whileInView={isDesktop ? "visible" : false}
-            viewport={isDesktop ? { once: true, amount: 0.3 } : {}}
+            viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
           >
             <h1 className={styles.heading}>
               I focus on product strategy and technical execution — defining and prioritizing
@@ -224,7 +211,7 @@ export default function AboutImageSection() {
                   <li>
                     <strong>Agile Delivery Leadership:</strong> I use Agile/Scrum/Kanban with tools
                     like Jira, Confluence, Figma, Google Analytics, and Miro to coordinate
-                    cross-functl teams and deliver solutions iteratively.
+                    cross-functional teams and deliver solutions iteratively.
                   </li>
                 </ul>
               </div>

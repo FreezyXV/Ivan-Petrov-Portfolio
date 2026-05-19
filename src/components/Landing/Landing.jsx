@@ -56,7 +56,7 @@ export default function Home() {
     <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
-          Value-driven Product Owner — Hybrid Product, Business & Tech Profile
+          Solutions Consultant | Mobility Tech & Digital Transformation
         </p>
       </div>
       <Image
@@ -85,7 +85,7 @@ export default function Home() {
           />
         </svg>
         <p>7+ years of B2B/B2C experience</p>
-        <p>Product Owner | AMOA & Tech-savvy Full-Stack profile</p>
+        <p>Solutions Consultant | ex-Mercedes & TotalEnergies | AMOA • Pre-Sales • Digital</p>
         <p>5 languages (FR/RU/EN/UA/MD) — Paris | Remote | Open to relocation</p>
       </div>
     </div>
