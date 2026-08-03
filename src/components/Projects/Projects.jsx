@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Fitness Pro",
     src: "/images/FitnessProWork.png",
-    color: "#00DE23",
+    color: "#0055dd",
     url: "https://fitness-pro-frontend.vercel.app",
   },
   {
@@ -44,8 +44,8 @@ const projects = [
   },
   {
     title: "Partsline.net",
-    src: "/images/PartslineImage.png",
-    color: "#FFDD00",
+    src: "/images/PartlineOnYellowWindow.png",
+    color: "#000000",
     url: "https://partsline.net",
   },
 ];
