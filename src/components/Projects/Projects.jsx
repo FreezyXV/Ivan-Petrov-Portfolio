@@ -45,8 +45,7 @@ const projects = [
   {
     title: "Partsline.net",
     src: "/images/PartslineImage.png",
-    hoverSrc: "/images/PartlineOnYellowWindow.png",
-    color: "#000000",
+    color: "#FFDD00",
     url: "https://partsline.net",
   },
 ];
@@ -173,7 +172,7 @@ export default function Projects() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Solutions </span>
+                <span>Product solutions </span>
                 <span>
                   focused on business impact{" "}
                   <Image

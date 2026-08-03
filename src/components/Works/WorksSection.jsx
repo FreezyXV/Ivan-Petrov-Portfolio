@@ -46,7 +46,7 @@ const projects = [
     title: "Partsline.net",
     src: "/images/PartslineImage.png",
     hoverSrc: "/images/PartlineOnYellowWindow.png",
-    color: "#000000",
+    color: "#FFDD00",
     url: "https://partsline.net",
   },
 ];
