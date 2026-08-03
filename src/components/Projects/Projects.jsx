@@ -42,6 +42,13 @@ const projects = [
     color: "#db0000",
     url: "https://lubricants.totalenergies.com",
   },
+  {
+    title: "Partsline.net",
+    src: "/images/PartslineImage.png",
+    hoverSrc: "/images/PartlineOnYellowWindow.png",
+    color: "#000000",
+    url: "https://partsline.net",
+  },
 ];
 
 const scaleAnimation = {
@@ -347,7 +354,7 @@ export default function Projects() {
                       style={{ backgroundColor: p.color }}
                     >
                       <Image
-                        src={p.src}
+                        src={p.hoverSrc || p.src}
                         width={300}
                         height={200}
                         alt={p.title}

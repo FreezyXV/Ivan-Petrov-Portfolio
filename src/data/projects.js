@@ -29,4 +29,11 @@ export const PROJECTS = [
     color: "#db0000",
     url: "https://lubricants.totalenergies.com",
   },
+  {
+    title: "Partsline.net",
+    src: "/images/PartslineImage.png",
+    hoverSrc: "/images/PartlineOnYellowWindow.png",
+    color: "#FFDD00",
+    url: "https://partsline.net",
+  },
 ];

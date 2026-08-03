@@ -213,6 +213,18 @@ export const allTechnologies = [
     description:
       "A global application platform that lets you deploy apps and databases close to your users, running on edge servers worldwide.",
   },
+  {
+    name: "Prisma",
+    icon: "/images/Prisma.png",
+    description:
+      "A type-safe ORM for Node.js and TypeScript that handles schema modeling, migrations, and database queries.",
+  },
+  {
+    name: "DigitalOcean",
+    icon: "/images/DigitalOcean.png",
+    description:
+      "A cloud infrastructure provider offering managed databases, app hosting, and scalable compute for production workloads.",
+  },
 
 ];
 
@@ -223,6 +235,20 @@ const featuredProjects = [
     description:
       "Solutions Consultant & AMOA Digital: Led solution roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages, 98 user stories) using Agile/Scrum, achieving +26% inbound leads, -35% form abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
+  },
+  {
+    title: "Partsline.net",
+    image: "/images/PartslineImage.png",
+    description:
+      "Development Lead: Led architecture and iteration of a TecDoc-powered vehicle-parts compatibility engine for a B2B auto-parts platform (Next.js, Prisma, PostgreSQL, DigitalOcean). Designed three successive matching doctrines (V2→V4) improving part-to-vehicle fitment across 99+ vehicles and 49 categories, achieving 61% confirmed linkage reliability. Built a cross-reference pipeline processing 122K+ part pairs into 106K+ validated matches, automated regression testing, and reliability benchmarking tooling. Worked directly with a professional mechanic as ground-truth validator on real-world fitment issues.",
+    techUsed: [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "DigitalOcean",
+      "REST API",
+      "TypeScript",
+    ],
   },
   {
     title: "Burger Town E-Commerce",
