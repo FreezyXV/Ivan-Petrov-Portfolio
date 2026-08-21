@@ -79,6 +79,7 @@
         position: relative;
         overflow: hidden;
         white-space: nowrap;
+        width: 64px;
         margin-left: 5px;
         font-family: "DM Sans", sans-serif;
         font-weight: 200;
@@ -109,17 +110,18 @@
       &:hover {
         .name {
           padding-right: 30px;
+          width: 92px;
 
           .codeBy {
             transform: translateX(-100%);
           }
 
           .ivan {
-            transform: translateX(-65px);
+            transform: translateX(-58px);
           }
 
           .petrov {
-            transform: translateX(-85px);
+            transform: translateX(-87px);
           }
         }
       }
