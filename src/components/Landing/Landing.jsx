@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./style.module.scss";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
@@ -56,14 +55,12 @@ export default function Home() {
     <div className={styles.landing}>
       <div className={styles.firstDescription}>
         <p>
-          Solutions Consultant | Mobility Tech & Digital Transformation
+          Business Analyst — ex-TotalEnergies
         </p>
       </div>
-      <Image
-        src="/images/Background/Middle Grey.png"
-        fill={true}
-        alt="background"
+      <div
         className={styles.image}
+        style={{ background: "linear-gradient(135deg, #8a8a86 0%, #e8e1d3 100%)" }}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
@@ -84,9 +81,9 @@ export default function Home() {
             fill="white"
           />
         </svg>
-        <p>7+ years of B2B/B2C experience</p>
-        <p>Solutions Consultant | ex-Mercedes & TotalEnergies | AMOA • Pre-Sales • Digital</p>
-        <p>5 languages (FR/RU/EN/UA/MD) — Paris | Remote | Open to relocation</p>
+        <p>Functional Scoping · User Stories · UAT · Change Management</p>
+        <p>Business Analyst | AMOA · Agile Scrum · UAT</p>
+        <p>5 languages (FR/EN/RU/UA/MD) — Paris | Luxembourg | Remote</p>
       </div>
     </div>
   );

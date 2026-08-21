@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Magnetic from "../../common/Magnetic/Magnetic";
-import IvanImage from "../../../public/images/IMG_7197.JPG";
+import IvanImage from "../../../public/images/IvanAvatar.jpeg";
 import styles from "./ContactSection.module.scss";
 
 export default function ContactSection() {
@@ -66,7 +66,7 @@ export default function ContactSection() {
       <div className={`${styles.layoutRow} ${styles.fadeUp}`}>
         <div className={styles.colLeft}>
           <h1 className={styles.mainHeading}>
-            <span>Let's align business, sales and technology around one roadmap</span>
+            <span>Let's align business, IT and measurable value</span>
           </h1>
         </div>
 
@@ -158,7 +158,7 @@ export default function ContactSection() {
                 label: "What services are you looking for ?",
                 name: "userServices",
                 type: "text",
-                placeholder: "Product Strategy, Technical Solutions, Digital Transformation ...",
+                placeholder: "Functional scoping, AMOA, UAT, digital transformation ...",
               },
               {
                 idx: "05",
@@ -234,11 +234,11 @@ export default function ContactSection() {
           <div className={styles.infoBlock}>
             <h5 className={styles.infoHeading}>Business Details</h5>
             <ul className={styles.infoList}>
-              <li>Solutions Consultant | AMOA & Pre-Sales</li>
-              <li>AMOA & Full-Stack Development Expertise</li>
+              <li>Business Analyst | AMOA</li>
+              <li>Functional Scoping · User Stories · UAT · Change Management</li>
               <li>Languages: FR (C2), RU (C2), EN (C1), UA (C1), MD (C1)</li>
-              <li>Based in Paris, Remote & Open to International Opportunities</li>
-              <li>Focus: Mobility Tech, Automotive, Digital Transformation, B2B Solutions - Contract & Freelance</li>
+              <li>Based in Paris — open to Paris, Luxembourg and remote</li>
+              <li>Looking for: permanent role and freelance missions</li>
             </ul>
           </div>
           <div className={styles.infoBlock}>
@@ -256,10 +256,6 @@ export default function ContactSection() {
                 {
                   name: "Little Big Connection",
                   href: "https://www.littlebigconnection.com/v2/supplier/my-profile",
-                },
-                {
-                  name: "Upwork",
-                  href: "https://www.upwork.com/freelancers/ivanp146",
                 },
               ].map((platform, index) => (
                 <Magnetic key={index}>

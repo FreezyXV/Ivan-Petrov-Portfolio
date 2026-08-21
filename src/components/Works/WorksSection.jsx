@@ -13,34 +13,18 @@ import styles from "../Works/WorksSection.module.scss";
 
 const projects = [
   {
-    title: "Burger Town",
-    src: "/images/BurgerTownWork.png",
-    color: "#FFA500",
-    url: "https://burger-house-front.vercel.app",
-  },
-  {
-    title: "Hi Tech Store",
-    src: "/images/HiTechStoreWork.png",
-    color: "#E9EAEB",
-    url: "https://hi-tech-store-front.vercel.app",
-  },
-  {
-    title: "Fitness Pro",
-    src: "/images/FitnessProWork.png",
-    color: "#0055dd",
-    url: "https://fitness-pro-frontend.vercel.app",
+    title: "TotalEnergies Lubricants",
+    src: "/images/TotalEnergiesWork.png",
+    color: "#db0000",
+    url: "https://lubricants.totalenergies.com",
+    category: "Functional Scoping & AMOA",
   },
   {
     title: "ELF.com",
     src: "/images/ELFLubricantsWork.png",
     color: "#000000",
     url: "https://elf.com/en",
-  },
-  {
-    title: "TotalEnergies Lubricants",
-    src: "/images/TotalEnergiesWork.png",
-    color: "#db0000",
-    url: "https://lubricants.totalenergies.com",
+    category: "Functional Scoping & AMOA",
   },
   {
     title: "Partsline.net",
@@ -48,6 +32,28 @@ const projects = [
     hoverSrc: "/images/PartlineOnYellowWindow.png",
     color: "#000000",
     url: "https://partsline.net",
+    category: "Functional Analysis & Specifications",
+  },
+  {
+    title: "Fitness Pro",
+    src: "/images/FitnessProWork.png",
+    color: "#0055dd",
+    url: "https://fitness-pro-frontend.vercel.app",
+    category: "Personal Project",
+  },
+  {
+    title: "Hi Tech Store",
+    src: "/images/HiTechStoreWork.png",
+    color: "#E9EAEB",
+    url: "https://hi-tech-store-front.vercel.app",
+    category: "Personal Project",
+  },
+  {
+    title: "Burger Town",
+    src: "/images/BurgerTownWork.png",
+    color: "#FFA500",
+    url: "https://burger-house-front.vercel.app",
+    category: "Personal Project",
   },
 ];
 
@@ -173,7 +179,7 @@ export default function WorksSection() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Delivering solutions that drive business impact </span>
+                <span>From business need to delivered solution </span>
                 <span>
                   <Image
                     src="/images/BlueCube.gif"
@@ -295,6 +301,7 @@ export default function WorksSection() {
                       <Project
                         index={i}
                         title={proj.title}
+                        category={proj.category}
                         manageModal={manageModal}
                       />
                     )}

@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUpVariants } from "../Works/animations";
-import IvanImage from "../../../public/images/Background/IvanLightGrey.png";
+import IvanImage from "../../../public/images/IvanAvatar.jpeg";
 import styles from "./AboutImageSection.module.scss";
 
 import useIsDesktop from "@/hooks/useIsDesktop";
@@ -43,10 +43,9 @@ export default function AboutImageSection() {
           <h1 className={styles.introduction}>
             Hello, I'm Ivan <br />
             <br />
-            I'm a Solutions Consultant with 7+ years bridging commercial performance and
-            digital transformation. My hybrid AMOA & Tech profile makes me the convergence
-            point between business teams, IT, and clients — from C-level stakeholders to
-            development teams.
+            I'm a Business Analyst working at the interface between business teams and IT.
+            My hybrid AMOA & Tech profile makes me the convergence point between business
+            teams, IT, and clients — from C-level stakeholders to development teams.
           </h1>
         </motion.div>
 
@@ -96,18 +95,18 @@ export default function AboutImageSection() {
             </div>
 
             <p className={styles.aboutMe}>
-              My approach is business-first: I build solutions that address real user needs
-              while generating measurable business results. Whether managing digital transformation
-              of international sites, optimizing conversion funnels, or architecting scalable
-              platforms, I align technical execution with business objectives.
+              My approach is business-first: I make sure a business need is fully understood —
+              and correctly written down — before a single line of code is discussed. Whether
+              coordinating a CMS migration across international sites or aligning a delivery
+              team on UAT criteria, I keep business intent and technical delivery in sync.
             </p>
 
             <p className={styles.aboutMe}>
-              What differentiates me from purely functional consultants: I combine Solutions
-              consulting expertise (requirements analysis, stakeholder management, business case design),
-              full-stack technical skills (React, Drupal 7-10, MERN, Laravel, API REST), and proven
-              commercial acumen (7 years B2B/B2C client relationships, ROI analysis, stakeholder management).
-              This rare combination enables me to technically challenge teams while maintaining business focus.
+              What sets me apart from a purely functional profile: hands-on technical literacy
+              (SQL, REST APIs, Drupal) that lets me read and challenge a technical solution
+              without needing to own the development myself, combined with a premium B2B/B2C
+              commercial background (2019–2023, ~€14M cumulative revenue) that keeps me focused
+              on business value and stakeholder buy-in.
             </p>
 
           </div>
@@ -126,10 +125,10 @@ export default function AboutImageSection() {
           </div>
 
           <p className={styles.aboutMe3}>
-              Proven results at TotalEnergies (2024-2025): 98 user stories delivered with
-              95% UAT acceptance, 108 web pages created and optimized, -35% cart abandonment,
-              +40% form completions, +26% incoming leads — managing 5 international teams
-              and conducting 45+ business/IT requirement workshops.
+              Proven results at TotalEnergies (2024–2025): 98 user stories delivered with
+              95% UAT acceptance, 108 web pages created and optimized, -35% form abandonment,
+              +40% form completions, +26% incoming leads — coordinating 5 international teams
+              and conducting 45+ business/IT workshops.
             </p>
             <br />
             <p>
@@ -149,10 +148,10 @@ export default function AboutImageSection() {
             viewport={isDesktop ? { once: false, amount: 0.3 } : {}}
           >
             <h1 className={styles.heading}>
-              I focus on product strategy and technical execution — defining and prioritizing
-              roadmaps that align technical feasibility with business objectives, managing
-              backlogs with data-driven prioritization (RICE/MoSCoW), and implementing solutions
-              using Agile/Scrum methodologies that generate measurable ROI.
+              I focus on functional scoping and delivery governance — running discovery
+              workshops, writing user stories with clear acceptance criteria, prioritizing
+              the backlog (RICE/MoSCoW), and steering UAT through to sign-off using
+              Agile/Scrum methodologies.
             </h1>
 
             <div className={styles.standOut}>
@@ -168,19 +167,20 @@ export default function AboutImageSection() {
               </h2>
               <ul>
                 <li>
-                  <strong>Consulting Expertise:</strong> Requirements Analysis, User Stories, Sprint Planning,
-                  Solution Discovery, OKRs, Prioritization (RICE/MoSCoW), Roadmap, UAT — with proven
-                  results across B2B/B2C digital products and digital transformation projects.
+                  <strong>Discovery & Analysis:</strong> needs-gathering workshops, functional
+                  specifications, process mapping (BPMN), user journeys, gap analysis — across
+                  B2B/B2C digital products and digital transformation projects.
                 </li>
                 <li>
-                  <strong>Full-Stack Technical Skills:</strong> React.js, Drupal 7-10, MERN stack,
-                  Laravel, Angular, Next.js, TypeScript, API REST, PostgreSQL, MongoDB, Figma, Git,
-                  CI/CD — I technically challenge development teams while keeping business focus.
+                  <strong>Technical Literacy:</strong> SQL, REST APIs, Postman, Drupal 7/10 —
+                  enough to read and challenge a technical solution without carrying the
+                  development myself.
                 </li>
                 <li>
-                  <strong>Business Acumen:</strong> 7 years B2B/B2C client relationships (360 vehicles sold,
-                  14M€ revenue), stakeholder management, ROI analysis, complex negotiation — fluent in
-                  5 languages (FR C2, RU C2, EN C1, UA C1, MD C1) for multicultural environments.
+                  <strong>Business Acumen:</strong> premium B2B/B2C client relationships
+                  (2019–2023, ~360 vehicles sold, €14M revenue), stakeholder management,
+                  complex negotiation — fluent in 5 languages (FR C2, RU C2, EN C1, UA C1,
+                  MD C1) for multicultural environments.
                 </li>
               </ul>
             </div>
@@ -199,19 +199,19 @@ export default function AboutImageSection() {
                 </h2>
                 <ul className={styles.DrivesMeList}>
                   <li>
-                    <strong>Measurable Business Impact:</strong> I build solutions that generate
-                    ROI — from conversion optimization and lead generation to cart abandonment
-                    reduction and user engagement improvements, always with clear KPIs.
+                    <strong>Measurable Business Impact:</strong> I write specifications that are
+                    judged by outcomes — lead generation, conversion, form completion, adoption —
+                    always with clear KPIs.
                   </li>
                   <li>
-                    <strong>Technical & Functional Bridge:</strong> My dual AMOA and technical
-                    background allows me to transform complex business needs into technical solutions,
-                    challenge dev teams with technical insight, and maintain business focus throughout.
+                    <strong>Business/IT Bridge:</strong> I translate complex business needs into
+                    specifications a development team can act on directly, and challenge technical
+                    proposals when they drift from business intent.
                   </li>
                   <li>
-                    <strong>Agile Delivery Leadership:</strong> I use Agile/Scrum/Kanban with tools
-                    like Jira, Confluence, Figma, Google Analytics, and Miro to coordinate
-                    cross-functional teams and deliver solutions iteratively.
+                    <strong>Agile Delivery:</strong> I run backlog, sprint ceremonies and UAT with
+                    Jira, Confluence, Figma, Google Analytics, and Miro to keep cross-functional
+                    teams aligned.
                   </li>
                 </ul>
               </div>

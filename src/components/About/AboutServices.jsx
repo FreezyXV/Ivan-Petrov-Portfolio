@@ -67,12 +67,11 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Solution Strategy & Roadmap Planning</h4>
+            <h4 className={styles.isTitle}>Discovery & Specifications</h4>
             <p className={styles.details}>
-            I define and prioritize solution roadmaps that align technical feasibility with business
-            objectives. Using Agile/Scrum, OKRs, data-driven prioritization (RICE/MoSCoW), I manage
-            requirements, conduct solution discovery, and coordinate UAT to deliver value with clear KPIs
-            and measurable business impact.
+            I run discovery workshops with business teams and IT, arbitrate scope, and produce
+            deliverables the development team can act on directly: functional specifications,
+            user stories with acceptance criteria, process mapping, and business rules.
             </p>
           </motion.div>
 
@@ -94,12 +93,11 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Technical Solutions Architecture</h4>
+            <h4 className={styles.isTitle}>Agile Delivery & UAT</h4>
             <p className={styles.details}>
-            I design and implement scalable, performance-optimized web applications with a focus on
-            business impact. From REST APIs to full-stack platforms (React, Drupal 7-10, MERN,
-            Laravel, Angular, Next.js), I build solutions focused on conversion optimization and
-            user engagement, with CI/CD pipelines for continuous deployment.
+            I manage the backlog and its prioritization (MoSCoW/RICE), coordinate sprints with the
+            development team, design and run the functional test plans, and steer business
+            sign-off through to delivery.
             </p>
           </motion.div>
 
@@ -121,12 +119,10 @@ export default function AboutServices() {
               />
             </h5>
             <div className={styles.stripe}></div>
-            <h4 className={styles.isTitle}>Digital Transformation & AMOA Expertise</h4>
+            <h4 className={styles.isTitle}>Change Management & Governance</h4>
             <p className={styles.details}>
-            I lead complex web ecosystem migrations and digital transformation initiatives, managing
-            technical execution while ensuring business continuity. Acting as the bridge between
-            technical and business teams, I conduct requirement workshops, align stakeholders across
-            international teams, and deliver solutions with measurable ROI.
+            I align multiple international stakeholders, train end users, document target-state
+            processes, and provide sponsors with KPI reporting and adoption tracking.
             </p>
           </motion.div>
         </div>

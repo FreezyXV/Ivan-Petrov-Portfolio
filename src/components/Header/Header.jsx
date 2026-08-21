@@ -100,9 +100,9 @@ export default function Header({ styleType }) {
             <div className={currentStyles.logo}>
               <p className={currentStyles.copyright}>©</p>
               <div className={currentStyles.name}>
-                <p className={currentStyles.codeBy}>Code by</p>
-                <p className={currentStyles.ivan}>Ivan</p>
-                <p className={currentStyles.petrov}>Petrov</p>
+                <p className={currentStyles.codeBy}></p>
+                <p className={currentStyles.ivan}>Portfolio</p>
+                <p className={currentStyles.petrov}></p>
               </div>
             </div>
           </Link>

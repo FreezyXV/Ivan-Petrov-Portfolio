@@ -13,40 +13,46 @@ import styles from "../Projects/style.module.scss";
 
 const projects = [
   {
-    title: "Burger Town",
-    src: "/images/BurgerTownWork.png",
-    color: "#FFA500",
-    url: "https://burger-house-front.vercel.app",
-  },
-  {
-    title: "Hi Tech Store",
-    src: "/images/HiTechStoreWork.png",
-    color: "#E9EAEB",
-    url: "https://hi-tech-store-front.vercel.app",
-  },
-  {
-    title: "Fitness Pro",
-    src: "/images/FitnessProWork.png",
-    color: "#0055dd",
-    url: "https://fitness-pro-frontend.vercel.app",
+    title: "TotalEnergies Lubricants",
+    src: "/images/TotalEnergiesWork.png",
+    color: "#db0000",
+    url: "https://lubricants.totalenergies.com",
+    category: "Functional Scoping & AMOA",
   },
   {
     title: "ELF.com",
     src: "/images/ELFLubricantsWork.png",
     color: "#000000",
     url: "https://elf.com/en",
-  },
-  {
-    title: "TotalEnergies Lubricants",
-    src: "/images/TotalEnergiesWork.png",
-    color: "#db0000",
-    url: "https://lubricants.totalenergies.com",
+    category: "Functional Scoping & AMOA",
   },
   {
     title: "Partsline.net",
     src: "/images/PartlineOnYellowWindow.png",
     color: "#000000",
     url: "https://partsline.net",
+    category: "Functional Analysis & Specifications",
+  },
+  {
+    title: "Fitness Pro",
+    src: "/images/FitnessProWork.png",
+    color: "#0055dd",
+    url: "https://fitness-pro-frontend.vercel.app",
+    category: "Personal Project",
+  },
+  {
+    title: "Hi Tech Store",
+    src: "/images/HiTechStoreWork.png",
+    color: "#E9EAEB",
+    url: "https://hi-tech-store-front.vercel.app",
+    category: "Personal Project",
+  },
+  {
+    title: "Burger Town",
+    src: "/images/BurgerTownWork.png",
+    color: "#FFA500",
+    url: "https://burger-house-front.vercel.app",
+    category: "Personal Project",
   },
 ];
 
@@ -172,9 +178,9 @@ export default function Projects() {
           <div className={styles.row}>
             <div className={`${styles.flexCol} once-in`}>
               <h1 className={styles.mainHeading}>
-                <span>Product solutions </span>
+                <span>From business need </span>
                 <span>
-                  focused on business impact{" "}
+                  to delivered solution{" "}
                   <Image
                     src="/images/BlueCube.gif"
                     alt="Blue Cube"
@@ -186,17 +192,6 @@ export default function Projects() {
               </h1>
             </div>
           </div>
-        </div>
-
-        <div
-          className={styles.recruiterNotice}
-          role="status"
-          aria-live="polite"
-        >
-          <p>
-            Note: Hosted on a free tier server. Please allow up to 30 seconds for
-            the initial load (Cold Start) for each project. Thank you for your patience!
-          </p>
         </div>
 
         {/* Desktop Toggle Buttons (hidden on mobile via CSS) */}
@@ -304,6 +299,7 @@ export default function Projects() {
                       <Project
                         index={i}
                         title={proj.title}
+                        category={proj.category}
                         manageModal={manageModal}
                       />
                     )}

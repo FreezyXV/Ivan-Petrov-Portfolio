@@ -11,8 +11,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Ivan Petrov - Solutions Consultant",
-  description: "Solutions Consultant with 7+ years bridging commercial performance and digital transformation. AMOA expertise and full-stack development skills (Laravel, MERN, Angular, Next.js). Based in Paris.",
+  title: "Ivan Petrov — Business Analyst | Functional Scoping & Digital Transformation",
+  description: "Business Analyst. Functional scoping, user stories, UAT and change management. Led the web ecosystem migration for TotalEnergies Lubricants: 98 user stories, 95% UAT acceptance, +26% leads. Paris & Luxembourg.",
+  keywords: "Business Analyst, AMOA, MOA, functional scoping, user stories, functional specifications, UAT, BPMN, Agile Scrum, Jira, Confluence, Paris, Luxembourg",
+  openGraph: {
+    title: "Ivan Petrov — Business Analyst",
+    description: "Functional scoping, user stories, UAT and change management. Ex-TotalEnergies. Paris & Luxembourg.",
+  },
 };
 
 export default function RootLayout({ children }) {

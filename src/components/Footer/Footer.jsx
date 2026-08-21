@@ -32,7 +32,7 @@
 //               <Image
 //                 fill={true}
 //                 alt="Work together image"
-//                 src="/images/IMG_7197.JPG"
+//                 src="/images/IvanAvatar.jpeg"
 //               />
 //             </div>
 //             <h2>Let's work</h2>
@@ -60,7 +60,7 @@
 //           <div className={styles.versionLocation}>
 //             <div className={styles.version}>
 //               <h3>Version</h3>
-//               <p>2024 © Edition</p>
+//               <p>© 2026</p>
 //             </div>
 //             <div className={styles.location}>
 //               <h3>Location</h3>
@@ -149,7 +149,7 @@ export default function Footer() {
                   <Image
                     fill={true}
                     alt="Work together image"
-                    src="/images/IMG_7197.JPG"
+                    src="/images/IvanAvatar.jpeg"
                   />
                 </div>
                 <h2>Let's align</h2>
@@ -177,7 +177,7 @@ export default function Footer() {
               <div className={styles.versionLocation}>
                 <div className={styles.version}>
                   <h3>Version</h3>
-                  <p>2024 © Edition</p>
+                  <p>© 2026</p>
                 </div>
                 <div className={styles.location}>
                   <h3>Location</h3>
@@ -217,7 +217,7 @@ export default function Footer() {
                   <Image
                     fill={true}
                     alt="Work together image"
-                    src="/images/IMG_7197.JPG"
+                    src="/images/IvanAvatar.jpeg"
                   />
                 </div>
                 <h2>Let's align</h2>
@@ -246,7 +246,7 @@ export default function Footer() {
               <div className={styles.versionLocation}>
                 <div className={styles.version}>
                   <h3>Version</h3>
-                  <p>2024 © Edition</p>
+                  <p>© 2026</p>
                 </div>
                 <div className={styles.location}>
                   <h3>Location</h3>

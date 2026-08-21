@@ -14,11 +14,11 @@ export default function AboutHeader() {
         transition={{ duration: 0.6 }}
         className={styles.aboutTitle}
       >
-        Solutions Consultant
+        Business Analyst
         <br />
-        Mobility Tech & Digital Transformation
+        Functional Scoping · User Stories · UAT · Change Management
         <br />
-        Bridging Business, IT & Clients
+        ex-TotalEnergies
       </motion.h2>
     </header>
   );

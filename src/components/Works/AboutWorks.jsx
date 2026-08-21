@@ -233,14 +233,14 @@ const featuredProjects = [
     title: "TotalEnergies Lubricants & ELF Lubricants",
     image: "/images/TotalEnergiesELF.png",
     description:
-      "Solutions Consultant & AMOA Digital: Led solution roadmap and digital transformation for TotalEnergies Lubricants ecosystem (Apr 2024 - May 2025). Managed Drupal 7→10 migration (108 web pages, 98 user stories) using Agile/Scrum, achieving +26% inbound leads, -35% form abandonment, +40% form completions through UX optimization and conversion funnel improvements. Coordinated cross-functional teams and international stakeholders.",
+      "Business Analyst on the migration of the Lubricants web ecosystem (3 international sites, Drupal 7 → 10, zero downtime). Ran 45+ workshops with subsidiaries, Marketing and IT; wrote the functional specifications and 98 user stories with Gherkin acceptance criteria; prioritized the backlog in Jira (MoSCoW/RICE); designed and executed the UAT plans (95% acceptance); trained end users and reported weekly to sponsors. Impact: -35% form abandonment, +40% completions, +26% incoming leads.",
     techUsed: ["HTML", "CSS", "JavaScript", "Drupal", "Agile", "Jira"],
   },
   {
     title: "Partsline.net",
     image: "/images/PartslineImage.png",
     description:
-      "Development Lead: Led architecture and iteration of a TecDoc-powered vehicle-parts compatibility engine for a B2B auto-parts platform (Next.js, Prisma, PostgreSQL, DigitalOcean). Designed three successive matching doctrines (V2→V4) improving part-to-vehicle fitment across 99+ vehicles and 49 categories, achieving 61% confirmed linkage reliability. Built a cross-reference pipeline processing 122K+ part pairs into 106K+ validated matches, automated regression testing, and reliability benchmarking tooling. Worked directly with a professional mechanic as ground-truth validator on real-world fitment issues.",
+      "Scoped and specified a parts/vehicle compatibility engine for a B2B auto-parts platform (TecDoc reference data). Defined the matching business rules across 3 successive iterations, set up a validation protocol with a professional mechanic as the domain expert, and built a way to measure match reliability across 122K+ part pairs. Documented the business rules and acceptance criteria.",
     techUsed: [
       "Next.js",
       "Prisma",
@@ -251,25 +251,24 @@ const featuredProjects = [
     ],
   },
   {
-    title: "Burger Town E-Commerce",
-    image: "/images/BurgerTownLogo.png",
+    title: "Fitness Pro",
+    image: "/images/FitnessProSimple.png",
     description:
-      "Full-stack e-commerce platform built with MERN stack demonstrating solutions thinking: user journey optimization, conversion-focused checkout flow, real-time inventory management, and mobile-first responsive design. Focus on business metrics and user retention.",
+      "Personal project — end-to-end training-tracking app: needs-gathering, user stories, user journeys, KPI definition, then technical build.",
     techUsed: [
-      "React.js",
-      "Vite",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Nodemailer",
+      "PHP",
+      "Laravel",
+      "Angular",
+      "PostgreSQL",
+      "Vercel",
+
     ],
   },
   {
     title: "Hi Tech Store E-Commerce",
     image: "/images/HiTechStoreLogo.png",
     description:
-      "Scalable e-commerce solution with business impact focus: secure Stripe payment integration, state management with Redux, TDD approach using Jest, and performance-optimized architecture. Full-stack development with conversion optimization principles.",
+      "Personal project — e-commerce platform: MVP scoping, prioritized backlog, checkout/payment specification, wireframes, then build.",
     techUsed: [
       "React.js",
       "Vite",
@@ -283,17 +282,18 @@ const featuredProjects = [
     ],
   },
   {
-    title: "Fitness Pro",
-    image: "/images/FitnessProSimple.png",
+    title: "Burger Town E-Commerce",
+    image: "/images/BurgerTownLogo.png",
     description:
-      "Fitness tracking platform with end-to-end product approach. User research-driven features, roadmap planning with phased releases, Laravel/Angular architecture, analytics dashboard for progression tracking. End-to-end solution delivery from concept to deployment with CI/CD pipeline.",
+      "Personal project — training capstone (Simplon): from needs definition and Figma mockups through to production release.",
     techUsed: [
-      "PHP",
-      "Laravel",
-      "Angular",
-      "PostgreSQL",
-      "Vercel",
-
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Nodemailer",
     ],
   },
 ];
@@ -344,10 +344,10 @@ export default function AboutWorks() {
             />
           </h2>
           <p className={styles.sectionDescription}>
-            From AMOA consulting at TotalEnergies (+26% leads, -35% form abandonment, 98 user stories)
-            to premium B2B mobility solutions at Mercedes-Benz (€14M revenue), I combine business
-            analysis with technical execution. Each project focuses on translating business requirements
-            into scalable solutions with measurable ROI.
+            From functional scoping at TotalEnergies (+26% leads, -35% form abandonment, 98 user
+            stories) to a premium B2B/B2C commercial background (€14M cumulative revenue), I combine
+            business analysis with the technical literacy to challenge delivery. Each project is
+            about turning a business need into a solution the team can actually build.
           </p>
 
           {/* FEATURED PROJECTS */}
@@ -463,16 +463,12 @@ export default function AboutWorks() {
         >
           <h3 className={styles.skillsTitle}>Skills & Expertise</h3>
           <ul className={styles.skillsList}>
-            <li>Solution Strategy & Roadmap Planning (Agile/Scrum, OKRs)</li>
-            <li>Full-Stack Development (PHP/Laravel, MERN, Angular, Next.js)</li>
-            <li>Business Impact & ROI Optimization (+26% leads entrants @ TotalEnergies)</li>
-            <li>Stakeholder Management & Cross-Functional Coordination</li>
-            <li>Digital Transformation & CMS Migration (Drupal 7/10)</li>
-            <li>Conversion Funnel Optimization & User Journey Mapping</li>
-            <li>Scalable API Architecture (REST/GraphQL, JWT)</li>
-            <li>Database Design (PostgreSQL, MongoDB, MySQL)</li>
-            <li>CI/CD Pipeline & DevOps (Docker, GitHub Actions, Vercel)</li>
-            <li>KPI Definition, Analytics & Performance Monitoring</li>
+            <li>Discovery & Analysis: needs-gathering · business/IT workshops · functional specifications · process mapping (BPMN) · user journeys · gap analysis</li>
+            <li>Agile Delivery: user stories & acceptance criteria (Gherkin) · backlog management · MoSCoW/RICE prioritization · Agile Scrum · Jira · Confluence</li>
+            <li>Quality & UAT: functional & regression test plans · UAT · defect tracking · documentation</li>
+            <li>Governance: stakeholder management · steering committees · KPI reporting to sponsors · change management · technical translation for non-technical audiences</li>
+            <li>Data & Tools: Google Analytics · Power BI · Excel (KPI dashboards) · Figma · Salesforce · Notion</li>
+            <li>Technical Environment: SQL · REST APIs · Postman · Drupal 7/10 · GDPR — I read and challenge the technical solution without carrying the development myself</li>
           </ul>
           <Image
             src="/images/WhiteCubeTransparent.gif"
@@ -503,10 +499,9 @@ export default function AboutWorks() {
             />
           </h3>
           <p className={styles.insightText}>
-            My approach starts with understanding business objectives and client needs, then
-            translating them into solution roadmaps and technical delivery. I work to bridge
-            technical teams and stakeholders, focusing on outcomes that deliver measurable business value
-            while maintaining quality and user experience.
+            A specification only has value if the business side and the development team
+            understand it the same way. My job is to remove that ambiguity upfront — it's what
+            prevents rework, scope drift, and UAT that fails at the last minute.
           </p>
           <div className={styles.buttonDiv}>
             <Rounded onClick={() => router.push("/contact")}>
